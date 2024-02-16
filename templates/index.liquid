@@ -1,5 +1,10 @@
-{% comment %} {{ content_for_index }} {% endcomment %}
-{{ content_for_index }}
-<section class="container py-5">
-<h2>THis is shopify indexpage check this massge</h2>
-</section>
+{% for product in collections.frontpage.products limit:4 %}
+  <div>
+    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+    {{ product.price | money }}
+    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+    <a href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+    </a>
+  </div>
+{% endfor %}
