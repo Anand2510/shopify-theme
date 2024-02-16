@@ -14,7 +14,7 @@
       {
         "type":"color",
         "id":"navbar_colors",
-        "label":"Navbar Background Csolors",
+        "label":"Navbar Background Csolors-",
         "default":"#F0000"
       }
     ]
