@@ -14,11 +14,9 @@
 <body>
 
  {% section 'header' %}
- {%  section 'simple' %} 
 
   <main role="main">
     {{ content_for_layout }}
-    {{ content_for_index}}
   </main>
   {{ 'bootstrap.min.js' | asset_url | script_tag }}
   {{ 'application.js' | asset_url | script_tag }}
