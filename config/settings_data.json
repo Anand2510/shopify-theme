@@ -1,6 +1,19 @@
 {
-  "current": "Default",
+  "current": {
+    "navbar_color": "#ec00ff",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }
