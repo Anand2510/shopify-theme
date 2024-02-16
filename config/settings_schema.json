@@ -17,5 +17,16 @@
         "default":"#FF0000"
       }
     ]
+  },
+  {
+    "name":"Header Bar color Setting",
+    "settings":[
+      {
+        "type":"color",
+        "id":"navbar_colors",
+        "label":"Navbar Background Csolors",
+        "default":"#F0000"
+      }
+    ]
   }
 ]
