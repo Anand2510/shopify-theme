@@ -1,0 +1,75 @@
+<section>
+ <h1>{{ section.settings.Shop-heading }}</h1>
+   <!-- <div class="nav">       
+        <ul >
+           {%- for block in section.blocks -%} 
+          <li> <button class="tablinks Active" onclick="openCity(event, '{{ block.settings.slider-text }}')">{{ block.settings.slider-text }}</button></li>
+          {% endfor %}
+        </ul>
+      </div> -->
+  
+  {%- for block in section.blocks -%} 
+     <div id="{{ block.settings.slider-text }}" class="tabcontent"> 
+        <div class="img-slider owl-carousel" id="bottom-carousel1">
+          <button> <img src="{{ block.settings.image | img_url:'original' }}"/>  </button>
+<section class="popup">
+  <div class="popup__content">
+    <div class="close">
+      <span></span>
+      <span></span>
+    </div>
+hello my name is popupb
+  </div>
+</section>
+            <img src="{{ block.settings.image | img_url:'original' }}"/>    
+  
+       
+        </div>
+    </div>
+{% endfor %}
+   <div class="nav">       
+        <ul >
+           {%- for block in section.blocks -%} 
+          <li> <button class="tablinks Active" onclick="openCity(event, '{{ block.settings.slider-text }}')">{{ block.settings.slider-text }}</button></li>
+          {% endfor %}
+        </ul>
+      </div>
+  </section>
+{% schema %}
+  {
+    "name": "Tab Slider",
+    "settings": [
+       {
+             "type": "text",
+         "id": "Shop-heading",
+         "label": "Shop Heading",
+         "default": "shop by concern"
+      }
+      
+    ],  
+     "blocks": [
+    {
+      "type": "text",
+      "name": "Add Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "slider-text",
+          "label": "Add slider Text"
+        },
+         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+      }
+       ]
+      }
+     ]    
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
