@@ -1,4 +1,4 @@
-<section class="container py-5">
+{% comment %} <section class="container py-5">
     <div class="row">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1>This example now</h1>
@@ -8,8 +8,17 @@
             <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
         </div>
     </div>
-</section>
-
+</section> {% endcomment %}
+{% if section.settings.enable_section %}
+    <section class="section-class">
+      <div class="container">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.description }}</p>
+        <!-- Add other content as needed -->
+      </div>
+    </section>
+  {% endif %}
+  
 {% schema %}
 {
     "name": "Hero",
