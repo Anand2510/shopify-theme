@@ -1,19 +1,16 @@
-<section class="contaniner py-5">
-<div class="row">
-
-    <div class="col-lg-6 col-md-8 mx-auto">
-            <h1>Example of Dawn theme</h1>
-            <p>this example of description ss</p>
-            <a href="#">Shop Now b </a>
+<section class="container py-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1>{{ section.settings.title }}</h1>
+            <p>{{ section.settings.description }}</p>
+            <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+        </div>
     </div>
-
-</div>
 </section>
 
-
-{% schema  %} 
+{% schema %}
 {
-    "name":"Hero",
+    "name": "Hero",
     "class": "hero-section",
     "settings": [
         {
@@ -25,7 +22,7 @@
         {
             "type": "richtext",
             "id": "description",
-            "default": "<p>Example Paragrap</p>>",
+            "default": "<p>Example Paragraph</p>",
             "label": "Heading Description"
         },
         {
@@ -38,15 +35,13 @@
             "type": "url",
             "id": "button_link",
             "label": "Heading Button Link"
-        },
-
+        }
     ],
     "presets": [
         {
             "category": "Hero",
             "name": "hero"
         }
-    ],
-
+    ]
 }
- {% endschema %}
+{% endschema %}
