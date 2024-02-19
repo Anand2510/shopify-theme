@@ -1,7 +1,7 @@
 {{ content_for_index }}
 
 
-{% comment %} 
+
 
 {% for product in collections.frontpage.products limit:4 %}
   <div>
@@ -12,4 +12,4 @@
       <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
     </a>
   </div>
-{% endfor %} {% endcomment %}
+{% endfor %}
