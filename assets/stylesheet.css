@@ -1,0 +1,6 @@
+.slider-images {
+  display: flex;
+}
+.slider-images img {
+  width: 200px;
+}
