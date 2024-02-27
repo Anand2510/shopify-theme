@@ -1,2 +1,2 @@
 // Put your application javascript here
-alert("This page working || not working");
+// alert("This page working || not working");
