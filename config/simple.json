@@ -1,7 +1,7 @@
 {
   "sections": {
     "image_banner": {
-      "type": "feature-collection",
+      "type": "index",
       "blocks": {
         "heading": {
           "type": "heading",
