@@ -1,28 +1,28 @@
-{% schema  %} 
-
-{
-    "name":"Feature Collection",
-    "class": "feature-collection -section",
-    "settings": [
-        {
-            "type": "collection",
-            "id": "feature_collection",
-            "label":"collection"
-        },
-        {
-            "type": "text",
-            "id":"title",
-            "default":"feature Collection",
-            "label":"Title"
-        }
-    ],
-    "presets": [
-        {
-            "category":"Collection",
-            "name":"Feature Collection"
-        }
-    ]
-}
-
-
-{% endschema %}
+{% unless section.settings.disabled %}
+    {% schema %}
+    {
+        "name":"Feature Collection",
+        "class": "feature-collection -section",
+        "settings": [
+            {
+                "type": "collection",
+                "id": "feature_collection",
+                "label":"collection"
+            },
+            {
+                "type": "text",
+                "id":"title",
+                "default":"feature Collection",
+                "label":"Title"
+            }
+        ],
+        "presets": [
+            {
+                "category":"Collection",
+                "name":"Feature Collection"
+            }
+        ]
+    }
+    {% endschema %}
+  {% endunless %}
+  
