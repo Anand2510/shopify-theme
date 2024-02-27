@@ -8,9 +8,9 @@
   cursor:pointer;
     position:relative;
     margin: 6px;
-    padding:10px 20px;
+    padding: 4px 6px;
     background:white;
-    font-size:28px;
+    font-size:20px;
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     transition:all 1s;
