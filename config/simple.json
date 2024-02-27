@@ -13,7 +13,7 @@
       }
     }
   },
-    "order": [
-      "image_banner"
-    ]
-  }
+  "order": [
+    "image_banner"
+  ]
+}

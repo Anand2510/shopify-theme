@@ -1,28 +1,27 @@
 {% unless section.settings.disabled %}
     {% schema %}
     {
-        "name":"Feature Collection",
+        "name": "Feature Collection",
         "class": "feature-collection -section",
         "settings": [
             {
                 "type": "collection",
                 "id": "feature_collection",
-                "label":"collection"
+                "label": "Collection"
             },
             {
                 "type": "text",
-                "id":"title",
-                "default":"feature Collection",
-                "label":"Title"
+                "id": "title",
+                "default": "Feature Collection",
+                "label": "Title"
             }
         ],
         "presets": [
             {
-                "category":"Collection",
-                "name":"Feature Collection"
+                "category": "Collection",
+                "name": "Feature Collection"
             }
         ]
     }
     {% endschema %}
   {% endunless %}
-  
