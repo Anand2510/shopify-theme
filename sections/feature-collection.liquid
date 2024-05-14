@@ -4,7 +4,7 @@
 
 <section class="container">
   {% for product in collections[section.settings.feature_collection].products %}
-    <div class="card">
+    <div class="card" style="width: 18rem;">
         <img src="{{ product.featured_media.preview_image | img_url: 'medium' }}" alt="{{ product.title }}">
      <div class="card-body">
       <h3> <a href="{{ product.url }}">{{ product.title }}</a></h3>
