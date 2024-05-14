@@ -1,8 +1,9 @@
 <section class="container">
     {% for product in collections[section.settings.featured_collection].products %}
-        {%product.title%}
+        {{ product.title }}
     {% endfor %}
 </section>
+
 {% comment %} {% unless section.settings.disabled %} {% endcomment %}
     {% schema %}
     {
