@@ -5,7 +5,8 @@
 <section class="container">
   {% for product in collections[section.settings.feature_collection].products %}
    <div class="card">
-        {{ product.title }}
+       <h3> {{ product.title }}</h3>
+       <p>{{ product.price }}</p>
     </div>
   {% endfor %}
 </section>
