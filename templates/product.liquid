@@ -12,6 +12,13 @@
     <div class="col-md-6 col-12">
           <h1>{{ product.title }}</h1>
           <p>{{ product.price | | money_with_currency }}</p>
+
+        {% form  'product', product, class:"product-form", id:"AddToCartForm" %} 
+            <div class="mb-3">
+              heello
+            </div>
+        {% endform %}
+
     </div>
   </div>
 </div>
