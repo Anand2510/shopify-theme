@@ -1,10 +1,22 @@
 {
-    "name":"Homepage",
-    "sections":
-    {
-        "template-homepage":{
-            "type": "template-index"
-        }
+  "sections": {
+    "template-homepage": {
+      "type": "template-index",
+      "settings": {
+      }
     },
-    "order":["template-homepage"]
+    "rvs_tndBTf": {
+      "type": "rvs",
+      "settings": {
+        "title": "Example Heading",
+        "description": "<p>Example Paragraph<\/p>",
+        "button_label": "Button",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "template-homepage",
+    "rvs_tndBTf"
+  ]
 }
