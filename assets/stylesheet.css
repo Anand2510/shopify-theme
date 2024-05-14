@@ -11,6 +11,9 @@
   bottom: 0;
   width: 100%;
 }
+.banner-text{
+  position: relative;
+}
 
 .slider-images {
   display: flex;
