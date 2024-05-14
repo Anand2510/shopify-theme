@@ -6,6 +6,15 @@
         "type": "header",
         "settings": {
         }
+      },
+      "rvs": {
+        "type": "rvs",
+        "settings": {
+          "title": "Example Heading",
+          "description": "<p>This is  an Example Paragraph<\/p>",
+          "button_label": "Button",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
