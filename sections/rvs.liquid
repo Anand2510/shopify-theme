@@ -1,0 +1,44 @@
+<section class="container py-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1>Example</h1>
+            <p>This is an Example Description</p>
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+
+{%schema%}
+{
+    "name": "rvs",
+    "class":"rvs-section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "default":"Example Heading",
+            "label":"Heading Title"
+        },
+        {
+            "type":"richtext",
+            "id":"description",
+            "deafult":"Example Heading",
+            "label":"heading title"
+        },
+        {
+            "type":"text",
+            "id":"button_label",
+            "deafult":"Button",
+            "label":"heading Button"
+        },
+        {
+            "type":"url",
+            "id":"button_link",
+            "label":"heading Button Link"
+        }
+
+]
+
+}
+    {%endschema%}
