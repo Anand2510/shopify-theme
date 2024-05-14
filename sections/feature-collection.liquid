@@ -5,7 +5,8 @@
 <section class="container">
   {% for product in collections[section.settings.feature_collection].products %}
    <div class="card">
-<a href="{{ product.url }}" >{{ product.title }}</a>
+        
+   <a href="{{ product.url }}" >{{ product.title }}this </a>
 
        <p>{{ product.price | | money_without_trailing_zeros }}</p>
     </div>
