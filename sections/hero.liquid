@@ -3,7 +3,7 @@
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1>This example now</h1>
             <h1>{{ section.settings.title }}</h1>
-             <h1>Thises Example now</h1>
+            <h1>This example now</h1> <!-- Fixed typo in the heading -->
             <p>{{ section.settings.description }}</p>
             <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
         </div>
@@ -31,12 +31,12 @@
             "type": "text",
             "id": "button_label",
             "default": "Button",
-            "label": "Heading Button"
+            "label": "Button Label" 
         },
         {
             "type": "url",
             "id": "button_link",
-            "label": "Heading Button Link"
+            "label": "Button Link"
         }
     ],
     "presets": [
