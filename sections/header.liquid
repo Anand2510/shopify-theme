@@ -19,11 +19,11 @@
       <li class="nav-item">
       <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
       </li>
-      [{% for childlink in linklists[child_list_handle].links %}
-        {% comment %} <li class="nav-item"> {% endcomment %}
+      {% for childlink in linklists[child_list_handle].links %}
+        <li class="nav-item">
         <a class="nav-link" href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-        {% comment %} </li> {% endcomment %}
-      {% endfor %}]
+        </li>
+      {% endfor %}
     {% else %}
       <li class="nav-item">
       <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
