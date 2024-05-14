@@ -8,6 +8,7 @@
     "rvs_tndBTf": {
       "type": "rvs",
       "settings": {
+        "image": "shopify:\/\/shop_images\/monthly-harmony-guide-background-image.png",
         "title": "Example Heading",
         "description": "<p>Example Paragraph<\/p>",
         "button_label": "Button",
