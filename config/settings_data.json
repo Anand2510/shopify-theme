@@ -11,7 +11,7 @@
         "type": "rvs",
         "settings": {
           "title": "Example Heading",
-          "description": "<p>This is  an Example Paragraph<\/p>",
+          "description": "<p><a href=\"#\" target=\"_blank\" title=\"#\">This <\/a>is  an Example <strong>Paragraph<\/strong><\/p>",
           "button_label": "Button",
           "button_link": ""
         }
