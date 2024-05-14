@@ -2,8 +2,8 @@
   {% unless section.settings.disabled %}
 {% endcomment %}
 
-<section class="container">
-    {{ page.title }}
+<section class="container py-4">
+<h3>{{ section.settings.title }}</h3>
     <div class="row">
   {% for product in collections[section.settings.feature_collection].products %}
     <div class="col">
