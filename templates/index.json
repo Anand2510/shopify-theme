@@ -2,7 +2,7 @@
     "name":"Homepage",
     "sections":
     {
-        "template-Homepage":{
+        "template-homepage":{
             "type": "template-index"
         }
     },
