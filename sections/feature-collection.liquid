@@ -6,7 +6,7 @@
   {% for product in collections[section.settings.feature_collection].products %}
    <div class="card">
        <h3> {{ product.title }}</h3>
-       <p>{{ product.price }}</p>
+       <p>{{ product.price | money }}</p>
     </div>
   {% endfor %}
 </section>
