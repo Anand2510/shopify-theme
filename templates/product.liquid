@@ -10,7 +10,8 @@
           {% endfor %}
     </div>
     <div class="col-md-6 col-12">
-      
+          <h1>{{ product.title }}</h1>
+          <p>{{ product.price | | money_with_currency }}</p>
     </div>
   </div>
 </div>
