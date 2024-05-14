@@ -15,7 +15,7 @@
 
         {% form  'product', product, class:"product-form", id:"AddToCartForm" %} 
             <div class="mb-3">
-              <select name="id" id="productSelect" class="form-select"></select>
+              <select name="id" id="productSelect" class="form-select">
            {% for  variant in product.variants %}
                 {% if variant.available %}
                   <option value="{{ varient.id }}">{{ variant.title }}</option>
@@ -23,6 +23,7 @@
                 {% else %}
                 <option value="{{ varient.id }}" disabled="disabled">{{ variant.title }}</option>
               {% endfor %} 
+              </select>
             </div>
         {% endform %}
 
