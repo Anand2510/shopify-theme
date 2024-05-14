@@ -2,15 +2,7 @@
 
 
 
-  {% if shop.customer_accounts_enabled %}
-    {% if customer %}
-      <a href="/account">account</a>
-      {{ 'log out'  | customer_logout_link }}
-    {% else %}
-      {{ 'log in ' | customer_login_link }}
-      {{ 'register' | customer_register_link }}
-    {% endif %}
-  {% endif %}
+
 
 {% comment  %} Clone down theme  {% endcomment %}
 <div class="page-width">
@@ -45,6 +37,15 @@
         <a class="nav-link" href="/cart"> Add | contact  </a>
     </li>
     </ul>
+    {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+        <a href="/account">account</a>
+        {{ 'log out'  | customer_logout_link }}
+      {% else %}
+        {{ 'log in ' | customer_login_link }}
+        {{ 'register' | customer_register_link }}
+      {% endif %}
+    {% endif %}
   </div>
 </nav>
 </div>
