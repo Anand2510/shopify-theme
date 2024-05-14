@@ -13,10 +13,18 @@
         "button_label": "Button",
         "button_link": ""
       }
+    },
+    "feature_collection_K4atPq": {
+      "type": "feature-collection",
+      "settings": {
+        "feature_collection": "3-d-puzzles",
+        "title": "Feature Collection"
+      }
     }
   },
   "order": [
     "template-homepage",
-    "rvs_tndBTf"
+    "rvs_tndBTf",
+    "feature_collection_K4atPq"
   ]
 }
