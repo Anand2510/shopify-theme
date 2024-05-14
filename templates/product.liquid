@@ -15,7 +15,14 @@
 
         {% form  'product', product, class:"product-form", id:"AddToCartForm" %} 
             <div class="mb-3">
-              heello
+              <select name="id" id="productSelect" class="form-select"></select>
+           {% for  variant in product.variants %}
+                {% if variant.available %}
+                  <option value="{{ varient.id }}">{{ variant.title }}</option>
+                {% endif %}
+                {% else %}
+                <option value="{{ varient.id }}" disabled="disabled">{{ variant.title }}</option>
+              {% endfor %} 
             </div>
         {% endform %}
 
