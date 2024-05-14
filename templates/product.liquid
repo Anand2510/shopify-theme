@@ -4,7 +4,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-12">
-      <img class="img-fluid" src="{{ product.main_image.src | img_url: 'large' }}" alt="{{ product.main_image.alt }}" id="productMainImage"> 
+      <img class="img-fluid" src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}" id="productMainImage"> 
+      {% comment %} <img class="img-fluid" src="{{ product.main_image.src | img_url: 'large' }}" alt="{{ product.main_image.alt }}" id="productMainImage">  {% endcomment %}
       {% for image in product.images %}
         <img src="{{ image.src | img_url: 'medium' }}" alt="{{ image.alt }}">
       {% endfor %}
