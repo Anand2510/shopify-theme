@@ -1,33 +1,39 @@
+{% comment %}
+  {% unless section.settings.disabled %}
+{% endcomment %}
+
 <section class="container">
-    {% for product in collections[section.settings.featured_collection].products %}
-        {{ product.title }}
-    {% endfor %}
+  {% for product in collections[section.settings.feature_collection].products %}
+    {{ product.title }}
+  {% endfor %}
 </section>
 
-{% comment %} {% unless section.settings.disabled %} {% endcomment %}
-    {% schema %}
-    {
-        "name": "Feature Collection",
-        "class": "featured-collection-section",
-        "settings": [
-            {
-                "type": "collection",
-                "id": "feature_collection",
-                "label": "Collection"
-            },
-            {
-                "type": "text",
-                "id": "title",
-                "default": "Feature Collection",
-                "label": "Title"
-            }
-        ],
-        "presets": [
-            {
-                "category": "Collection",
-                "name": "Feature Collection"
-            }
-        ]
-    }
-    {% endschema %}
-  {% comment %} {% endunless %} {% endcomment %}
+{% comment %}
+  {% endunless %}
+{% endcomment %}
+
+{% schema %}
+{
+    "name": "Feature Collection",
+    "class": "featured-collection-section",
+    "settings": [
+        {
+            "type": "collection",
+            "id": "feature_collection",
+            "label": "Collection"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "default": "Feature Collection",
+            "label": "Title"
+        }
+    ],
+    "presets": [
+        {
+            "category": "Collection",
+            "name": "Feature Collection"
+        }
+    ]
+}
+{% endschema %}
