@@ -52,8 +52,11 @@
           <div>
             <p class="h3">The Total Amount Is :</p>
             <p><strong>sub total :</strong> {{ cart.total_price | money }}</p>
-            <button type="submit" name="update">Update</button>
-            <button type="submit" name="checkout">Checkout</button>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary" name="update">Update</button>
+              <button type="submit" class="btn btn-primary" name="checkout">Checkout</button>
+            </div>
+       
           </div>
         </div>
       </div>
