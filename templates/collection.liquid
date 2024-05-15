@@ -2,7 +2,7 @@
 
 {% paginate collection.products by 2 %}
   <div class="row">
-    <h1>{{ collection.title }}</h1>
+    <h1 class="text-center">{{ collection.title }}</h1>
   </div>
   <div class="row">
   {% assign image = product.featured_media.preview_image %}
