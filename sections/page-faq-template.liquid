@@ -1,17 +1,22 @@
-
 <div class="container">
     <div class="accordion accordion-flush" id="accordionFAQ">
         {% for block in section.blocks %}
             <div class="accordion-item">
                 <h2 class="accordion-header" id="{{ block.id }}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="{{ block.id }}" arial-expanded="false" aria-controls="{{ block.id }}"></button>    
-                {{ block.settings.title }}</h2>
-                <div class="accordion-collapse collapse" id="{{ block.id }}" aria-labelledby="{{ block.id }}" data-bs-parent="#accordionFAQ">{{ block.settings.answer }}</div>
-                {% comment %} <p class="accordion-desctiption">{{ block.settings.answer }}</p> {% endcomment %}
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ block.id }}" aria-expanded="false" aria-controls="{{ block.id }}">
+                        {{ block.settings.title }}
+                    </button>    
+                </h2>
+                <div class="accordion-collapse collapse" id="{{ block.id }}" aria-labelledby="{{ block.id }}" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        {{ block.settings.answer | strip_html }} {# Remove HTML tags from the answer #}
+                    </div>
+                </div>
             </div>
         {% endfor %}
     </div>
 </div>
+
 
 {% schema %}
 {
