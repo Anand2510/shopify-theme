@@ -32,7 +32,26 @@
                   </td>
                   <td>{{ item.price | money }}</td>
                   <td>
+                    {% comment %} <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0"> {% endcomment %}
                     <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+<button onclick="increment()">+</button>
+<button onclick="decrement()">-</button>
+
+<script>
+  function increment() {
+    var input = document.getElementById('updates_{{ item.key }}');
+    input.value = parseInt(input.value) + 1;
+  }
+
+  function decrement() {
+    var input = document.getElementById('updates_{{ item.key }}');
+    var value = parseInt(input.value);
+    if (value > 0) {
+      input.value = value - 1;
+    }
+  }
+</script>
+
                   </td>
                   <td>
                     {% if item.original_line_price != item.line_price %}{{ item.original_line_price | money }}{% endif %}
