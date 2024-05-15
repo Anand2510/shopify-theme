@@ -4,6 +4,7 @@
   <div class="row">
     <h1>{{ collection.title }}</h1>
   </div>
+  <div class="row">
   {% assign image = product.featured_media.preview_image %}
   {% for product in collection.products %}
     <div class="col-3 g-2">
@@ -21,13 +22,6 @@
         </div>
       </div>
     </div>
-    <div>
-      <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-      {{ product.price | money }}
-      {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-      <a href="{{ product.url | within: collection }}">
-        <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-      </a>
     </div>
   {% else %}
     <p>no matches</p>
