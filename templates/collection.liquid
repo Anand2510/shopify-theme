@@ -30,7 +30,7 @@
               {% endif %} 
         <li class="page-item"><a href="#" class="page-link">1</a></li>
         
-        {% if paginate.previous.is_link %}
+        {% if paginate.next.is_link %}
           <li class="page-item"><a href="{{ paginate.next.url }}" class="page-link">{{ paginate.next.title }}</a></li>
           {% endif %} 
             </ul>
