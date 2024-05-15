@@ -1,5 +1,5 @@
 <div class="container">
-  {% paginate collection.products by 2 %}
+  {% paginate collection.products by 4 %}
     <div class="row">
       <h1 class="text-center">{{ collection.title }}</h1>
     </div>
@@ -21,7 +21,7 @@
         </div>
       {% endfor %}
     </div>
-    {% if paginate.pages > 2 %}
+    {% if paginate.pages > 4 %}
       <div class="row">
         <div class="col">
           {{ paginate | default_pagination }}
