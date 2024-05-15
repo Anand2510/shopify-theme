@@ -1,3 +1,14 @@
+
+<div class="container">
+    <div class="accordion accordion-flush" id="accordionFAQ">
+        {% for block in section.blocks %}
+            <div class="accordion-item">
+                <div class="accordion-header" id="{{ block.id }}">{{ block.settings.title }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% schema %}
 {
     "name": "FAQ",
