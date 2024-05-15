@@ -6,9 +6,10 @@
 <h3 class="my-3">{{ section.settings.title }}</h3>
     <div class="row gap-3">
   {% for product in collections[section.settings.feature_collection].products %}
+    {% assign image = product.featured_media.preview_image %}
     <div class="col">
     <div class="card" style="width: 18rem;"> 
-      {% assign image = product.featured_media.preview_image %}
+    
       {% if image != blank %}
         <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
       {% else %}
