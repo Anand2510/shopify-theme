@@ -28,6 +28,23 @@
           "container": "container",
           "show_publish_date": true
         }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "faq_Vt9UBn": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": "<p>This Example Of FAQ<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "faq_Vt9UBn"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
