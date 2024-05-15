@@ -15,6 +15,12 @@
           "button_label": "Button",
           "button_link": ""
         }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "dynamic_buttons_checkbox": true
+        }
       }
     },
     "content_for_index": [
