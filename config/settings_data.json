@@ -21,6 +21,13 @@
         "settings": {
           "dynamic_buttons_checkbox": true
         }
+      },
+      "page-template": {
+        "type": "page-template",
+        "settings": {
+          "container": "container",
+          "show_publish_date": false
+        }
       }
     },
     "content_for_index": [
