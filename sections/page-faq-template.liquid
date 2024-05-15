@@ -1,4 +1,7 @@
 <div class="container">
+    <div class="row my-5">
+        <div class="text-center">{{ page.title }}</div>
+    </div>
     <div class="accordion accordion-flush" id="accordionFAQ">
         {% for block in section.blocks %}
             <div class="accordion-item">
@@ -8,7 +11,7 @@
                         {{ block.settings.title }}
                     </button> 
                 </h2>
-                <div class="accordion-collapse collapse p-3" id="collapse-{{ block.id }}" 
+                <div class="accordion-collapse collapse p-3x" id="collapse-{{ block.id }}" 
                         aria-labelledby="collapse-header-{{ block.id }}" data-bs-parent="#accordionFAQ">
                     <div class="accordion-body">
                         {{ block.settings.answer | strip_html }}
