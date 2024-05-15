@@ -26,7 +26,7 @@
         "type": "page-template",
         "settings": {
           "container": "container",
-          "show_publish_date": false
+          "show_publish_date": true
         }
       }
     },
