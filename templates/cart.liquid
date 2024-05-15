@@ -33,11 +33,13 @@
                   <td>{{ item.price | money }}</td>
                   <td>
                     {% comment %} <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0"> {% endcomment %}
+                    <div class="input-box">
                     <input type="text" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+                   <div class="plus-minus">
                     <button onclick="decrement()">-</button>
                     <button onclick="increment()">+</button>
-
-
+                    </div>
+                    </div>
 <script>
   function increment() {
     var input = document.getElementById('updates_{{ item.key }}');
