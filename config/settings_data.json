@@ -45,11 +45,19 @@
               "title": "FAQ Title Example",
               "answer": ""
             }
+          },
+          "faq_TdPtJT": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": "<p>hello every one 4 a clock activity organise all work is over <\/p>"
+            }
           }
         },
         "block_order": [
           "faq_Vt9UBn",
-          "faq_RUgnjy"
+          "faq_RUgnjy",
+          "faq_TdPtJT"
         ],
         "settings": {
         }
