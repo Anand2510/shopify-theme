@@ -36,12 +36,20 @@
             "type": "faq",
             "settings": {
               "title": "FAQ Title Example",
-              "answer": "<p>This Example Of FAQ<\/p>"
+              "answer": "<p>hello every one <\/p>"
+            }
+          },
+          "faq_RUgnjy": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": ""
             }
           }
         },
         "block_order": [
-          "faq_Vt9UBn"
+          "faq_Vt9UBn",
+          "faq_RUgnjy"
         ],
         "settings": {
         }
