@@ -24,7 +24,7 @@
     {% if paginate.pages > 5 %}
         <nav aria-label="page navigation">
             <ul class="pagination justify-content-center">
-                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">{{ paginate | default_pagination }}</a></li>
             </ul>
         </nav>
           {% comment %} {{ paginate | default_pagination }} {% endcomment %}
