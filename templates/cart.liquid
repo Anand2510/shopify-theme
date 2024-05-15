@@ -33,7 +33,7 @@
                   <td>{{ item.price | money }}</td>
                   <td>
                     {% comment %} <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0"> {% endcomment %}
-                    <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+                    <input type="text" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
 <button onclick="increment()">+</button>
 <button onclick="decrement()">-</button>
 
