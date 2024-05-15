@@ -1,4 +1,8 @@
-
+{% if section.settings.container == 'container' %}
+    {% assign container_class = 'container' %}
+    {% else %} 
+    {% assign container_class = 'container-fluid' %}
+{% endif %}
     <div class="page-template">
         {% schema %}
             {
