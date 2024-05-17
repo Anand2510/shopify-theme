@@ -33,10 +33,10 @@
         {% endfor %}
       </div>
    
-    
-    {% if paginate.pages > 1 %}
+      {% render 'pagination', paginate: paginate   %} 
+    {% comment %} {% if paginate.pages > 1 %}
       {{ paginate | default_pagination }}
-    {% endif %}
+    {% endif %} {% endcomment %}
     
     {% endpaginate %}
     
