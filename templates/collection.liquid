@@ -3,7 +3,17 @@
     <div class="row">
       <h1 class="text-center">{{ collection.title }}</h1>
     </div>
+
     <div class="row">
+      <div name="sorting" id="sort_by" class="form-select">
+        {% for option in collection.sort_option %}
+          <option value="{{ option.value }}">{{ option.name }}</option>
+          
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row justify-content-centermy-5">
       {% for product in collection.products %}
         <div class="col-3 g-2">
           <div class="card" style="width: 18rem;"> 
