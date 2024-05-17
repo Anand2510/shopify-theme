@@ -8,15 +8,21 @@
   {% paginate blog.articles by 5 %}
       <div class="row row-cols-1 row-cols-md-2 row cols-lg-3">
         {% for article in blog.articles %}
-          <div>
+          <div class="col">
+            <div class="card shadow">
+              <div class="card-body">
+
+             
             <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
             {{ article.author }} @ {{ article.created_at }}
-            <div>
+            <p class="card-text">
               {% if article.excerpt.size > 0 %}
                 {{ article.excerpt }}
               {% else %}
                 <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
               {% endif %}
+            </p>
+            </div>
             </div>
           </div>
         {% endfor %}
