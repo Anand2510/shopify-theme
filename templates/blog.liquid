@@ -11,7 +11,7 @@
           <div class="col">
             <div class="card shadow">
               {% if article.image.src != null %}
-                <img src="{{ article.image.src | img_url: 'medium' }}" class="card-img-top" alt="{{ article.image.alt }}">
+                <img src="{{ article.image.src | img_url: 'small' }}" class="card-img-top" alt="{{ article.image.alt }}">
                 {% else %}
                   {{ 'image' | placeholder_svg_tag: 'card-img-top' }}
               {% endif %}
