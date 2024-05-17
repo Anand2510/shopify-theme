@@ -15,7 +15,12 @@
 
 </div>
 </div>
-<div>{{ article.content }}</div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div>{{ article.content }}</div>
+      <div class="comment-section">
+        
 {% if blog.comments_enabled? %}
   <h2>{{ number_of_comments }} comments</h2>
   {% paginate article.comments by 5 %}
@@ -28,6 +33,12 @@
     {% if paginate.pages > 1 %}
       {{ paginate | default_pagination }}
     {% endif %}
+      </div>
+    </div>
+    <div class="col-12 col-md-4"></div>
+  </div>
+</div>
+
   {% endpaginate %}
 
   <div>
