@@ -22,12 +22,19 @@
       <div class="comment-section">
         
 {% if blog.comments_enabled? %}
-  <h2>{{ number_of_comments }} comments</h2>
+<h2>{{ number_of_comments }} comments{% if number_of_comments > 1 %}s{% endif %} </h2>
   {% paginate article.comments by 5 %}
     {% for comment in article.comments %}
-      <div>
-        <div>{{ comment.content }}</div>
-        {{ comment.author }} @ {{ comment.created_at }}
+      
+      <div class="card shadow rounded-0 my-3">
+        <div class="card-header">
+         by {{ comment.author }} @ {{ comment.created_at | date: format: 'long' }}
+        </div>
+        <div class="card-body">
+          <div>{{ comment.content }}</div>
+        </div>
+       
+        
       </div>
     {% endfor %}
     {% if paginate.pages > 1 %}
