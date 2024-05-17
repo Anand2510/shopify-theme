@@ -10,6 +10,11 @@
         {% for article in blog.articles %}
           <div class="col">
             <div class="card shadow">
+              {% if article.image.src != null %}
+                <img src="{{ article.image.src }}" class="card-img-top" alt="{{ article.image.alt }}">
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'card-img-top' }}
+              {% endif %}
               <div class="card-body">
 
              
