@@ -54,12 +54,22 @@
       {% for error in form.errors %}
         <div class="alert alert-danger">
           {% if error == 'form' %}
+            {{ form.errors.messages[error] }}
+          {% else %}
+            {{ form.errors.translated_fields[error] }}: {{ form.errors.messages[error] }}
+          {% endif %}
+        </div>
+      {% endfor %}
+      
+      {% comment %} {% for error in form.errors %}
+        <div class="alert alert-danger">
+          {% if error == 'form' %}
             {{ form.errors.massages[error] }}
             {% else %}
                {{ form.error.translated_fields[error] }}{{ form.errors.massages[error] }}
           {% endif %}
         </div>
-      {% endfor %}
+      {% endfor %} {% endcomment %}
       <label for="CommentAuthor">name</label>
       <input type="text" name="comment[author]" id="CommentAuthor" placeholder="name" value="{{ form.author }}" autocapitalize="words">
 
