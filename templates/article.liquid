@@ -51,6 +51,15 @@
   <div>
     {% form 'new_comment', article %}
       {{ form.errors | default_errors }}
+      {% for error in form.errors %}
+        <div class="alert alert-danger">
+          {% if error == 'form' %}
+            {{ form.errors.massages[error] }}
+            {% else %}
+               {{ form.error.translated_fields[error] }}{{ form.errors.massages[error] }}
+          {% endif %}
+        </div>
+      {% endfor %}
       <label for="CommentAuthor">name</label>
       <input type="text" name="comment[author]" id="CommentAuthor" placeholder="name" value="{{ form.author }}" autocapitalize="words">
 
