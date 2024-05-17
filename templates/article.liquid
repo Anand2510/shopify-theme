@@ -37,9 +37,6 @@
         
       </div>
     {% endfor %}
-    {% if paginate.pages > 1 %}
-      {{ paginate | default_pagination }}
-    {% endif %}
     <div>
       {% form 'new_comment', article %}
         {% if form.errors.size > 0 %}
@@ -66,6 +63,10 @@
         <input type="submit" value="Post">
       {% endform %}
     </div>
+    
+    {% if paginate.pages > 1 %}
+      {{ paginate | default_pagination }}
+    {% endif %}
       </div>
     </div>
     <div class="col-12 col-md-4"></div>
@@ -73,5 +74,4 @@
 </div>
 
   {% endpaginate %}
-
-  
+ 
