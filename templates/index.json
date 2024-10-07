@@ -34,7 +34,12 @@
     "slider_UidXrr": {
       "type": "slider",
       "settings": {
-        "text_name": "Add Slider name"
+      }
+    },
+    "slider_pPb4wT": {
+      "type": "slider",
+      "disabled": true,
+      "settings": {
       }
     }
   },
@@ -42,6 +47,7 @@
     "template-homepage",
     "rvs_tndBTf",
     "feature_collection_K4atPq",
-    "slider_UidXrr"
+    "slider_UidXrr",
+    "slider_pPb4wT"
   ]
 }
