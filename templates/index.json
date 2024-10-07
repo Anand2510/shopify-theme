@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "template-homepage": {
@@ -8,9 +17,9 @@
     "rvs_tndBTf": {
       "type": "rvs",
       "settings": {
-        "image": "shopify:\/\/shop_images\/seafolly-spring-mar24.jpg",
+        "image": "shopify://shop_images/seafolly-spring-mar24.jpg",
         "title": "Example Heading",
-        "description": "<p>Example Paragraph<\/p>",
+        "description": "<p>Example Paragraph</p>",
         "button_label": "Button",
         "button_link": ""
       }
@@ -21,11 +30,18 @@
         "feature_collection": "anand-cloth",
         "title": "Feature Collection"
       }
+    },
+    "slider_UidXrr": {
+      "type": "slider",
+      "settings": {
+        "text_name": "Add Slider name"
+      }
     }
   },
   "order": [
     "template-homepage",
     "rvs_tndBTf",
-    "feature_collection_K4atPq"
+    "feature_collection_K4atPq",
+    "slider_UidXrr"
   ]
 }
