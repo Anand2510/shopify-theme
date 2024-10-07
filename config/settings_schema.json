@@ -17,6 +17,16 @@
         "default":"#FF0000"
       }
     ]
+  },
+  {
+    "name": "Background Color",
+    "settings": [
+      {
+        "type": "color",
+        "id":"back_color",
+        "label":"Background Color"
+      }
+    ]
   }
   
 ]
