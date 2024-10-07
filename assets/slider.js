@@ -18,4 +18,6 @@ $(document).ready(function () {
       }
     }
   });
+
+  alert("this the test ")
 });
