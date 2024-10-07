@@ -24,7 +24,8 @@
       {
         "type": "color",
         "id":"back_color",
-        "label":"Background Color"
+        "label":"Background Color",
+        "default":"#79FF00"
       }
     ]
   }
