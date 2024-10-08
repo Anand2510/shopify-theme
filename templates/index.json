@@ -34,12 +34,32 @@
     "slider_UidXrr": {
       "type": "slider",
       "settings": {
+        "heading": ""
       }
     },
     "slider_pPb4wT": {
       "type": "slider",
       "disabled": true,
       "settings": {
+        "heading": ""
+      }
+    },
+    "rvs_azJ9WR": {
+      "type": "rvs",
+      "settings": {
+        "title": "Example Heading",
+        "description": "<p>Example Paragraph</p>",
+        "button_label": "Button",
+        "button_link": ""
+      }
+    },
+    "hero_tYE4fd": {
+      "type": "hero",
+      "settings": {
+        "title": "Example Heading22",
+        "description": "<p>Example Paragraph</p>",
+        "button_label": "Button",
+        "button_link": ""
       }
     }
   },
@@ -48,6 +68,8 @@
     "rvs_tndBTf",
     "feature_collection_K4atPq",
     "slider_UidXrr",
-    "slider_pPb4wT"
+    "slider_pPb4wT",
+    "rvs_azJ9WR",
+    "hero_tYE4fd"
   ]
 }
