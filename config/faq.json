@@ -1,7 +1,7 @@
 {
     "sections": {
       "main": {
-        "type": "faq-section"
+        "type": "faq-new" 
       }
     }
   }

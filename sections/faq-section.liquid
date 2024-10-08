@@ -1,7 +1,7 @@
 <div class="text"></div>
 <div class="container mb-5">
     <div class="row my-4">
-        <h2 class=" text-center">custom faq section {{ page.title }}</h2>
+        <h2 class=" text-center">faq section {{ page.title }}</h2>
     </div>
     <div class="accordion accordion-flush" id="accordionFAQ">
         {%  for block in section.blocks  %}
@@ -30,40 +30,37 @@
 </div>
 
 {% schema %}
-    {
-      "name": "FAQ Section",
-      "settings": [
-        {
-          "type": "text",
-          "id": "faq_title",
-          "label": "FAQ Title",
-          "default": "Frequently Asked Questions"
-        }
-      ],
-      "blocks": [
-        {
-          "type": "faq",
-          "name": "FAQ Block",
-          "settings": [
+{
+    "name": "FAQS New",
+    "settings": [
+        
+        ],
+        "blocks": [
             {
-              "type": "text",
-              "id": "question",
-              "label": "Question"
-            },
-            {
-              "type": "textarea",
-              "id": "answer",
-              "label": "Answer"
+                "name": "faq item",
+                "type": "faq",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Quetion",
+                        "default": "Faq Title Example"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+
             }
-          ]
-        }
-      ],
-      "presets": [
-        {
-          "name": "FAQ",
-          "category": "Custom"
-        }
-      ]
-    }
-    {% endschema %}
-    
+        ],
+        "presets":[
+            {
+                "name": "Faq New",
+                "category": "Custom"
+            }
+        ]
+
+}
+{% endschema %} 
