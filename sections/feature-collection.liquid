@@ -3,7 +3,7 @@
     {%  for product in collections[section.settings.featute_collection].products %}
         <div class="card">
             <h3>{{ product.title }}</h3>
-            <p>{{ product.price }}</p> 
+            <p>{{ product.price |  money_with_currency}}</p> 
         </div>
      {% endfor %}
 
