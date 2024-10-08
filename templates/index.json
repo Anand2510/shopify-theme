@@ -102,10 +102,9 @@
       "blocks": {
         "faq_nb4wFL": {
           "type": "faq",
-          "disabled": true,
           "settings": {
-            "title": "Faq Title Example",
-            "answer": ""
+            "title": "Faq Title Example1",
+            "answer": "<p>Experience Adventure Every Day with Our Exciting Playsets!</p>"
           }
         },
         "faq_hWrahE": {
