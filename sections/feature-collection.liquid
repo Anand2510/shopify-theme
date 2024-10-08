@@ -1,4 +1,5 @@
 <section class="container">
+    {{ section.settings.title }}
     {%  for product  in collections[section.settings.featute_collection].products %}
         <div class="card">
             {{ product.title }}
