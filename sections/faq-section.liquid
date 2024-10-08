@@ -1,4 +1,15 @@
-{% {% schema %}
+<div class="container">
+    <div class="accordion accordion-flush" id="accordionFAQ">
+        {%  for block in section.blocks  %}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="{{ block.id }}">{{ block.settings.title }}</h2>
+            </div>
+        
+        {% endfor %} 
+    </div>
+</div>
+
+{% schema %}
 {
     "name": "FAQS New",
     "settings": [
@@ -31,4 +42,4 @@
         ]
 
 }
-{% endschema %} %}
+{% endschema %} 
