@@ -1,6 +1,6 @@
-{% comment %} {% section 'product-template' %} {% endcomment %}
+{% section 'product-template' %}
 
-{% assign current_product = product.selected_or_first_available_variant %}
+{% comment %} {% assign current_product = product.selected_or_first_available_variant %}
 {%  assign product_image = current_product.featured_image |  default: product.featured_image %} 
 
 <div class="container">
@@ -37,4 +37,4 @@
             {% endform %}
         </div>
     </div>
-</div>
+</div> {% endcomment %}
