@@ -2,7 +2,7 @@
     {{ section.settings.title }}
     {%  for product in collections[section.settings.featute_collection].products %}
         <div class="card">
-            <h3>{{ product.title }}</h3>
+            <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
             <p>{{ product.price |  money_with_currency}}</p> 
         </div>
      {% endfor %}
