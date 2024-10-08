@@ -30,37 +30,40 @@
 </div>
 
 {% schema %}
-{
-    "name": "FAQS New",
-    "settings": [
-        
-        ],
-        "blocks": [
+    {
+      "name": "FAQ Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_title",
+          "label": "FAQ Title",
+          "default": "Frequently Asked Questions"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "faq",
+          "name": "FAQ Block",
+          "settings": [
             {
-                "name": "faq item",
-                "type": "faq",
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "title",
-                        "label": "Quetion",
-                        "default": "Faq Title Example"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "answer",
-                        "label": "Answer"
-                    }
-                ]
-
-            }
-        ],
-        "presets":[
+              "type": "text",
+              "id": "question",
+              "label": "Question"
+            },
             {
-                "name": "Faq New",
-                "category": "Custom"
+              "type": "textarea",
+              "id": "answer",
+              "label": "Answer"
             }
-        ]
-
-}
-{% endschema %} 
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "FAQ",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
