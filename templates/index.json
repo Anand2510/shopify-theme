@@ -27,7 +27,7 @@
     "feature_collection_K4atPq": {
       "type": "feature-collection",
       "settings": {
-        "feature_collection": "anand-cloth",
+        "featute_collection": "",
         "title": "Feature Collection"
       }
     },
@@ -46,6 +46,7 @@
     },
     "rvs_azJ9WR": {
       "type": "rvs",
+      "disabled": true,
       "settings": {
         "title": "Example Heading",
         "description": "<p>Example Paragraph</p>",
@@ -55,11 +56,27 @@
     },
     "hero_tYE4fd": {
       "type": "hero",
+      "disabled": true,
       "settings": {
         "title": "Example Heading22",
         "description": "<p>Example Paragraph</p>",
         "button_label": "Button",
         "button_link": ""
+      }
+    },
+    "feature_collection_6gBHhU": {
+      "type": "feature-collection",
+      "disabled": true,
+      "settings": {
+        "featute_collection": "",
+        "title": "Feature COllection"
+      }
+    },
+    "feature_collection_old_KyeBNT": {
+      "type": "feature-collection-old",
+      "settings": {
+        "feature_collection": "",
+        "title": "Feature Collection"
       }
     }
   },
@@ -70,6 +87,8 @@
     "slider_UidXrr",
     "slider_pPb4wT",
     "rvs_azJ9WR",
-    "hero_tYE4fd"
+    "hero_tYE4fd",
+    "feature_collection_6gBHhU",
+    "feature_collection_old_KyeBNT"
   ]
 }
