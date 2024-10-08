@@ -78,6 +78,23 @@
         "feature_collection": "",
         "title": "Feature Collection"
       }
+    },
+    "page_faq_template_GH9hCN": {
+      "type": "page-faq-template",
+      "blocks": {
+        "faq_8L9Uhq": {
+          "type": "faq",
+          "settings": {
+            "title": "FAQ Title Example",
+            "answer": "<p>Discover the Science Behind Lorem Ipsum: A Holistic Approach to Wellness.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_8L9Uhq"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -89,6 +106,7 @@
     "rvs_azJ9WR",
     "hero_tYE4fd",
     "feature_collection_6gBHhU",
-    "feature_collection_old_KyeBNT"
+    "feature_collection_old_KyeBNT",
+    "page_faq_template_GH9hCN"
   ]
 }
