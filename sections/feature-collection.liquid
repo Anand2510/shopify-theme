@@ -1,3 +1,13 @@
+<section class="container">
+    {%  for product  in collections[section.settings.featute_collection].products %}
+        <div class="card">
+            {{ product.title }}
+            {{ product.price }}
+        </div>
+     {% endfor %}
+
+</section>
+
 {%  schema  %} 
 {
     "name":"Feature Collection",
