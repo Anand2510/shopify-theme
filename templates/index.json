@@ -74,6 +74,7 @@
     },
     "feature_collection_old_KyeBNT": {
       "type": "feature-collection-old",
+      "disabled": true,
       "settings": {
         "feature_collection": "",
         "title": "Feature Collection"
