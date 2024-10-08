@@ -1,5 +1,6 @@
 <section class="container">
     {{ section.settings.title }}
+    <div class="card-flex">
     {%  for product in collections[section.settings.featute_collection].products %}
         <div class="card" style="width: 18rem;">
             <img src="{{ product.featured_media.preview_image |  img_url: 'medium' }}" alt="{{ product.title }}">
@@ -9,7 +10,7 @@
             </div>
         </div>
      {% endfor %}
-
+     </div>
 </section>
 
 {%  schema  %} 
