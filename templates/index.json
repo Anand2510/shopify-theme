@@ -95,6 +95,23 @@
       ],
       "settings": {
       }
+    },
+    "faq_section_9APexV": {
+      "type": "faq-section",
+      "blocks": {
+        "faq_hWrahE": {
+          "type": "faq",
+          "settings": {
+            "title": "Faq Title Example",
+            "answer": "<p>Navigate our Store with Ease: Check Out Our FAQ Section!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_hWrahE"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -107,6 +124,7 @@
     "hero_tYE4fd",
     "feature_collection_6gBHhU",
     "feature_collection_old_KyeBNT",
-    "page_faq_template_GH9hCN"
+    "page_faq_template_GH9hCN",
+    "faq_section_9APexV"
   ]
 }
