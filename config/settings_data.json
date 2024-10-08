@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "navbar_color": "#ec00ff",
@@ -11,7 +20,7 @@
         "type": "rvs",
         "settings": {
           "title": "Example Heading",
-          "description": "<p><a href=\"#\" target=\"_blank\" title=\"#\">This <\/a>is  an Example <strong>Paragraph<\/strong><\/p>",
+          "description": "<p><a href=\"#\" target=\"_blank\" title=\"#\">This </a>is  an Example <strong>Paragraph</strong></p>",
           "button_label": "Button",
           "button_link": ""
         }
@@ -36,21 +45,21 @@
             "type": "faq",
             "settings": {
               "title": "FAQ Title Example",
-              "answer": "<p>hello every one <\/p>"
+              "answer": "<p>hello every one </p>"
             }
           },
           "faq_RUgnjy": {
             "type": "faq",
             "settings": {
               "title": "FAQ Title Example 2",
-              "answer": "<p>this is  fun activity in enjoy this activity in all company memober and all freinds and so enjoy this activity<\/p>"
+              "answer": "<p>this is  fun activity in enjoy this activity in all company memober and all freinds and so enjoy this activity</p>"
             }
           },
           "faq_TdPtJT": {
             "type": "faq",
             "settings": {
               "title": "FAQ Title Example",
-              "answer": "<p>hello every one 4 a clock activity organise all work is over <\/p>"
+              "answer": "<p>hello every one 4 a clock activity organise all work is over </p>"
             }
           }
         },
@@ -68,8 +77,8 @@
     ],
     "blocks": {
       "5946647744298494267": {
-        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": true,
         "settings": {
         }
       }
