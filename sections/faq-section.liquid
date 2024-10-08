@@ -2,18 +2,19 @@
     <div class="accordion accordion-flush" id="accordionFAQ">
         {%  for block in section.blocks  %}
             <div class="accordion-item">
-                <button class="accordion-button collapsed" type="button"
+                <h2 class="accordion-header" id="collapse-header-{{ block.id }}">  
+            <button class="accordion-button collapsed" type="button"
                 data-base-toggle="collapse"
-                data-base-target="{{ block.id }}"
+                data-base-target="#collapse-{{ block.id }}"
                 aria-expanded="false"
                 aria-controls="{{ block.id }}"
                 >
-                <h2 class="accordion-header" id="{{ block.id }}">{{ block.settings.title }}</h2>
+                {{ block.settings.title }}
                 </button>
-                
+                </h2>
                 <div class="accordion-colapse colapse"
-                id="{{ block.id }}"
-                aria-labelledby="{{ block.id }}"
+                id="collapse-{{ block.id }}"
+                aria-labelledby="#collapse-header-{{ block.id }}"
                 data-bs-parent="#accordionFAQ"
                 >
                 {{ block.settings.answer }}
