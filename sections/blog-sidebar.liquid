@@ -17,51 +17,50 @@
     {% endfor %}
 </div>
 
-
 {%  schema  %}  
-{
-    "name":"Blog",
-    "settings": [],
-    "blocks": [
-        {
-            "name": "Blog Item",
-            "type": "image",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "image_text",
-                    "label": "Heading",
-                    "default": "Heading"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label":"Image"
-                },
-                {
-                    "type": "url",
-                    "id": "img_link",
-                    "label": "Links"
-                }
-            ]
-        },
-        {
-            "name": "side bar text",
-            "type": "text",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Title",
-                    "default": "Sidebar Title"
-                },
-                {
-                    "type": "richtext",
-                    "id": "description",
-                    "label":"Descriptions"
-                }
-            ]
-        }
-    ]
-}
-{% endschema %} 
+    {
+        "name":"Blog",
+        "settings": [],
+        "blocks": [
+            {
+                "name": "Blog Item",
+                "type": "image",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "image_text",
+                        "label": "Heading",
+                        "default": "Heading"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label":"Image"
+                    },
+                    {
+                        "type": "url",
+                        "id": "img_link",
+                        "label": "Links"
+                    }
+                ]
+            },
+            {
+                "name": "side bar text",
+                "type": "text",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Sidebar Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "description",
+                        "label":"Descriptions"
+                    }
+                ]
+            }
+        ]
+    }
+    {% endschema %} 
