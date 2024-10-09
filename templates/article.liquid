@@ -37,6 +37,13 @@
         
       </div>
     {% endfor %}
+
+<div class="custom-product">
+   {% assign custom_product = metafield.custom.custom_blog_product %} 
+   {{ custom_product.title }}
+   {{ custom_product.price }}
+</div>
+
     <div>
       {% form 'new_comment', article %}
         {% if form.errors.size > 0 %}
