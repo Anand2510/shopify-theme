@@ -45,15 +45,26 @@
   </div>
 </div>
 <div class="col-12 col-md-4">
-      <h1>test</h1>article.metafields.namespace.field_name
-  {{ article.metafields.namespace.custom_blog_product.title }}
- check {{ product.metafield.custom.custom_blog_product.title }}
-  {% assign custom_product = product.metafields.custom.custom_blog_product.value %} 
-   {{ custom_product.title }}
-   {{ custom_product.price }}
-    </div>
-  </div>
-  </div>
+  <h1>Test</h1>
+  
+  <!-- Display article metafield -->
+  <p>{{ article.metafields.namespace.field_name }}</p>
+  
+  <!-- Display article custom blog product title -->
+  <p>{{ article.metafields.namespace.custom_blog_product.title }}</p>
+  
+  <!-- Display product custom blog product title -->
+  <p>Check: {{ product.metafields.custom.custom_blog_product.title }}</p>
+  
+  {% assign custom_product = product.metafields.custom.custom_blog_product.value %}
+
+  {% if custom_product %}
+    <p>Title: {{ custom_product.title }}</p>
+    <p>Price: {{ custom_product.price }}</p>
+  {% else %}
+    <p>No custom product available.</p>
+  {% endif %}
+</div>
 
   <div>
     {% form 'new_comment', article %}
