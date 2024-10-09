@@ -121,11 +121,12 @@
               "menu": "contact-us"
             }
           },
-          "link_list_KCjWbC": {
-            "type": "link_list",
+          "text_8bEy9m": {
+            "type": "text",
             "settings": {
-              "title": "Quick Links",
-              "menu": "main-menu"
+              "logo": "shopify://shop_images/comfortable-living-room-cat.jpg",
+              "heading": "Sotre Information",
+              "description": "<p>Unlock the Joys of Healthy Living with Meticulously Curated Store Detail.</p>"
             }
           }
         },
@@ -133,7 +134,7 @@
           "link_list_GWL9w3",
           "link_list_pHd6qE",
           "link_list_aabR6r",
-          "link_list_KCjWbC"
+          "text_8bEy9m"
         ],
         "settings": {
           "colum_range": 4
