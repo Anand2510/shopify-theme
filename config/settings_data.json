@@ -78,12 +78,21 @@
             "type": "image",
             "settings": {
               "image_text": "Heading",
-              "image": "shopify://shop_images/preparing-for-travel.jpg"
+              "image": "shopify://shop_images/preparing-for-travel.jpg",
+              "img_link": ""
+            }
+          },
+          "text_tP8emj": {
+            "type": "text",
+            "settings": {
+              "title": "Sidebar Title",
+              "description": "<p>Key Ingredients for Crafting the Ultimate Blog Post.</p>"
             }
           }
         },
         "block_order": [
-          "image_rXJQRA"
+          "image_rXJQRA",
+          "text_tP8emj"
         ],
         "settings": {
         }
