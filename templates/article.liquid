@@ -47,7 +47,7 @@
 <div class="col-12 col-md-4">
       <h1>test</h1>
  check {{ product.metafield.custom.custom_blog_product.title }}
-  {% assign custom_product = product.metafield.custom.custom_blog_product %} 
+  {% assign custom_product = product.metafields.custom.custom_blog_product.value %} 
    {{ custom_product.title }}
    {{ custom_product.price }}
     </div>
