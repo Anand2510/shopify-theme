@@ -3,6 +3,7 @@
         {%  assign item = block.settings  %} 
         <div class="mb-4">
             <p>{{ item.image_text }}</p>
+            <img src="{{ item.image | img_url: 'small' }}" alt="{{ item.image.alt }}">
         </div>
 
     {% endfor %}
