@@ -46,17 +46,7 @@
 </div>
 <div class="col-12 col-md-4">
   <h1>Test</h1>
-      <p><strong>Custom Title:</strong> {{ article.metafields.namespace.custom_title }}</p>
-  {{ article.metafields.custom.custom_text }}
-  {{ article.metafields.namespace.custom_text }}
-  <!-- Display article metafield -->
-  <p>{{ article.metafields.namespace.field_name }}</p>
-  
-  <!-- Display article custom blog product title -->
-  <p>{{ article.metafields.namespace.custom_blog_product.title }}</p>
-  
-  <!-- Display product custom blog product title -->
-  <p>Check: {{ product.metafields.custom.custom_blog_product.title }}</p>
+
   
   {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
   <p>Title: {{ custom_product.title }}</p>
