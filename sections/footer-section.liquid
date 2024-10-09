@@ -15,7 +15,8 @@
                                 {% endfor %}
                         </ul>
                     </div>
-                   {%  els if  block.type == 'text' %} 
+                 
+                   {%  else if  block.type == 'text' %} 
                                 
                    <div class="col">
                     <img src="{{ item.logo |  img_url: 'medium' }}" class="mb-5">
