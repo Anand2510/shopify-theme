@@ -96,6 +96,23 @@
         ],
         "settings": {
         }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "blocks": {
+          "link_list_GWL9w3": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "customer-account-main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "link_list_GWL9w3"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
