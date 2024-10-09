@@ -3,14 +3,26 @@
     <div class="row">
       <h1 class="text-center">{{ collection.title }}</h1>
     </div>
-    <div class="row justify-content-center">
+    {% comment %} <div class="row justify-content-center">
       <select name="sorting" id="sort_by" class="form-select form-select-sm w-25 ">
         {% for option in collection.sort_options %}
           <option value="{{ option.value }}"   {% if option.value == collection.sort_by %} selected{% endif %} >            
           {{ option.name }}</option>          
         {% endfor %}
       </select>
-    </div>   
+    </div>    {% endcomment %}
+    <form action="{{ collection.url }}" method="get">
+  <div class="row justify-content-center">
+    <select name="sort_by" id="sort_by" class="form-select form-select-sm w-25" onchange="this.form.submit();">
+      {% for option in collection.sort_options %}
+        <option value="{{ option.value }}" {% if option.value == collection.sort_by %} selected{% endif %}>
+          {{ option.name }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+</form>
+
 
     <div class="row justify-content-centermy-5">
       {% for product in collection.products %}
