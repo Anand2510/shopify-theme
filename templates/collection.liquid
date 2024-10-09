@@ -1,100 +1,57 @@
-{% assign number_of_comments = article.comments_count %}
-{% if comment and comment.created_at %}
-  {% assign number_of_comments = article.comments_count %}
-{% endif %}
-
-<h1>{{ article.title }}</h1>
-{% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
-{% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'abbreviated_date' }}</time>{% endcapture %}
-{% comment %} {{ article.author }} @ {{ article.created_at }} {% endcomment %}
-<div class="position-relative text-center bg-light p-3 p-md-5">
-<div class="col-md-5 p-lg-5 mx-auto my-5">
-  <h1 class="display-4">{{ article.title }}</h1>
-  {% comment %} <p class="lead"> {{ author }} / {{ date }} </p> {% endcomment %}
-  <p class="lead">{{ author }} / {{ date }}</p>
-
-</div>
-</div>
-<div class="container my-5">
-  <div class="row">
-    <div class="col-12 col-md-8">
-      <div>{{ article.content }}</div>
-      <div class="comment-section">
-      
-{% if blog.comments_enabled? %}
-<h2>{{ number_of_comments }} comments{% if number_of_comments > 1 %}s{% endif %} </h2>
-  {% paginate article.comments by 5 %}
-    {% for comment in article.comments %}
-      
-      <div class="card shadow rounded-0 my-3">
-        <div class="card-header">
-         by {{ comment.author }} @ {{ comment.created_at | date: format: 'long' }}
-        </div>
-        <div class="card-body">
-          <div>{{ comment.content }}</div>
-        </div>
-       
-        
-      </div>
+<div class="container">
+  {% paginate collection.products by 4 %}
+    <div class="row">
+      <h1 class="text-center">{{ collection.title }}</h1>
+    </div>
+  <div class="row justify-content-center">
+      <select name="sorting" id="sort_by" class="form-select form-select-sm w-25 ">
+        {% for option in collection.sort_options %}
+          <option value="{{ option.value }}"   {% if option.value == collection.sort_by %} selected{% endif %} >            
+          {{ option.name }}</option>          
+        {% endfor %}
+      </select>
+    </div> 
+    {% comment %} <div class="row justify-content-center">
+  <select name="sorting" id="sort_by" class="form-select form-select-sm w-25">
+    {% for option in collection.sort_options %}
+      {% if collection.handle == 'anand-cloth' %}
+        {% if option.value == 'created-ascending' %} 
+          <option value="{{ option.value }}" selected>
+        {% else %}
+          <option value="{{ option.value }}">
+        {% endif %}
+      {% else %}
+        <option value="{{ option.value }}" {% if option.value == collection.sort_by %} selected{% endif %}>
+      {% endif %}
+      {{ option.name }}
+      </option>
     {% endfor %}
- 
-      <!-- </div> -->
-    <!-- </div> -->
-    
-     {% endpaginate %}
-  </div>
-</div>
-<div class="col-12 col-md-4">
-  <h1>Test 33</h1>
+  </select>
+</div> {% endcomment %}
 
-  
-{% assign custom_product = article.metafields.custom.custom_blog_product.value %}
 
-<div class="custom-product">
-   <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
-  {% if custom_product %}
-    <h2>Custom Product</h2>
-    
-    <p>Title: {{ custom_product.title }}</p>
-    <p>Price: {{ custom_product.price }}</p>
-    
-    {% if custom_product %}
-      <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
-    {% else %}
-      <p>No image available for this product.</p>
-    {% endif %}
-    
-  {% else %}
-    <p>No custom product available.</p>
-  {% endif %}
-</div>
 
-</div>
-
-  <div>
-    {% form 'new_comment', article %}
-      {{ form.errors | default_errors }}
-      {% for error in form.errors %}
-        <div class="alert alert-danger">
-          {% if error == 'form' %}
-            {{ form.errors.messages[error] }}
-          {% else %}
-            {{ form.errors.translated_fields[error] }}: {{ form.errors.messages[error] }}
-          {% endif %}
+    <div class="row justify-content-centermy-5">
+      {% for product in collection.products %}
+        <div class="col-3 g-2">
+          <div class="card" style="width: 18rem;"> 
+            {% assign image = product.featured_media.preview_image %}
+            {% if image != blank %}
+              <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
+            {% else %}
+              {{ 'product-1' | placeholder_svg_tag: 'card-img-top' }}
+            {% endif %}
+            <div class="card-body">
+              <h3><a href="{{ product.url }}">{{ product.title | truncate: 15 }}</a></h3>
+              <p>{{ product.price | money_without_trailing_zeros }}</p>
+            </div>
+          </div>
         </div>
       {% endfor %}
-      
-     
-      <label for="CommentAuthor">name</label>
-      <input type="text" name="comment[author]" id="CommentAuthor" placeholder="name" value="{{ form.author }}" autocapitalize="words">
+    </div>
+    {% render 'pagination', paginate: paginate   %} 
+  {% endpaginate %}
+</div>
 
-      <label for="CommentEmail">email</label>
-      <input type="email" name="comment[email]" id="CommentEmail" placeholder="email" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
 
-      <label for="CommentBody">message</label>
-      <textarea name="comment[body]" id="CommentBody" placeholder="message">{{ form.body }}</textarea>
 
-      <input type="submit" value="post">
-    {% endform %}
-  </div>
-{% endif %}
