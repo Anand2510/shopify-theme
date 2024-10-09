@@ -49,7 +49,7 @@
     {% comment %} <div class="col-3"> {% endcomment %}
       <div class="card">
         {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
-       <a href="{{ product.url }}"> <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"></a>
+       <a href="{{ custom_product.url }}"> <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"></a>
         <div class="card-body">
           <div class="custom-product">
             <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
