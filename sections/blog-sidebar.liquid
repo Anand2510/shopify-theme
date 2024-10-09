@@ -1,10 +1,18 @@
 <div class="siderbar-section">
     {% for block in section.blocks %}
         {%  assign item = block.settings  %} 
-        <div class="mb-4">
-            <p>{{ item.image_text }}</p>
-           <a href="{{ item.img_link }}"><img class="w-100" src="{{ item.image |  img_url: 'medium' }}" alt="{{ item.image.alt }}"></a> 
-        </div>
+
+        {% if block.type == 'image' %}
+            <div class="mb-4">
+                <p>{{ item.image_text }}</p>
+               <a href="{{ item.img_link }}"><img class="w-100" src="{{ item.image |  img_url: 'medium' }}" alt="{{ item.image.alt }}"></a> 
+            </div>
+            {%  else %}
+            <div class="mb-4">
+                <h2>{{ item.title }}</h2>
+                <p> {{ item.description }} </p>
+            </div>
+        {% endif %}
 
     {% endfor %}
 </div>
@@ -56,4 +64,4 @@
         }
     ]
 }
-{% endschema %} 
+{% endschema %} {
