@@ -17,6 +17,7 @@
 </div>
 <div class="container my-5">
   <div class="row">
+    {% paginate article.comments by 5 %}
     <div class="col-12 col-md-4 testt">
       <h2>custom product</h2>
       <div class="custom-product">
@@ -31,7 +32,7 @@
         
 {% if blog.comments_enabled? %}
 <h2>{{ number_of_comments }} comments{% if number_of_comments > 1 %}s{% endif %} </h2>
-  {% paginate article.comments by 5 %}
+ 
     {% for comment in article.comments %}
       
       <div class="card shadow rounded-0 my-3">
@@ -74,17 +75,17 @@
         <input type="submit" value="Post">
       {% endform %}
     </div>
-    {% render 'pagination', paginate: paginate   %} 
+    {% comment %} {% render 'pagination', paginate: paginate   %}  {% endcomment %}
     {% comment %} {% if paginate.pages > 1 %}
       {{ paginate | default_pagination }}
     {% endif %} {% endcomment %}
       </div>
     </div>
-    
+    {% render 'pagination', paginate: paginate   %} 
    
-    
+  {% endpaginate %}
   </div>
 </div>
 
-  {% endpaginate %}
+  
  
