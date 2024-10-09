@@ -48,15 +48,26 @@
   <h1>Test</h1>
 
   
-  {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
-  <p>Title: {{ custom_product.title }}</p>
+{% assign custom_product = article.metafields.custom.custom_blog_product.value %}
+
+<div class="custom-product">
   {% if custom_product %}
+    <h2>Custom Product</h2>
+    
     <p>Title: {{ custom_product.title }}</p>
     <p>Price: {{ custom_product.price }}</p>
+    
+    {% if custom_product.image %}
+      <img src="{{ custom_product.image | img_url: 'medium' }}" alt="{{ custom_product.title }}">
+    {% else %}
+      <p>No image available for this product.</p>
+    {% endif %}
+    
   {% else %}
     <p>No custom product available.</p>
   {% endif %}
 </div>
+
 
   <div>
     {% form 'new_comment', article %}
