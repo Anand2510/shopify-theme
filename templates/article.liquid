@@ -57,7 +57,7 @@
   <p>Check: {{ product.metafields.custom.custom_blog_product.title }}</p>
   
   {% assign custom_product = product.metafields.custom.custom_blog_product.value %}
-
+  <p>Title: {{ custom_product.title }}</p>
   {% if custom_product %}
     <p>Title: {{ custom_product.title }}</p>
     <p>Price: {{ custom_product.price }}</p>
