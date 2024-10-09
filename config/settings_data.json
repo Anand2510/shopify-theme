@@ -104,7 +104,7 @@
             "type": "link_list",
             "settings": {
               "title": "Quick Links",
-              "menu": "customer-account-main-menu"
+              "menu": "navigation-menu"
             }
           }
         },
