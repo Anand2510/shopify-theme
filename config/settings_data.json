@@ -70,6 +70,23 @@
         ],
         "settings": {
         }
+      },
+      "blog-sidebar": {
+        "type": "blog-sidebar",
+        "blocks": {
+          "image_rXJQRA": {
+            "type": "image",
+            "settings": {
+              "image_text": "Heading",
+              "image": "shopify://shop_images/preparing-for-travel.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "image_rXJQRA"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
