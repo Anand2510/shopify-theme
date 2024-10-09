@@ -51,6 +51,7 @@
 {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
 
 <div class="custom-product">
+   <img src="{{ article.metafields.custom.custom_blog_product.image | img_url: 'medium' }}" alt="{{ custom_product.title }}">
   {% if custom_product %}
     <h2>Custom Product</h2>
     
