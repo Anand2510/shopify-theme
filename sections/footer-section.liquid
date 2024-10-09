@@ -15,6 +15,16 @@
                                 {% endfor %}
                         </ul>
                     </div>
+                   {%  els if  block.type == 'text' %} 
+                                
+                   <div class="col">
+                    <img src="{{ item.logo |  img_url: 'medium' }}" class="mb-5">
+                    <h5>{{ item.description }}</h5>
+                    <p>{{ item.description }}</p>
+                   </div>
+
+                   {% endif %}
+
                 {% endif %}
             {% endfor %}
         </div>
@@ -53,6 +63,30 @@
                     "type": "link_list",
                     "id": "menu",
                     "label":"menu"
+                }
+            ]
+
+        },
+        {
+            "type": "text",
+            "name":"store details",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Store Logo"
+
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "Sotre Information"
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "Text"
                 }
             ]
 
