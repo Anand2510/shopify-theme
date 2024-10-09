@@ -17,6 +17,13 @@
 </div>
 <div class="container my-5">
   <div class="row">
+    <div class="col-12 col-md-4">
+      <h2>custom product</h2>
+      <div class="custom-product">
+   {% assign custom_product = product.metafield.custom.custom_blog_product %} 
+   {{ custom_product.title }}
+   {{ custom_product.price }}
+</div>
     <div class="col-12 col-md-8">
       <div>{{ article.content }}</div>
       <div class="comment-section">
@@ -73,13 +80,7 @@
       </div>
     </div>
     <h1>text</h1>
-    <div class="col-12 col-md-4">
-      <h2>custom product</h2>
-      <div class="custom-product">
-   {% assign custom_product = product.metafield.custom.custom_blog_product %} 
-   {{ custom_product.title }}
-   {{ custom_product.price }}
-</div>
+   
     </div>
   </div>
 </div>
