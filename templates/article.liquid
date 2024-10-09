@@ -46,7 +46,7 @@
 </div>
 <div class="col-12 col-md-4">
   <div class="row">
-    <div class="col-3">
+    {% comment %} <div class="col-3"> {% endcomment %}
       <div class="card">
         {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
         <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
@@ -68,7 +68,7 @@
          </div>
         </div>
       </div>
-    </div>
+    {% comment %} </div> {% endcomment %}
   </div>
   <h>devloper</h>
 
