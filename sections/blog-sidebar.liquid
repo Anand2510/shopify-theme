@@ -1,0 +1,25 @@
+{%  schema  %}  
+{
+    "name":"Blog",
+    "settings": [],
+    "blocks": [
+        {
+            "name": "Blog Item",
+            "type": "image",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "image_text",
+                    "label": "Heading",
+                    "default": "Heading"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label":"Image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %} 
