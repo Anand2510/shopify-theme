@@ -45,26 +45,37 @@
   </div>
 </div>
 <div class="col-12 col-md-4">
+  <div class="row">
+    <div class="col-3">
+      <div class="card">
+        {% assign custom_product = article.metafields.custom.custom_blog_product.value %}
+        <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
+        <div class="card-body">
+          <div class="custom-product">
+            <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
+           {% if custom_product %}
+             <h2>Custom Products </h2>
+           
+             <p>Title: {{ custom_product.title }}</p>
+             <p>Price: {{ custom_product.price }}</p>
+             
+         
+            
+             
+           {% else %}
+             <p>No custom product availablesss.</p>
+           {% endif %}
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <h>devloper</h>
 
   
-{% assign custom_product = article.metafields.custom.custom_blog_product.value %}
 
-<div class="custom-product">
-   <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
-  {% if custom_product %}
-    <h2>Custom Products </h2>
-    <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
-    <p>Title: {{ custom_product.title }}</p>
-    <p>Price: {{ custom_product.price }}</p>
-    
 
-   
-    
-  {% else %}
-    <p>No custom product availablesss.</p>
-  {% endif %}
-</div>
+
 
 </div>
 
