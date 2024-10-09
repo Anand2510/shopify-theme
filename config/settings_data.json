@@ -106,10 +106,34 @@
               "title": "Quick Links",
               "menu": "navigation-menu"
             }
+          },
+          "link_list_pHd6qE": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "footer"
+            }
+          },
+          "link_list_aabR6r": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "contact-us"
+            }
+          },
+          "link_list_KCjWbC": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
           }
         },
         "block_order": [
-          "link_list_GWL9w3"
+          "link_list_GWL9w3",
+          "link_list_pHd6qE",
+          "link_list_aabR6r",
+          "link_list_KCjWbC"
         ],
         "settings": {
         }
