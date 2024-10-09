@@ -54,13 +54,13 @@
    <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
   {% if custom_product %}
     <h2>Custom Product</h2>
-    
+    <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
     <p>Title: {{ custom_product.title }}</p>
     <p>Price: {{ custom_product.price }}</p>
     
-    {% if custom_product %}
+    {% comment %} {% if custom_product %}
       <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
-    {% else %}
+    {% else %} {% endcomment %}
       <p>No image available for this product.</p>
     {% endif %}
     
