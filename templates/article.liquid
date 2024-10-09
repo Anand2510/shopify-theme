@@ -20,7 +20,7 @@
     <div class="col-12 col-md-8">
       <div>{{ article.content }}</div>
       <div class="comment-section">
-      </div>
+      
 {% if blog.comments_enabled? %}
 <h2>{{ number_of_comments }} comments{% if number_of_comments > 1 %}s{% endif %} </h2>
   {% paginate article.comments by 5 %}
