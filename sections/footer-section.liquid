@@ -1,6 +1,6 @@
 <footer class="footer-section bg-light py-5 mt-5">
     <div class="container">
-        <div class="row">
+        <div class="row row-colum-{{ section.settings.colum_range }}">
             {% for block in section.blocks %}
                 {%  assign item = block.settings %} 
                 {% if block.type == 'link_list' %}
@@ -28,7 +28,15 @@
   {%  schema  %} 
 {
     "name":"footer",
-    "settings": [],
+    "settings": [
+        {
+            "type":"range",
+            "id": "colum_range",
+            "min": 3,
+            "max": 4,
+            "label": "Number of colum"
+        }
+    ],
     "blocks": [
         {
             "type": "link_list",
