@@ -3,15 +3,29 @@
     <div class="row">
       <h1 class="text-center">{{ collection.title }}</h1>
     </div>
-    {% comment %} <div class="row justify-content-center">
+  {% comment %} <div class="row justify-content-center">
       <select name="sorting" id="sort_by" class="form-select form-select-sm w-25 ">
         {% for option in collection.sort_options %}
           <option value="{{ option.value }}"   {% if option.value == collection.sort_by %} selected{% endif %} >            
           {{ option.name }}</option>          
         {% endfor %}
       </select>
-    </div>    {% endcomment %}
+    </div>  {% endcomment %}
+    
     <div class="row justify-content-center">
+      <select name="sorting" id="sort_by" class="form-select form-select-sm w-25 ">
+        {% for option in collection.sort_options %}
+          {% if product in collections[anand-cloth].products %}
+             <option value="{{ option.value }}"   {% if option.value == collection.created-ascending %} selected{% endif %} >            
+                 {{ option.name }}</option>    
+                 {%  else %}
+                <option value="{{ option.value }}"   {% if option.value == collection.sort_by %} selected{% endif %} >            
+                  {{ option.name }}</option> 
+          {% endif %}     
+        {% endfor %}
+      </select>
+    </div> 
+    {% comment %} <div class="row justify-content-center">
   <select name="sorting" id="sort_by" class="form-select form-select-sm w-25">
     {% assign default_sort = 'date' %}  {# Adjust this to the actual value for "Date, new to old" #}
     {% for option in collection.sort_options %}
@@ -24,7 +38,7 @@
       </option>
     {% endfor %}
   </select>
-</div>
+</div> {% endcomment %}
 
 
     <div class="row justify-content-centermy-5">
