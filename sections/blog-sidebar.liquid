@@ -1,3 +1,14 @@
+<div class="siderbar-section">
+    {% for block in section.blocks %}
+        {%  assign item = block.settings  %} 
+        <div class="mb-4">
+            <p>{{ item.title }}</p>
+        </div>
+
+    {% endfor %}
+</div>
+
+
 {%  schema  %}  
 {
     "name":"Blog",
