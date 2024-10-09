@@ -59,7 +59,7 @@
     <p>Price: {{ custom_product.price }}</p>
     
     {% if custom_product %}
-      <img src="{{ custom_product.image | img_url: 'medium' }}" alt="{{ custom_product.title }}">
+      <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
     {% else %}
       <p>No image available for this product.</p>
     {% endif %}
