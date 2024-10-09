@@ -53,19 +53,16 @@
 <div class="custom-product">
    <!-- <img src="{{ article.metafields.custom.custom_blog_product | img_url: 'medium' }}" alt="{{ custom_product.title }}"> -->
   {% if custom_product %}
-    <h2>Custom Product</h2>
+    <h2>Custom Products </h2>
     <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
     <p>Title: {{ custom_product.title }}</p>
     <p>Price: {{ custom_product.price }}</p>
     
-    {% comment %} {% if custom_product %}
-      <img src="{{ custom_product | img_url: 'medium' }}" alt="{{ custom_product.title }}">
-    {% else %} {% endcomment %}
-      <p>No image available for this product.</p>
+
     {% endif %}
     
   {% else %}
-    <p>No custom product available.</p>
+    <p>No custom product availablesss.</p>
   {% endif %}
 </div>
 
