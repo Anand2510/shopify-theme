@@ -20,6 +20,18 @@
                   <th>Total</th>
                 </tr>
               </thead>
+              <tbody>
+                {% for order in customer.orders %}
+                  <tr>
+                    <td>
+                      {{ order.name }}
+                    </td>
+                    <td>{{ order.fulfillment_status_label  }}</td>
+                    <td>{{ order.financial_status_label }} </td>
+                    <td> {{ order.created_at |  time_tag format: 'date' }} </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
           </table>
           {% endif %}
       </div>
