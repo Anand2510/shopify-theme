@@ -1,4 +1,25 @@
-<!-- /templates/customers/addresses.liquid -->
+<div class="container my-5">
+    <h1 class="lead">
+        My Address
+    </h1>
+    <div class="row my-5 gx-5">
+    {% for address in customer.addresses %}
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        {{ address |  format_address  }}
+                    </div>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+
+</div>
+
+
+
+
+{% comment %} <!-- /templates/customers/addresses.liquid -->
 
 <h2>New Address</h2>
 {% form 'customer_address', customer.new_address %}
@@ -36,4 +57,4 @@
 <label for="phone">Phone Number</label>
 <input type="tel" value="" name="address[phone]" />
 
-{% endform %}
+{% endform %} {% endcomment %}
