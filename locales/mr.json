@@ -526,6 +526,253 @@
           }
         }
       }
+    },
+    "payment_methods": {
+      "store_credit": {
+        "expirable_amounts_button": "कालबाह्य रक्कम पहा",
+        "expirable_amounts_label": "कालबाह्य रक्कम",
+        "details_modal": {
+          "title": "कालबाह्य स्टोअर क्रेडिट",
+          "balance_label": "शिल्लक",
+          "expiration_date_label": "कालबाह्यता तारीख",
+          "amount_label": "रक्कम",
+          "date_label": "तारीख",
+          "expirable_balance_info": "तुमची काही शिल्लक भविष्यातील तारखेला कालबाह्य होईल",
+          "expirable_amount_label": "एकूण कालबाह्य रक्कम",
+          "expirable_amounts_info": "लवकर कालबाह्य होणारी रक्कम चेकआउट करताना प्रथम लागू केली जाते",
+          "expirable_amounts_button": "पहा",
+          "expired_amounts_button": "कालबाह्य झालेली रक्कम पहा",
+          "pagination": {
+            "load_more_label": "अधिक लोड करा",
+            "load_more_accessibility_label": "अधिक कालबाह्य प्रमाणात लोड करा"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "पेमेंट पद्धतीचे तपशील",
+        "credit_card_details_accessibility_label": "{{lastDigits}} मध्ये समाप्त",
+        "billing_title": "बिलिंग पत्ता",
+        "card_info_title": "कार्ड माहिती",
+        "payment_method_expiring_on": "{{expiryDate}} रोजी कालबाह्य होत आहे",
+        "payment_method_expired_on": "{{expiryDate}} रोजी कालबाह्य झाले",
+        "preauthorized_payments": "पूर्वअधिकृत देयके",
+        "close_payment_modal": "बंद करा",
+        "close_payment_modal_accessibility_label": "पेमेंट पद्धत तपशील मॉडेल बंद करा",
+        "payment_method_not_found_error": "पेमेंट पद्धत शोधण्यात अक्षम",
+        "payment_details_loading": "पेमेंट पद्धतीचे तपशील लोड करत आहे",
+        "pre_authorized_payments": "पूर्व-अधिकृत देयके",
+        "total_amount_of_subscription_line_items_left": "आणि {{total}} अधिक",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "एकूण {{totalItems}} आयटम, {{totalItemsToDisplay}} आयटम प्रदर्शित.",
+        "next_payment_due": "पुढील पेमेंट देय {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "संपादित करा",
+        "edit_payment_method_button_accessibility_label": "{{lastDigits}} ने समाप्त होणारी पेमेंट पद्धत संपादित करा",
+        "loading_shop_pay": "शॉप पे लोड करत आहे",
+        "invalid_payment_method": "अवैध पेमेंट पद्धत",
+        "invalid_payment_method_message": "आगामी ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी नवीन क्रेडिट कार्ड वापरा.",
+        "replace_payment_method": "पेमेंट पद्धत बदला",
+        "checkout_card_banner": "ही पेमेंट पद्धत केवळ पूर्व-अधिकृत पेमेंटसाठी वापरली जाऊ शकते. तुम्ही या स्टोअरमध्ये लॉग इन केले असल्यास ते चेकआउटवर दिसणार नाही.",
+        "default_checkbox": "डीफॉल्ट म्हणून सेट करा",
+        "default_checkbox_accessibility_label": "ही पेमेंट पद्धत डीफॉल्ट म्हणून सेट करा"
+      },
+      "edit_payment_method": {
+        "title": "पेमेंट पद्धत संपादित करा",
+        "save_payment_method_button": "जतन करा",
+        "cancel_edit_payment_method_button": "रद्द करा",
+        "payment_method_updated_toast": "पेमेंट पद्धत अपडेट केली",
+        "billing_address": "बिलिंग पत्ता",
+        "billing_address_add_new": "नवीन जोडा",
+        "billing_address_choose_from_list": "सूचीमधून निवडा",
+        "future_purchases_notice": "ही पेमेंट पद्धत भविष्यातील खरेदीसाठी जतन केली जाईल.",
+        "generic_error": "अपडेट करताना समस्या आली. कृपया पुन्हा प्रयत्न करा."
+      },
+      "card_fields": {
+        "card_number_label": "कार्ड क्रमांक",
+        "card_number_placeholder": "कार्ड क्रमांक",
+        "name_on_card_label": "कार्डवर नाव",
+        "name_on_card_placeholder": "कार्डवर नाव",
+        "card_expiry_label": "कालबाह्यता तारीख (MM / YY)",
+        "card_expiry_placeholder": "कालबाह्यता तारीख (MM / YY)",
+        "card_verification_value_label": "सुरक्षा कोड",
+        "card_verification_value_placeholder": "सुरक्षा कोड",
+        "card_start_label": "जारी करण्याची तारीख (MM/YY)",
+        "card_start_placeholder": "जारी करण्याची तारीख (MM/YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "अधिक माहिती",
+          "card_verification_value_explanation_amex": "तुमच्या कार्डच्या समोर 4-अंकी सुरक्षा कोड",
+          "card_verification_value_explanation_other": "तुमच्या कार्डच्या मागील बाजूस 3-अंकी सुरक्षा कोड",
+          "card_verification_value_explanation": "3-अंकी सुरक्षा कोड सहसा तुमच्या कार्डच्या मागील बाजूस आढळतो. अमेरिकन एक्सप्रेस कार्डच्या समोर 4-अंकी कोड असतो.",
+          "card_security_notice": "सर्व व्यवहार सुरक्षित आणि एनक्रिप्टेड आहेत."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "तुमच्या कार्डवर जसे लिहिले आहे तसे तुमचे नाव एंटर करा",
+          "credit_card_number_invalid": "वैध कार्ड क्रमांक प्रविष्ट करा",
+          "credit_card_expiry_invalid": "वैध कार्ड कालबाह्यता तारीख प्रविष्ट करा",
+          "credit_card_verification_value_blank": "तुमच्या कार्डवर CVV किंवा सुरक्षा कोड एंटर करा"
+        }
+      },
+      "payment_delete": {
+        "title": "पेमेंट पद्धत हटवा",
+        "description_without_replacement": "ही पेमेंट पद्धत यापुढे भविष्यातील खरेदीसाठी उपलब्ध असणार नाही.",
+        "description_with_replacement": "ही पेमेंट पद्धत हटवल्याने पूर्वअधिकृत पेमेंटवर परिणाम होईल. आगामी ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी तुम्ही वैकल्पिकरित्या ते दुसऱ्या पेमेंट पद्धतीसह बदलू शकता.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "ही पेमेंट पद्धत हटवल्याने पूर्वअधिकृत पेमेंटवर परिणाम होईल. तुम्ही पर्यायी पेमेंट पद्धत निवडल्याशिवाय, विद्यमान ऑर्डरवरील कोणत्याही थकबाकीसाठी या पेमेंट पद्धतीवर शुल्क आकारले जाईल. पर्यायी पेमेंट पद्धत निवडल्याने तुम्हाला कोणत्याही व्यत्ययाशिवाय आगामी सदस्यता ऑर्डर प्राप्त करता येतील.",
+          "with_pending_orders": "ही पेमेंट पद्धत हटवल्याने ती तुमच्या खात्यातून काढून टाकली जाईल आणि भविष्यातील खरेदीसाठी यापुढे उपलब्ध राहणार नाही. तुम्ही पर्यायी पेमेंट पद्धत निवडल्याशिवाय, विद्यमान ऑर्डरवरील कोणत्याही थकबाकीसाठी अद्याप शुल्क आकारले जाईल.",
+          "with_subscriptions": "ही पेमेंट पद्धत हटवल्याने पूर्वअधिकृत पेमेंटवर परिणाम होईल. आगामी ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी त्यास पर्यायी पेमेंट पद्धतीसह पुनर्स्थित करा."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "ही पेमेंट पद्धत हटवल्याने पूर्वअधिकृत पेमेंटवर परिणाम होईल. या पेमेंट पद्धतीवर अद्याप विद्यमान ऑर्डरवरील कोणत्याही थकबाकीसाठी शुल्क आकारले जाईल, परंतु तुम्हाला आगामी सदस्यता ऑर्डर मिळणार नाहीत. सदस्यता ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी पर्यायी पेमेंट पद्धत जोडा.",
+          "with_pending_orders": "ही पेमेंट पद्धत हटवल्याने ती तुमच्या खात्यातून काढून टाकली जाईल आणि भविष्यातील खरेदीसाठी यापुढे उपलब्ध राहणार नाही. विद्यमान ऑर्डरवरील कोणत्याही थकबाकीसाठी अद्याप शुल्क आकारले जाईल.",
+          "with_subscriptions": "ही पेमेंट पद्धत हटवल्याने पूर्वअधिकृत पेमेंटवर परिणाम होईल. आगामी ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी पर्यायी पेमेंट पद्धत जोडा."
+        },
+        "payment_method_selector_placeholder": "बदली पेमेंट पद्धत निवडा (पर्यायी)",
+        "payment_method_selector_no_alternative_payment": "बदलण्याची पद्धत नाही",
+        "replace_method_with_new_method_description": "तुमचे {{currentPaymentMethodName}} हटवले जाईल आणि तुमच्या {{newPaymentMethodName}} ने बदलले जाईल.",
+        "error_when_deleting": "आम्ही दिलगीर आहोत पण काहीतरी चूक झाली आणि आम्ही ही पेमेंट पद्धत हटवू शकलो नाही. कृपया नंतर पुन्हा प्रयत्न करा किंवा पृष्ठ रीफ्रेश करा.",
+        "delete_and_replace_button": "हटवा आणि बदला",
+        "delete_and_replace_button_accessibility_label": "{{currentPaymentMethodName}} हटवा आणि {{newPaymentMethodName}} ने बदला.",
+        "deleted_successfully": "पेमेंट पद्धत यशस्वीरित्या हटवली.",
+        "loading_available_payment_methods_accessibility_label": "उपलब्ध पेमेंट पद्धती लोड करत आहे"
+      },
+      "add_payment_method": {
+        "title": "पेमेंट पद्धत जोडा",
+        "payment_method_added_confirmation": "पेमेंट पद्धत जोडली",
+        "billing_address": {
+          "title": "बिलिंग पत्ता",
+          "add_billing_address_button": "नवीन जोडा",
+          "add_billing_address_button_accessibility_label": "नवीन बिलिंग पत्ता जोडा",
+          "choose_billing_address_from_list_button": "सूचीमधून निवडा",
+          "choose_billing_address_from_list_button_accessibility_label": "सूचीमधून बिलिंग पत्ता निवडा",
+          "missing_billing_address_error_message": "कृपया बिलिंग पत्ता निर्दिष्ट करा",
+          "default_checkbox": "डीफॉल्ट पेमेंट पद्धत म्हणून सेट करा"
+        }
+      }
+    },
+    "payment_method_brands": {
+      "visa": "व्हिसा",
+      "mastercard": "मास्टरकार्ड",
+      "americanexpress": "अमेरिकन एक्सप्रेस",
+      "discover": "शोधा",
+      "dinersclub": "डिनर क्लब",
+      "jcb": "जेसीबी",
+      "elo": "एलो",
+      "visaelectron": "व्हिसा इलेक्ट्रॉन",
+      "maestro": "उस्ताद",
+      "dankort": "डॅनकोर्ट",
+      "hipercard": "हायपरकार्ड",
+      "unionpay": "युनियनपे",
+      "laser": "लेसर",
+      "shoppay": "शॉप पे",
+      "applepay": "ऍपल पे",
+      "paypal": "पेपल",
+      "storecredit": "स्टोअर क्रेडिट"
+    },
+    "shop_policies": {
+      "legal_notice": "कायदेशीर सूचना",
+      "privacy_policy": "गोपनीयता धोरण",
+      "refund_policy": "परतावा धोरण",
+      "shipping_policy": "शिपिंग धोरण",
+      "subscription_policy": "सदस्यता धोरण",
+      "terms_of_sale": "विक्रीच्या अटी",
+      "terms_of_service": "सेवा अटी"
+    },
+    "ui_components": {
+      "closeNotification": "बंद करा",
+      "expandNotification": "अधिक पहा",
+      "closeModal": "बंद करा",
+      "submit": "सबमिट करा",
+      "processing": "प्रक्रिया करत आहे...",
+      "increase": "{{type}} वाढवा",
+      "decrease": "{{type}} कमी करा",
+      "minimumReached": "किमान {{value}} गाठले",
+      "maximumReached": "कमाल {{value}} गाठली",
+      "january": "जानेवारी",
+      "february": "फेब्रुवारी",
+      "march": "मार्च",
+      "april": "एप्रिल",
+      "may": "मे",
+      "june": "जून",
+      "july": "जुलै",
+      "august": "ऑगस्ट",
+      "september": "सप्टेंबर",
+      "october": "ऑक्टोबर",
+      "november": "नोव्हेंबर",
+      "december": "डिसेंबर",
+      "monday": "सोमवार",
+      "tuesday": "मंगळवार",
+      "wednesday": "बुधवार",
+      "thursday": "गुरुवार",
+      "friday": "शुक्रवार",
+      "saturday": "शनिवार",
+      "sunday": "रविवार",
+      "mondayAbbreviation": "मो",
+      "tuesdayAbbreviation": "तू",
+      "wednesdayAbbreviation": "आम्ही",
+      "thursdayAbbreviation": "गु",
+      "saturdayAbbreviation": "सा",
+      "sundayAbbreviation": "सु",
+      "showNextMonth": "पुढील महिन्यात दाखवा, {{month}} {{year}}",
+      "showPreviousMonth": "मागील महिना दाखवा, {{month}} {{year}}",
+      "rangeStart": "श्रेणी प्रारंभ",
+      "inRange": "श्रेणीत",
+      "rangeEnd": "श्रेणी समाप्त",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} आयटम उपलब्ध",
+        "other": "{{count}} आयटम उपलब्ध"
+      },
+      "removeItem": "{{label}} काढा",
+      "removeTag": "टॅग काढा",
+      "month": {
+        "one": "महिना",
+        "other": "महिने"
+      },
+      "mapClusterTitle": {
+        "one": "{{number}} मार्करचा क्लस्टर",
+        "other": "{{number}} मार्करचा क्लस्टर"
+      },
+      "expandSheet": "विस्तृत करा",
+      "qrCode": "QR कोड",
+      "addFile": "फाइल जोडा",
+      "dropzoneInvalidFileType": "फाइल प्रकार समर्थित नाही",
+      "dropzoneDraggedOver": "अपलोड करण्यासाठी फाइल ड्रॉप करा"
+    },
+    "profile_preview_bar": {
+      "customize_button": "सानुकूल करा",
+      "hide_bar": "बार लपवा",
+      "navigate_to_admin": "प्रशासनाकडे नेव्हिगेट करा",
+      "close_preview": "पूर्वावलोकन बंद करा",
+      "previewing": "तुम्ही पूर्वावलोकन करत आहात:",
+      "saved_at": "सेव्ह केले {{date}} रोजी {{time}}",
+      "viewing": "तुम्ही पहात आहात:",
+      "not_available": "प्रोफाइल डेटा उपलब्ध नाही",
+      "actions_button": "क्रिया"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "{{extensionName}} नावाचा विस्तार निवडा",
+        "unselect": "{{extensionName}} नावाच्या विस्ताराची निवड रद्द करा",
+        "move_down": "विस्तार पुढील स्थानावर हलवा",
+        "move_up": "विस्ताराला मागील स्थितीत हलवा",
+        "remove": "विस्तार काढा",
+        "move_down_tooltip": "पुढील स्थानावर जा",
+        "move_up_tooltip": "मागील स्थितीत जा",
+        "remove_tooltip": "काढा"
+      }
+    },
+    "settings": {
+      "title": "सेटिंग्ज",
+      "loading_accessibility_message": "सेटिंग्ज पृष्ठ लोड करत आहे",
+      "log_out_everywhere": {
+        "title": "सर्वत्र लॉग आउट करा",
+        "description": "तुम्ही एखादे डिव्हाइस गमावल्यास किंवा सुरक्षेच्या चिंता असल्यास, तुमच्या खात्याची सुरक्षितता सुनिश्चित करण्यासाठी सर्वत्र लॉग आउट करा.",
+        "button": "सर्वत्र लॉग आउट करा",
+        "warning_message": "आपण या डिव्हाइसवर देखील लॉग आउट केले जाईल."
+      }
+    }
+  },
+  "general": {
+    "404": {
+      "title": "सापडले नाही",
+      "subtext_html": "आपण शोधत असलेले पृष्ठ अस्तित्वात नाही"
     }
   }
 }
