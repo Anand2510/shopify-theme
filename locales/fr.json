@@ -13,13 +13,7 @@
         "title": "Not found",
         "subtext_html": "franch"
       }
-    },
-    "shopify": {
-      "checkout": {
-        "customer_account": {
-          "save_my_information_label": "save the information next time"
-        }
-      }
     }
+   
   }
   
