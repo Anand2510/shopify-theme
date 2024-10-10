@@ -12,6 +12,12 @@
       "404": {
         "title": "Not found",
         "subtext_html": "franch"
+      },
+      "Cart": {
+        "title": "franch  cart"
+      },
+      "Blog": {
+        "title": " franch Blog"
       }
     }
    
