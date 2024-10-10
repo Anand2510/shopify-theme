@@ -56,14 +56,14 @@
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                         <label for="AddressCountryNew" class="form-label">Country</label>
-                        <input type="text" name="address[country]" value="{{ form.country }}" id="AddressCountryNew"
-                            class="form-control">
+                        <section type="text" name="address[country]"  id="AddressCountryNew"
+                            class="form-control">{{ all_country_option_tags }}</section>
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                         <label for="AddressProvinceNew" class="form-label">Province</label>
                         <select type="text" name="address[province]"  id="AddressProvinceNew"
                             class="form-control">
-                            {{ all_country_option_tags }}
+                            {% comment %} {{ all_country_option_tags }} {% endcomment %}
                             </select>
                     </div>
                 </div>
