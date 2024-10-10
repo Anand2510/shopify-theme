@@ -633,7 +633,46 @@
             "ascending": "ऑर्डर क्रमांक (कमी ते उच्च)"
           }
         }
-      }
+      },
+      "order_status": {
+        "delivery_promise": {
+          "claim_shop_cash_cta": {
+            "download_shop_app_label": "दुकान डाउनलोड करा"
+          },
+          "details_modal": {
+            "title": "द्वारे वितरण समर्थित",
+            "modal_accessiblity_label": "वितरण वचन तपशील",
+            "delivery_by_label": "डिलिव्हरी {{date}} पर्यंत",
+            "delivery_guaranteed_by_label": "डिलिव्हरीची हमी {{date}} पर्यंत",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "ही ऑर्डर उशीरा आल्यास तुम्ही शॉप कॅशवर दावा करण्यास पात्र असाल.",
+              "may_be_eligible_not_authorized_label": "ही ऑर्डर उशिरा पोहोचल्यामुळे तुम्ही शॉप कॅशवर दावा करण्यास पात्र असाल. तपशील पाहण्यासाठी लॉग इन करा.",
+              "redeemed_label": "ही ऑर्डर उशिरा पोहोचल्यामुळे तुम्ही आधीच शॉप कॅशवर दावा केला आहे.",
+              "expired_label": "ही ऑर्डर उशीरा डिलिव्हरीच्या दाव्यासाठी पात्र नाही कारण 30-दिवसांची हमी कालबाह्य झाली आहे.",
+              "no_shop_cash_label": "ही ऑर्डर उशीरा डिलिव्हरीच्या दाव्यासाठी पात्र नाही कारण त्याचे शॉप पे द्वारे पैसे दिले गेले नाहीत.",
+              "no_longer_guaranteed_label": "या वस्तू यापुढे डिलिव्हरीच्या हमीद्वारे समर्थित नाहीत.",
+              "claim_shop_cash_title": "शॉप कॅशमध्ये {{amount}} चा दावा करण्यासाठी स्कॅन करा",
+              "claim_shop_cash_description": "शॉप ॲपमध्ये भविष्यातील खरेदीसाठी तुम्ही तुमचे शॉप कॅश वापरू शकता."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "वितरित म्हणून चिन्हांकित करा",
+      "fulfillment_status_title": "पूर्तता स्थिती: {{status}}",
+      "buy_again": "पुन्हा खरेदी करा",
+      "buy_again_accessibility_label": "ऑर्डरसाठी पुन्हा खरेदी करा {{orderId}}",
+      "manage": "व्यवस्थापित करा",
+      "manage_accessiblity_label": "ऑर्डर {{orderId}} व्यवस्थापित करा",
+      "group_title_label": "याचा भाग: {{groupTitle}}",
+      "havent_received_your_delivery": "तुमची डिलिव्हरी मिळाली नाही?",
+      "didnt_pick_up_order": "तुमची ऑर्डर उचलली नाही?",
+      "if_you_didnt_receive_this": "जर तुम्हाला हे मिळाले नसेल,",
+      "if_not_received": {
+        "one": "ते मिळाले नाही तर,",
+        "other": "जर ते मिळाले नाहीत,"
+      },
+      "let_us_know": "आम्हाला कळवा",
+      "contact_us": "आमच्याशी संपर्क साधा."
     },
     "payment_methods": {
       "store_credit": {
@@ -875,6 +914,228 @@
         "button": "सर्वत्र लॉग आउट करा",
         "warning_message": "आपण या डिव्हाइसवर देखील लॉग आउट केले जाईल."
       }
+    },
+    "order_details": {
+      "shipping": {
+        "free_shipping_discount": "मोफत शिपिंग",
+        "one_time": "एक-वेळ शिपिंग",
+        "subscription": "सदस्यता शिपिंग",
+        "address": "शिपिंग पत्ता",
+        "address_map_marker": "शिपिंग पत्ता",
+        "method": "शिपिंग पद्धत",
+        "summary": "शिपिंग",
+        "free": "मोफत"
+      },
+      "pickup": {
+        "pickup": "पिकअप",
+        "pickup_location": "पिकअप स्थान",
+        "pickup_point": "पिकअप पॉइंट"
+      },
+      "show_items": "आयटम दाखवा",
+      "show_order_summary": "ऑर्डरचा सारांश दाखवा",
+      "hide_order_summary": "ऑर्डर सारांश लपवा",
+      "subtitle": "पुष्टी केली {{date}}",
+      "subtotal": "बेरजे",
+      "summary_list_title_accessibility_label": "ऑर्डर आयटम",
+      "summary_title": "ऑर्डर सारांश",
+      "summary_totals_title_accessibility_label": "ऑर्डर एकूण",
+      "shop_order_tracking": {
+        "download_shop_to_track": "पॅकेज ट्रॅक करण्यासाठी शॉप डाउनलोड करा",
+        "track_order_with_shop": "दुकानासह ऑर्डरचा मागोवा घ्या",
+        "title_header": "तुमच्या फोनने स्कॅन करा",
+        "real_time_delivery_updates": "एकदा तुमची ऑर्डर पाठवल्यानंतर शॉप तुम्हाला रिअल-टाइम वितरण अद्यतने पाठवेल."
+      },
+      "edit_summary": {
+        "added": "जोडले",
+        "added_with_quantity": "जोडले {{quantity}}",
+        "removed": "काढले",
+        "removed_with_quantity": "काढले {{quantity}}",
+        "updated_at": "तुमची ऑर्डर {{date}} रोजी अपडेट केली गेली",
+        "returned": "परतले",
+        "returned_with_quantities": "{ {{total}} पैकी {{delta}} परत केले",
+        "removed_with_quantities": "{ {{total}} पैकी {{delta}} काढले",
+        "return_line_item_removed": "रिटर्नमधून काढले",
+        "return_line_item_removed_with_quantities": "रिटर्नमधून {{delta}} काढले"
+      },
+      "shop_pay": {
+        "order_completed_with": "यासह ऑर्डर पूर्ण झाली",
+        "learn_more": "अधिक जाणून घ्या"
+      },
+      "taxes": "कर",
+      "taxes_included": "करांमध्ये {{amount}} समाविष्ट आहे",
+      "duties_and_taxes_included": "एकूण कर्तव्ये आणि कर समाविष्ट आहेत. डिलिव्हरीवर कोणतेही अतिरिक्त शुल्क नाही.",
+      "duties": "कर्तव्ये",
+      "ok_duties_tooltip": "ही ऑर्डर दुसऱ्या देशातून पाठवली जात आहे, त्यामुळे तुमच्या एकूण ऑर्डरमध्ये कर्तव्ये जोडली गेली आहेत.",
+      "error_duties_tooltip": "ही ऑर्डर दुसऱ्या देशातून पाठवली जात आहे, त्यामुळे वितरणावर शुल्क आणि कर आकारले जाऊ शकतात.",
+      "zero_duties_tooltip": "ही ऑर्डर दुसऱ्या देशातून पाठवली जात आहे. या मूल्याच्या ऑर्डरवर शुल्क आकारले जात नाही.",
+      "tip": "टीप",
+      "title": "ऑर्डर {{name}}",
+      "total": "एकूण",
+      "unit_price": "{{price}} /ea",
+      "pagination": {
+        "load_more": "अधिक लोड करा",
+        "load_more_accessibility_label": "अधिक आयटम लोड करा",
+        "loading_accessibility_label": "आयटम लोड करत आहे"
+      },
+      "login_to_view_all_order_details": "सर्व ऑर्डर तपशील पाहण्यासाठी लॉग इन करा.",
+      "log_in": "लॉग इन करा",
+      "logged_in_account_no_permission_to_order": "तुम्ही {{email}} म्हणून लॉग इन केले आहे. या खात्याला ही ऑर्डर व्यवस्थापित करण्याची परवानगी नाही.",
+      "log_in_to_a_different_account": "वेगळ्या खात्यात लॉग इन करा",
+      "fees": {
+        "restocking_fee": "पुनर्संचयित शुल्क",
+        "return_shipping_fee": "शिपिंग परत करा"
+      },
+      "vat_invoices": {
+        "title": "व्हॅट इनव्हॉइस"
+      },
+      "shipment_timeline": {
+        "expand_events_label": "तपशील दाखवा",
+        "expand_events_accessibility_label": "ऑर्डर शिपमेंट तपशील दर्शवा",
+        "hide_events_label": "तपशील लपवा",
+        "hide_events_accessibility_label": "ऑर्डर शिपमेंट तपशील लपवा"
+      },
+      "addresses_section_title": "बिलिंग आणि शिपिंग",
+      "order_details": "ऑर्डर तपशील",
+      "order_details_skeleton_accessibility_label": "सर्व ऑर्डर तपशील पाहण्यासाठी लॉग इन करा.",
+      "billing_address": "बिलिंग पत्ता",
+      "card_ending_with": "{{lastDigits}} ने समाप्त",
+      "contact": "संपर्क करा",
+      "contact_information": "संपर्क माहिती",
+      "company": "कंपनी",
+      "fully_refunded_label": "परतावा दिला",
+      "group_title_label": "याचा भाग: {{groupTitle}}",
+      "discount": "सवलत",
+      "hide_items": "आयटम लपवा",
+      "loading": "ऑर्डर तपशील लोड करत आहे",
+      "loading_finished_accessibility_message": "ऑर्डर तपशील लोड केले गेले आहेत",
+      "location": "स्थान",
+      "image_gallery": {
+        "next": "पुढील आयटम दर्शवा",
+        "previous": "मागील आयटम दर्शवा",
+        "load_more_items": {
+          "one": "आणखी {{count}} आयटम लोड करा",
+          "other": "आणखी {{count}} आयटम लोड करा"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "ऑर्डर सारांश दर्शवा",
+        "closed": "ऑर्डर सारांश लपवा"
+      },
+      "no_data": "काहीही नाही",
+      "no_data_provided_accessibility_label": "{{fieldName}} रिक्त आहे",
+      "paid_amount": "पैसे दिले",
+      "partially_refunded_label": "अंशतः परतावा दिला",
+      "payment": {
+        "status_in_review": "पुनरावलोकनानंतर देय देय",
+        "status_unpaid": "{{date}} रोजी देय देय",
+        "title": "पेमेंट",
+        "card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} ने समाप्त",
+        "gift_card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} ने समाप्त",
+        "store_credit_payment_details": "स्टोअर क्रेडिट - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "शॉप पे हप्त्यांसह पैसे दिले",
+          "view_schedule": "वेळापत्रक पहा"
+        },
+        "manual_payment_methods": {
+          "money_order": "मनी ऑर्डर - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "कॅश ऑन डिलिव्हरी (सीओडी) - {{formattedTransactionAmount}}",
+          "bank_deposit": "बँक ठेव - {{formattedTransactionAmount}}",
+          "manual": "मॅन्युअल - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "सर्व दाखवा",
+          "show_less": "कमी दाखवा",
+          "details": "तपशील",
+          "payment_details": "देयक तपशील"
+        },
+        "emv_details": {
+          "source": "स्रोत:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "शॉप पे हप्त्यांसह पैसे दिले",
+        "description": "शॉप ॲपमधील रिमाइंडरसह तुमच्या पेमेंट शेड्यूलमध्ये शीर्षस्थानी रहा.",
+        "payment_reminders_button": "पेमेंट स्मरणपत्रे मिळवा",
+        "desktop_qr_code_content": {
+          "title": "स्मरणपत्रांसाठी स्कॅन करा",
+          "description": "शॉपसह तुमच्या हप्त्यांचे स्मरणपत्र मिळवा."
+        }
+      },
+      "refunded_amount": "परतावा दिला",
+      "request_return_failed": "तुमच्या विनंतीवर प्रक्रिया करताना समस्या आली. कृपया पुन्हा प्रयत्न करा.",
+      "remaining_amount": "बाकी",
+      "marketing_section_title": "बातम्या आणि ऑफर",
+      "marketing_description": "तुम्हाला विपणन ईमेल प्राप्त होतील. तुम्ही कधीही सदस्यत्व रद्द करू शकता.",
+      "marketing_checkbox_label": "बातम्या आणि ऑफरसह मला ईमेल करा",
+      "marketing_checkmark_label": "आपण ईमेल बातम्या आणि ऑफर प्राप्त करण्यासाठी सदस्यता घेतली आहे",
+      "returns": {
+        "expand_events_label": "तपशील दाखवा",
+        "hide_events_label": "तपशील लपवा",
+        "ineligible_return_message": "या ऑर्डरमधील कोणतेही आयटम परत मिळण्यास पात्र नाहीत.",
+        "ineligible_return_message_when_returned": "या ऑर्डरमधील कोणतेही अतिरिक्त आयटम रिटर्नसाठी पात्र नाहीत.",
+        "print_shipping_label": "शिपिंग लेबल प्रिंट करा",
+        "return_and_refund_modal_header": "परतावा धोरण",
+        "tracking_number": "ट्रॅकिंग क्रमांक:"
+      }
+    },
+    "addresses": {
+      "add_button": "पत्ता जोडा",
+      "add_button_text": "ॲड",
+      "add_button_accessibility_label": "पत्ता जोडा",
+      "back_button": "मागे",
+      "back_button_accessibility_label": "पत्ता संपादित करण्यासाठी परत {{address}}",
+      "add_address_banner": "चेकआउट करताना वापरण्यासाठी पत्ते जोडा",
+      "no_addresses_banner": "कोणतेही पत्ते जोडलेले नाहीत",
+      "address_deleted_notification": "पत्ता हटवला",
+      "cancel_adding_address_accessibility_label": "पत्ता जोडणे रद्द करा",
+      "cancel_deletion_button": "रद्द करा",
+      "cancel_deletion_button_accessibility_label": "{{address}} हटवणे रद्द करा",
+      "default_address": {
+        "title": "डीफॉल्ट पत्ता",
+        "title_accessibility_label": "डीफॉल्ट पत्ता: {{address}}"
+      },
+      "delete_button": "हटवा",
+      "delete_button_accessibility_label": "{{address}} हटवा",
+      "delete_confirmation_button": "पत्ता हटवा",
+      "delete_confirmation_button_accessibility_label": "{{address}} हटवा",
+      "delete_confirmation_message": "पत्ता हटवायचा? विद्यमान ऑर्डर प्रभावित होत नाहीत.",
+      "delete_confirmation_title": "पत्ता हटवायचा?",
+      "delete_confirmation_description": "विद्यमान ऑर्डर प्रभावित होत नाहीत.",
+      "edit_button": "संपादित करा",
+      "edit_button_accessibility_label": "संपादित करा {{address}}",
+      "edit_section_accessibility_label": "संपादित करा {{address}}",
+      "edit_modal_title": {
+        "default": "पत्ता संपादित करा",
+        "billing": "बिलिंग पत्ता संपादित करा",
+        "shipping": "शिपिंग पत्ता संपादित करा"
+      },
+      "loading_accessibility_message": "पत्ता लोड करत आहे",
+      "loading_addresses_accessibility_message": "पत्ते लोड करत आहे",
+      "loading_billing_accessibility_message": "बिलिंग पत्ता लोड करत आहे",
+      "loading_finished_accessibility_message": "पत्त्यांचे नवीन पृष्ठ लोड झाले आहे",
+      "loading_shipping_accessibility_message": "शिपिंग पत्ता लोड करत आहे",
+      "pagination": {
+        "load_more": "अधिक लोड करा",
+        "load_more_accessibility_label": "आणखी पत्ते लोड करा"
+      },
+      "save_new_address_accessibility_label": "पत्ता सेव्ह करा",
+      "title": "पत्ते",
+      "billing_address_dropdown_placeholder": "बिलिंग पत्ता"
+    },
+    "address_form": {
+      "attention": "लक्ष द्या",
+      "attention_company": "कंपनी/लक्ष",
+      "attention_help_text": "एखाद्या व्यक्तीचे किंवा विभागाचे नाव",
+      "auto_complete_close_accessibility_label": "सूचना बंद करा",
+      "auto_complete_title": "सूचना",
+      "billing_address": "बिलिंग पत्ता म्हणून वापरा",
+      "cancel": "रद्द करा",
+      "cancel_accessibility_label": "पत्ता संपादित करणे रद्द करा {{address}}",
+      "creation_success_notification": "पत्ता जोडला",
+      "default_address": "हा माझा डिफॉल्ट पत्ता आहे",
+      "default_address_creation_success_notification": "डीफॉल्ट पत्ता जोडला",
+      "default_address_update_success_notification": "डीफॉल्ट पत्ता अपडेट केला",
+      "loading_add_form_accessibility_message": "नवीन पत्ता फॉर्म लोड करत आहे"
     }
   },
   "general": {
