@@ -11,5 +11,13 @@
         "save_my_information_label": "save the information next time"
       }
     }
-  }
+  },
+  "Cart":{
+    "title":"card"
+  },
+  
+    "Blog":{
+      "title":"Blog"
+    }
+  
 }
