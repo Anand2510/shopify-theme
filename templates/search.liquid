@@ -17,7 +17,7 @@
         <div class="card-body">
           {% if item.featured_image %}
             <a href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
-              {{ item.featured_image.src | img_url: 'small' | img_tag: item.featured_image.alt }}
+              {{ item.featured_image.src | img_url: 'small' | img_tag: item.featured_image.alt, 'card-img-top'  }}
             </a>
           {% endif %}
           <h5>{{ item.title | link_to: item.url }}</h5>
