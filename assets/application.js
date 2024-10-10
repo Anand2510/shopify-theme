@@ -10,9 +10,9 @@ document.querySelector('#sort_by').addEventListener('change', function(e) {
 
 if( document.getElementById('AddressCountryNew') != null){
     document.getElementById('AddressCountryNew').addEventListener('change', function(e){
-            var provinces = this.options[selectedIndex].getAttribute('data-provinces');
+            var province = this.options[selectedIndex].getAttribute('data-provinces');
             var proviceSelector = document.getElementById('AddressCountryNew');
-            var provinceArray = JSON.parse(provinces);
+            var provinceArray = JSON.parse(province);
 
             console.log(provinceArray);
         
