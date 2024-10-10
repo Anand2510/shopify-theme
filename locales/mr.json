@@ -2885,7 +2885,14 @@
       "default_address": "हा माझा डिफॉल्ट पत्ता आहे",
       "default_address_creation_success_notification": "डीफॉल्ट पत्ता जोडला",
       "default_address_update_success_notification": "डीफॉल्ट पत्ता अपडेट केला",
-      "loading_add_form_accessibility_message": "नवीन पत्ता फॉर्म लोड करत आहे"
+      "loading_add_form_accessibility_message": "नवीन पत्ता फॉर्म लोड करत आहे",
+      "loading_edit_form_accessibility_message": "संपादन पत्ता फॉर्म लोड करत आहे",
+      "loading_form_accessibility_message": "पत्ता फॉर्म लोड करत आहे",
+      "loading_finished_accessibility_message": "पत्ता फॉर्म लोड झाला आहे",
+      "save": "जतन करा",
+      "save_accessibility_label": "पत्ता जतन करा {{address}}",
+      "section_title_accessibility_label": "पत्ता जोडा",
+      "update_success_notification": "पत्ता अपडेट केला"
     },
     "date": {
       "humanize": {
@@ -2899,7 +2906,131 @@
         "tomorrow": "उद्या {{time}} वाजता"
       }
     },
-    "enable_javascript": "तुमचे खाते पाहण्यासाठी, तुमच्या ब्राउझर सेटिंग्जमध्ये JavaScript सक्षम करा किंवा दुसऱ्या ब्राउझरने लॉग इन करा."
+    "enable_javascript": "तुमचे खाते पाहण्यासाठी, तुमच्या ब्राउझर सेटिंग्जमध्ये JavaScript सक्षम करा किंवा दुसऱ्या ब्राउझरने लॉग इन करा.",
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "कंपनीचे नाव",
+        "company_card_section_accessibility_label": "कंपनी"
+      },
+      "locations": {
+        "contact_email": "ईमेल",
+        "contact_list_title": "लोक",
+        "contact_name": "नाव",
+        "contact_permissions": "परवानग्या",
+        "contact_phone_number": "फोन नंबर",
+        "location_picker_label": "स्थानाचे नाव",
+        "location_picker_accessibility_label": "स्थानाचे नाव: {{locationName}}",
+        "net_payment_terms_description": "{{name}} : {{numberOfDays}} दिवसांत देय देय",
+        "deposit_percentage": "{{percentage}} ठेव",
+        "own_role_contact_name": "आपण",
+        "pagination": {
+          "load_more": "अधिक लोड करा",
+          "load_more_accessibility_label": "अधिक स्थाने लोड करा"
+        },
+        "payment_details_title": "देयक तपशील",
+        "payment_terms": "पेमेंट अटी",
+        "permissions_label": "तुमच्या परवानग्या",
+        "permissions_title": "परवानग्या",
+        "section_title": "स्थान",
+        "shipping_address_required": "ऑर्डर देणे सुरू करण्यासाठी या स्थानावर एक शिपिंग पत्ता जोडा.",
+        "staff_and_permissions_title": "कर्मचारी आणि परवानग्या",
+        "tax_details_title": "कर तपशील",
+        "tax_id": "कर आयडी",
+        "tax_exemptions": "कर सवलत",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} अधिक",
+        "multiple_tax_exemptions_and": "आणि",
+        "tax_exemptions_modal_close": "बंद करा",
+        "taxes_none": "काहीही नाही",
+        "tax_exemptions_modal_button_accessibility_label": "सर्व कर सूट पहा"
+      },
+      "location_selection": {
+        "continue_to_store": "साठवणे सुरू ठेवा",
+        "description": "तुमच्या कार्टमध्ये आधीच आयटम असल्यास, स्थान बदलल्याने कार्टच्या किमती आणि प्रमाणांवर परिणाम होऊ शकतो.",
+        "list_accessibility_label": "स्थानांची यादी",
+        "list_item_without_address_accessibility_label": "{{name}} : पत्ता नाही",
+        "list_loading_accessibility_message": "स्थानांची सूची लोड करत आहे",
+        "list_loading_address_accessibility_message": "{{locationName}} साठी पत्ता लोड करत आहे",
+        "list_loading_finished_accessibility_message": "स्थानांची यादी लोड केली आहे",
+        "loading_store_accessibility_message": "स्टोअरमध्ये जात आहे",
+        "no_location_title": "केवळ वैयक्तिक ऑर्डर",
+        "no_location_description": "तुम्हाला यापुढे {{company}} साठी ऑर्डर देण्याची परवानगी नाही. तुम्ही तरीही वैयक्तिक ऑर्डर देऊ शकता.",
+        "no_locations_found": "कोणतीही स्थाने आढळली नाहीत",
+        "search": "स्थान शोधा",
+        "search_location_title": "एक स्थान निवडा",
+        "selection_cancel_button": "रद्द करा",
+        "selection_confirmation_button": "स्थान निवडा",
+        "title": "तुम्ही कोणत्या स्थानासाठी खरेदी करत आहात?",
+        "clear_search": "शोध साफ करा",
+        "try_new_search": "नवीन शोध करून पहा"
+      },
+      "addresses": {
+        "add_billing_address_button": "बिलिंग पत्ता जोडा",
+        "add_billing_address_section_accessibility_label": "बिलिंग पत्ता जोडा",
+        "add_shipping_address_button": "शिपिंग पत्ता जोडा",
+        "add_shipping_address_section_accessibility_label": "शिपिंग पत्ता जोडा",
+        "billing_address_card_title": "बिलिंग पत्ता",
+        "cancel_adding_billing_address_accessibility_label": "बिलिंग पत्ता जोडणे रद्द करा",
+        "cancel_adding_shipping_address_accessibility_label": "शिपिंग पत्ता जोडणे रद्द करा",
+        "save_new_billing_address_accessibility_label": "बिलिंग पत्ता जतन करा",
+        "save_new_shipping_address_accessibility_label": "शिपिंग पत्ता जतन करा",
+        "shipping_address_card_title": "शिपिंग पत्ता"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "सर्व लपवा",
+          "show_all": "सर्व दाखवा",
+          "hide_all_accessibility_label": "पुनरावलोकनात सर्व ऑर्डर लपवा",
+          "show_all_accessibility_label": "पुनरावलोकनात सर्व ऑर्डर दर्शवा",
+          "show_all_orders_in_review": "पुनरावलोकनात सर्व ऑर्डर दर्शवा",
+          "show_less_orders_in_review": "पुनरावलोकनात कमी ऑर्डर दर्शवा",
+          "title": "प्रलंबित",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "तुमच्याकडे कोणतेही प्रलंबित ऑर्डर नाहीत",
+            "pending_orders": {
+              "one": "तुमच्याकडे {{count}} ऑर्डर प्रलंबित आहे",
+              "other": "तुमच्याकडे {{count}} ऑर्डर प्रलंबित आहेत"
+            },
+            "more_than_pagination_length": "तुमच्याकडे {{count}} पेक्षा जास्त प्रलंबित ऑर्डर आहेत"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "पुनरावलोकन नेव्हिगेशन बटणांमध्ये ऑर्डर"
+          }
+        },
+        "order_list_column_headers_location": "स्थान",
+        "order_list_column_headers_contact": "संपर्क करा",
+        "removed_company_contact_tooltip": "कंपनीतून काढून टाकले"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "ऑर्डर {{draftOrderName}} वरून {{date}} पुष्टी केली",
+        "loading": "ऑर्डर तपशील लोड करत आहे",
+        "loading_finished_accessibility_message": "ऑर्डर तपशील लोड केले गेले आहेत",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "तुमचे पेमेंट {{count}} दिवस बाकी आहे",
+              "other": "तुमचे पेमेंट {{count}} दिवस थकले आहे"
+            },
+            "banner_due": {
+              "one": "तुमचे पेमेंट {{count}} दिवसात देय आहे",
+              "other": "तुमचे पेमेंट {{count}} दिवसांत देय आहे"
+            },
+            "banner_due_today": "तुमचे पेमेंट आज बाकी आहे",
+            "title": "देय देय",
+            "title_with_date": "देय देय {{date}}",
+            "title_due_on_receipt": "पेमेंट अद्याप देय नाही",
+            "title_due_on_fulfillment": "पूर्ततेवर देय देय",
+            "description_overdue": "तुमचे पेमेंट उशीर झाले आहे.",
+            "description_partially_paid": "हा आदेश अंशतः अदा करण्यात आला. तुमच्याकडे शिल्लक शिल्लक आहे.",
+            "description_authorized": "तुमच्या पेमेंट पद्धतीवर देय तारखेला शुल्क आकारले जाईल किंवा तुम्ही आता पैसे देऊ शकता.",
+            "description_waiting_for_manual_payment": "या ऑर्डरचे पेमेंट प्रलंबित आहे. पेमेंट मिळाल्यावर शिल्लक अपडेट केली जाईल.",
+            "description_due_on_receipt": "पेमेंट देय झाल्यावर तुम्हाला एक बीजक प्राप्त होईल.",
+            "description_due_on_receipt_partially_paid": "हा आदेश अंशतः अदा करण्यात आला. तुमच्याकडे शिल्लक शिल्लक आहे. पेमेंट देय झाल्यावर तुम्हाला एक बीजक प्राप्त होईल.",
+            "description_due_on_fulfillment": "या ऑर्डरमधील सर्व आयटम पूर्ण झाल्यानंतर पेमेंट देय आहे."
+          }
+        }
+      }
+    }
   },
   "general": {
     "404": {
