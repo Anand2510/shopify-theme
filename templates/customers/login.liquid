@@ -4,8 +4,10 @@
     <div class="login-form">
         <div class="h3">Customer Login</div>
         {%  form 'customer_login' %}  
-            <input type="email" name="customer[email]" class="form-control rounded-0 my-2">
-            <label for="emailAddress">Email Address</label>
+   <div class="form-floating">
+    <input type="email" name="customer[email]" class="form-control rounded-0 my-2">
+    <label for="emailAddress">Email Address</label>
+   </div>
             <label for="password">Password</label>
             <input type="password" name="customer[password]" class="form-control rounded-0 my-2">
             
