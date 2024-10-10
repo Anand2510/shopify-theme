@@ -46,16 +46,10 @@
 
   <div class="my-3 ">
     {% form 'new_comment', article %}
-      {{ form.errors | default_errors }}
-      {% for error in form.errors %}
-        <div class="alert alert-danger">
-          {% if error == 'form' %}
-            {{ form.errors.messages[error] }}
-          {% else %}
-            {{ form.errors.translated_fields[error] }}: {{ form.errors.messages[error] }}
-          {% endif %}
-        </div>
-      {% endfor %}
+      {% comment %} {{ form.errors | default_errors }} {% endcomment %}
+    
+      {% include 'form-error' form:form %} 
+
       <div class="my-5 p-2 bg-light">
         <h2>Comment Your Thought Below </h2>
         <div class="form-floating my-3">       
