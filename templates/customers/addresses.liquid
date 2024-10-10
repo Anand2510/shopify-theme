@@ -22,7 +22,41 @@
                     <div class="modal-title" id="#newAddressModallabel">Add New Address</div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"> </button>
                 </div>
-                    <div class="modal-body"></div>
+                    <div class="modal-body">
+                        <div class="col-12 mb-3">
+                            <label for="AddressFirstNameNew" class="form-label" class="form-label"> First Name</label>
+                            <input type="text" name="address[first_name]" value="{{ form.first_name }}" id="AddressFirstNameNew" class="form-control">
+                            </div>
+                            <div class="col-12 mb-3">
+                            <label for="AddressLastNameNew" class="form-label">Last Name</label>
+                            <input type="text" name="address[last_name]" value="{{ form.last_name }}" id="AddressLastNameNew" class="form-control">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="AddressCompanyNew" class="form-label">Company Name</label>
+                                <input type="text" name="address[company_name]" value="{{ form.company_name }}" id="AddressCompanyNew" class="form-control">
+                                </div>
+                                <div class="col-12 mb-3">
+                                <label for="AddressAddress1New" class="form-label">Address 1</label>
+                                <input type="text" name="address[address1]" value="{{ form.address1 }}" id="AddressAddress1New" class="form-control">
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="AddressAddress2New" class="form-label">Apparment, Suite, etc 2</label>
+                                    <input type="text" name="address[address2]" value="{{ form.address2 }}" id="AddressAddress2New" class="form-control">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="AddressCityNew" class="form-label">City</label>
+                                        <input type="text" name="address[city]" value="{{ form.city }}" id="AddressCityNew" class="form-control">
+                                        </div>'
+                                        <div class="col-12 mb-3">
+                                            <label for="AddressCountryNew" class="form-label">Country</label>
+                                            <input type="text" name="address[country]" value="{{ form.country }}" id="AddressCountryNew" class="form-control">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                            <label for="AddressprovinceNew" class="form-label">Province</label>
+                                            <input type="text" name="address[province]" value="{{ form.province }}" id="AddressprovinceNew" class="form-control">
+                                            </div>
+                                            
+                    </div>
                     <div class="modal-footer"></div>
               
             </div>
