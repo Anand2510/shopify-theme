@@ -14,7 +14,19 @@ if( document.getElementById('AddressCountryNew') != null){
             var proviceSelector = document.getElementById('AddressCountryNew');
             var provinceArray = JSON.parse(province);
 
-            console.log(provinceArray);
+            // console.log(provinceArray);
+            if(provinceArray.length < 1 ){
+                proviceSelector.setAttribute('disabled','disabled');
+
+            }else{
+                proviceSelector.removeAttribute('disabled');
+
+            }
+            proviceSelector.innerHTML = '';
+            var options = '';
+            for(var i = 0; i < provinceArray.length; i++ ){
+                options +='<option value="'+ provinceArray[i][0] + '">'+ provinceArray[i][0] +'</option>';
+            }
         
     });
 }
