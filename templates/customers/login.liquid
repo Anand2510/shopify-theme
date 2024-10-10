@@ -1,14 +1,18 @@
 
 <!-- /templates/customers/login.liquid -->
  <div class="container my-5 py-5">
-{%  form 'customer_login' %}  
-<label for="emailAddress">Email Address</label>
-<input type="email" name="customer[email]" class="form-control">
-<label for="password">Password</label>
-<input type="password" name="customer[password]" class="form-control">
+    <div class="login-form">
+        <div class="h3">Customer Login</div>
+        {%  form 'customer_login' %}  
+            <label for="emailAddress">Email Address</label>
+            <input type="email" name="customer[email]" class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="customer[password]" class="form-control">
+            
+            <input type="button" value="Sign in" class="btn btn-primary btn-lg ">
+            {% endform %} 
+    </div>
 
-<input type="button" value="Sign in" class="btn btn-primary btn-lg ">
-{% endform %} 
 </div>
 {% comment %} <h2>Login</h2>
 {% form 'customer_login' %}
