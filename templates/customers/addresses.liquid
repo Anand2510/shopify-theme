@@ -7,6 +7,13 @@
             <div class="card">
                 <div class="card-body">
                     {{ address | format_address }}
+
+                </div>
+                <div class="card-footer">
+                    <form action="/account/address/{{ address.id }}" method="post" data-conform-massege="Delete Addresss">
+                    <div class="btn btn-danger"></div>
+                    
+                    </form>
                 </div>
             </div>
         </div>
