@@ -13,7 +13,8 @@
       },
       "Layout":{
         "login_text":"Login",
-        "register_text":"Register"
+        "register_text":"Register",
+        "account_text":"Account"
       }
   },
   "shopify": {
