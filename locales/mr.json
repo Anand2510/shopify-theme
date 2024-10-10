@@ -3199,5 +3199,12 @@
       "title": "सापडले नाही",
       "subtext_html": "आपण शोधत असलेले पृष्ठ अस्तित्वात नाही"
     }
-  }
+  },
+    "Cart":{
+    "title":"marathi cart"
+  },
+  
+    "Blog":{
+      "title":"Blog"
+    }
 }
