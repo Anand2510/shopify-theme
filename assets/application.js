@@ -7,3 +7,14 @@ document.querySelector('#sort_by').addEventListener('change', function(e) {
     window.location.href = url.href;
 });
 }
+
+if( document.getElementById('AddressCountryNew') != null){
+    document.getElementById('AddressCountryNew').addEventListener('change', function(e){
+            var province = this.options[selectedIndex].getAttribute('data-provinces');
+            var proviceSelector = document.getElementById('AddressCountryNew');
+            var provinceArray = JSON.parse(provinces);
+
+            console.log(provinceArray);
+        
+    });
+}
