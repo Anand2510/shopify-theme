@@ -103,7 +103,7 @@
 </div>
 
 
-
+{% comment %} 
 {% for address in customer.addresses %}
 
     {{ address | format_address }}
@@ -125,7 +125,7 @@
       {% endform %}
     </div>
   
-  {% endfor %}
+  {% endfor %} {% endcomment %}
 {% comment %} <!-- /templates/customers/addresses.liquid -->
 
 <h2>New Address</h2>
