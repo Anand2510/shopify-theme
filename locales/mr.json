@@ -660,6 +660,131 @@
       "pickup_point": {
         "location_is_currently_closed": "बंद",
         "business_hours": "उघडण्याचे तास"
+      },
+      "order_summary": {
+        "original_price": "मूळ किंमत",
+        "sale_price": "विक्री किंमत",
+        "total_updated_label": "अद्यतनित एकूण किंमत:",
+        "order_total_updated_label": "एकूण अपडेट केले",
+        "total_already_paid_label": "पैसे दिले",
+        "unit_price": {
+          "accessible_separator": "प्रति"
+        },
+        "gift_card_ending": "%{last_characters} ने समाप्त होणारे गिफ्ट कार्ड",
+        "estimated_tax_label": "अंदाजे कर",
+        "multiple_shipping_lines_label": "एकूण शिपिंग",
+        "recurring_subtotal_label": "आवर्ती उपटोटल",
+        "recurring_total_label": "आवर्ती एकूण",
+        "recurring_total_tooltip": "शिपिंग, कर, कर्तव्ये किंवा कोणत्याही लागू सवलतींचा समावेश नाही.",
+        "confirmation_number_label": "पुष्टीकरण #%{confirmation_number}",
+        "higher_value_discount_applied": "तुमच्या विद्यमान सवलतींसोबत <strong style=\"text-transform:uppercase\">%{code}</strong> वापरता येत नाही.",
+        "percent_off_shipping": "शिपिंगवर %{percent}% सूट",
+        "amount_off_shipping": "शिपिंगवर %{amount} सूट",
+        "deferred_payment_info": {
+          "title": "%{amount_due} चे पेमेंट %{due_at} रोजी देय आहे",
+          "description_html": "तुमच्या ऑर्डरबद्दल प्रश्नांसाठी, %{contact_us}.",
+          "paid_today": "आज एकूण पैसे दिले",
+          "due_on_fulfillment_title": "%{amount_due} चे पेमेंट पूर्ण झाल्यावर देय आहे",
+          "due_on_receipt_title": "%{amount_due} चे पेमेंट पावतीवर देय आहे"
+        },
+        "deferred_balance_info": {
+          "title": "{{due_at}} {{amount_due}} } शिल्लक आहे",
+          "due_on_fulfillment_title": "पूर्तीवर {{amount_due}} शिल्लक आहे"
+        },
+        "payment_terms_totals": {
+          "due_today": "आज एकूण देय",
+          "due_later": "एकूण देय %{due_at}",
+          "due_on_fulfillment": "पूर्ततेवर एकूण देय",
+          "due_on_receipt": "पावतीवर एकूण देय",
+          "due_later_checkout_to_draft": "एकूण देय नंतर",
+          "total_paid": "एकूण पैसे दिले"
+        },
+        "maximum_discount_code_limit_reached": "तुम्ही सूट कोडची कमाल संख्या गाठली आहे. <strong style=\"text-transform:uppercase\">%{code}</strong> वापरण्यासाठी विद्यमान कोड काढून टाका.",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> सध्या काम करत नाही. मदतीसाठी आमच्याशी संपर्क साधा.",
+        "due_on_fulfillment": "पूर्ततेवर देय",
+        "subscriptions": "सदस्यता",
+        "duties_label": "कर्तव्ये",
+        "duties_and_taxes_label": "कर्तव्ये आणि कर",
+        "error_duties_tooltip": "ही ऑर्डर दुसऱ्या देशातून पाठवली जात आहे, त्यामुळे वितरणावर शुल्क आणि कर आकारले जाऊ शकतात.",
+        "may_be_charged_on_delivery": "डिलिव्हरीवर शुल्क आकारले जाऊ शकते",
+        "total_updated_label_with_price": "अद्यतनित एकूण किंमत: %{totalPrice}",
+        "updated_shipping_method": "अद्यतनित शिपिंग पद्धत: %{shipping_method}",
+        "recurring_payments": "आवर्ती देयके",
+        "recurring_total_multiple_label": "या ऑर्डरमध्ये एकाधिक आयटमसाठी आवर्ती शुल्क आहे.",
+        "deferred_total_due_date_label": "एकूण देय {{date}}",
+        "full_price": "पूर्ण किंमत: %{price}",
+        "custom_discount": "सानुकूल सवलत",
+        "expand_component_information": {
+          "one": "%{count} आयटम दाखवा",
+          "other": "%{count} आयटम दाखवा"
+        },
+        "collapse_component_information": {
+          "one": "%{count} आयटम लपवा",
+          "other": "%{count} आयटम लपवा"
+        },
+        "component_quantity_title": "%{मात्रा} × %{उत्पादन_शीर्षक}",
+        "discount_discovery": {
+          "add_code": "सवलत जोडा",
+          "merchandise_quantity_label": {
+            "one": "%{count} आयटम",
+            "other": "%{count} आयटम"
+          }
+        },
+        "alternative_payment_currency_total": "%{amount_due} म्हणून शुल्क आकारले"
+      },
+      "shipping": {
+        "title": "शिपिंग",
+        "delivery_title": "डिलिव्हरी",
+        "shipping_method_title": "शिपिंग पद्धत",
+        "shipping_method_one_time_purchase_group_title": "एक वेळ खरेदी",
+        "shipping_method_first_shipment_group_title": {
+          "one": "प्रथम शिपमेंट",
+          "other": "प्रथम शिपमेंट्स"
+        },
+        "shipping_method_subscription_group_title": "वर्गणी",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "आवर्ती शिपमेंट",
+          "other": "आवर्ती शिपमेंट"
+        },
+        "subscription_shipping": "सदस्यता शिपिंग",
+        "subscription_local_delivery": "सदस्यता स्थानिक वितरण",
+        "subscription_pickup": "सदस्यता पिकअप",
+        "waiting_on_rate_notice": "उपलब्ध शिपिंग दर मिळवत आहे...",
+        "waiting_on_pickup_location_notice": "उपलब्ध पिकअप स्थाने मिळवत आहे...",
+        "no_rates_for_cart_or_destination_notice": "तुमच्या कार्ट किंवा पत्त्यासाठी कोणत्याही शिपिंग पद्धती उपलब्ध नाहीत",
+        "no_pickup_location_notice": "तुमचे किमान एक उत्पादन पिकअपसाठी उपलब्ध नाही",
+        "no_rates_for_country_notice": "या पत्त्यासाठी कोणतेही शिपिंग दर आढळले नाहीत.",
+        "no_rates_contact_notice": "अधिक माहितीसाठी आमच्याशी संपर्क साधा",
+        "free_rate_label": "मोफत",
+        "cheapest_rate_label": "सर्वात स्वस्त",
+        "please_enter_your_shipping_information_notice": "कृपया तुमची शिपिंग माहिती प्रविष्ट करा.",
+        "estimated_delivery_date": {
+          "one": "%{count} व्यवसाय दिवस",
+          "other": "%{count} व्यवसाय दिवस"
+        },
+        "estimated_delivery_date_range": "%{किमान} ते %{कमाल} व्यवसाय दिवस",
+        "estimated_delivery_time": "अंदाजे वितरण %{time}",
+        "estimated_delivery_time_range": "अंदाजे वितरण %{min_time}–%{max_time}",
+        "delivery_today": "त्याच दिवशी वितरण %{time}",
+        "delivery_tomorrow": "पुढच्या दिवशी वितरण %{time}",
+        "two_day_delivery": "2-दिवस वितरण %{time}",
+        "delivery": "वितरण %{time}",
+        "arrives_time": "आगमन %{time}",
+        "arrives_time_range": "आगमन %{min_time}–%{max_time}",
+        "estimated_time": "अंदाजे %{वेळ}",
+        "estimated_time_range": "अंदाजे %{min_time}–%{max_time}",
+        "default_description": "1 व्यवसाय दिवसात शिप करा",
+        "shipping_line_phone_label": "मोबाईल फोन नंबर (आवश्यक)",
+        "shipping_line_phone": "तुमचा कुरियर तुमच्याशी संपर्क साधण्यासाठी हा नंबर वापरू शकतो.",
+        "shipping_line_delivery_phone_label": "मोबाईल फोन नंबर",
+        "shipping_line_delivery_phone": "तुमच्या डिलिव्हरीच्या अपडेटसाठी तुमच्याशी संपर्क साधला जाऊ शकतो.",
+        "optional_shipping_line_delivery_instructions_label": "वितरण सूचना (पर्यायी)",
+        "shipping_line_delivery_instructions": "दार कोड किंवा ड्रॉप-ऑफ सूचना यासारखी आवश्यक माहिती प्रविष्ट करा.",
+        "other_method": {
+          "zero": "इतर कोणत्याही पद्धती उपलब्ध नाहीत",
+          "one": "%{count} इतर पद्धत येथे उपलब्ध आहे",
+          "other": "%{count} इतर पद्धती उपलब्ध आहेत"
+        }
       }
     }
   },
