@@ -630,14 +630,40 @@
             "descending": "स्थान (ZA)"
           },
           "order_number": {
-            "ascending": "ऑर्डर क्रमांक (कमी ते उच्च)"
+            "ascending": "ऑर्डर क्रमांक (कमी ते उच्च)",
+            "descending": "ऑर्डर क्रमांक (उच्च ते कमी)"
+          },
+          "order_total": {
+            "ascending": "एकूण ऑर्डर (कमी ते उच्च)",
+            "descending": "एकूण ऑर्डर (उच्च ते कमी)"
           }
-        }
+        },
+        "filter_title": "फिल्टर करा",
+        "filter": {
+          "clear_section": "विभाग साफ करा",
+          "clear_all": "सर्व साफ करा",
+          "apply": "अर्ज करा",
+          "date": {
+            "start_date": "प्रारंभ तारीख",
+            "end_date": "शेवटची तारीख",
+            "title": "ऑर्डरची तारीख",
+            "today": "आज",
+            "last_7_days": "शेवटचे ७ दिवस",
+            "last_30_days": "शेवटचे ३० दिवस",
+            "last_90_days": "शेवटचे ९० दिवस",
+            "last_365_days": "मागील 12 महिने",
+            "custom": "सानुकूल"
+          }
+        },
+        "table_view": "टेबल दृश्य दाखवा",
+        "show_order_actions_accessibility_label": "ऑर्डर {{name}} साठी ऑर्डर क्रिया दर्शवा"
       },
       "order_status": {
         "delivery_promise": {
           "claim_shop_cash_cta": {
-            "download_shop_app_label": "दुकान डाउनलोड करा"
+            "download_shop_app_label": "दुकान डाउनलोड करा",
+            "has_shop_app_label": "तुमच्या दुकानातील रोख रकमेवर दावा करा",
+            "no_shop_app_label": "शॉप कॅशवर दावा करण्यासाठी {{appDownloadLink}}"
           },
           "details_modal": {
             "title": "द्वारे वितरण समर्थित",
@@ -654,6 +680,118 @@
               "claim_shop_cash_title": "शॉप कॅशमध्ये {{amount}} चा दावा करण्यासाठी स्कॅन करा",
               "claim_shop_cash_description": "शॉप ॲपमध्ये भविष्यातील खरेदीसाठी तुम्ही तुमचे शॉप कॅश वापरू शकता."
             }
+          },
+          "promise_line": {
+            "single_brand_label": "द्वारे वितरण समर्थित",
+            "mixed_brands_label": "वितरण हमी",
+            "not_delivered_by_label": "{{date}} पर्यंत वितरित केले नाही",
+            "modal_accessibility_button_label": "वितरण वचन तपशील"
+          }
+        },
+        "attempted_delivery_label": "प्रसूतीचा प्रयत्न केला",
+        "attempted_delivery_description": "वितरणाचा प्रयत्न अयशस्वी झाला.",
+        "attempted_to_deliver_label": "पोचवण्याचा प्रयत्न केला",
+        "confirmed_description": "आम्हाला तुमची ऑर्डर मिळाली आहे.",
+        "on_its_way_description": "हे शिपमेंट त्याच्या मार्गावर आहे.",
+        "out_for_delivery_description": "हे शिपमेंट वितरणासाठी बाहेर आहे.",
+        "preparing_for_shipping_label": "शिपिंगची तयारी करत आहे",
+        "preparing_for_shipping_description": "या वस्तू शिपिंगसाठी तयार केल्या जात आहेत.",
+        "ready_for_pickup_label": "पिकअप साठी तयार",
+        "ready_for_pickup_description": "या वस्तू पिकअपसाठी तयार आहेत. तुम्ही तुमची ऑर्डर उचलता तेव्हा कृपया तुमच्या ऑर्डरची पुष्टी आणा.",
+        "ready_for_pickup_location": "तुमची ऑर्डर ठिकाणावर पिकअपसाठी तयार आहे",
+        "picked_up_label": "उचलले",
+        "picked_up_description": "या वस्तू उचलण्यात आल्या आहेत.",
+        "canceled_description": "तुमची ऑर्डर {{date}} रोजी रद्द करण्यात आली होती.",
+        "canceled_label": "रद्द केले",
+        "canceled_title": "तुमची ऑर्डर रद्द करण्यात आली आहे",
+        "come_back": "तुमच्या शिपमेंट स्थितीच्या अद्यतनांसाठी या पृष्ठावर परत या.",
+        "company_tracking_number": "{{company}} ट्रॅकिंग क्रमांक:",
+        "confirmed_label": "पुष्टी केली",
+        "confirmed_title": "तुमची ऑर्डर पुष्टी झाली आहे",
+        "confirmed_description_pickup": "तुमची ऑर्डर पिकअपसाठी तयार झाल्यावर तुम्हाला ईमेल प्राप्त होईल.",
+        "confirmed_description_digital": "तुमची ऑर्डर तयार झाल्यावर तुम्हाला एक ईमेल प्राप्त होईल.",
+        "confirmed_description_gift_card_text": "तुमची ऑर्डर तयार झाल्यावर तुम्हाला एक मजकूर मिळेल.",
+        "delivered_description": "हे शिपमेंट वितरित केले गेले आहे.",
+        "complete_label": "पूर्ण",
+        "delivered_label": "वितरित केले",
+        "delivered_title": "तुमचे शिपमेंट वितरित केले गेले आहे",
+        "delivered_description_digital": {
+          "one": "हा आयटम पूर्ण झाला आहे.",
+          "other": "या वस्तू पूर्ण आहेत."
+        },
+        "delivered_description_gift_card": {
+          "one": "गिफ्ट कार्ड ईमेलने पाठवले होते.",
+          "other": "गिफ्ट कार्ड ईमेलद्वारे पाठवले गेले."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "भेटकार्ड मजकुराद्वारे पाठवले होते.",
+          "other": "भेटकार्डे मजकूराद्वारे पाठविली गेली."
+        },
+        "gift_card_label": {
+          "one": "भेट कार्ड",
+          "other": "भेटकार्डे"
+        },
+        "gift_card_resend": {
+          "one": "ईमेल पुन्हा पाठवा",
+          "other": "ईमेल पुन्हा पाठवा"
+        },
+        "gift_card_resend_text": {
+          "one": "मजकूर पुन्हा पाठवा",
+          "other": "मजकूर पुन्हा पाठवा"
+        },
+        "gift_resend_success": {
+          "one": "भेट कार्ड पुन्हा पाठवले",
+          "other": "भेटकार्डे पुन्हा पाठवली"
+        },
+        "gift_resend_failure": {
+          "one": "तुमचे भेटकार्ड पुन्हा पाठवताना समस्या आली. पुन्हा प्रयत्न करा किंवा आमच्याशी संपर्क साधा.",
+          "other": "तुमची भेट कार्डे पुन्हा पाठवताना समस्या आली. पुन्हा प्रयत्न करा किंवा आमच्याशी संपर्क साधा."
+        },
+        "gift_card_resend_description": {
+          "one": "ते प्राप्त झाले नसल्यास, ईमेल पुन्हा पाठवा किंवा",
+          "other": "ते प्राप्त झाले नसल्यास, ईमेल पुन्हा पाठवा किंवा"
+        },
+        "gift_card_resend_description_text": {
+          "one": "तो प्राप्त झाला नसल्यास, मजकूर पुन्हा पाठवा किंवा",
+          "other": "ते प्राप्त झाले नसल्यास, मजकूर पुन्हा पाठवा किंवा"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "गिफ्ट कार्ड वेगळ्या ईमेलमध्ये पाठवले जाईल.",
+          "other": "प्रत्येक भेट कार्ड वेगळ्या ईमेलमध्ये पाठवले जाईल."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "भेटकार्ड वेगळ्या मजकुरात पाठवले जाईल.",
+          "other": "प्रत्येक भेटकार्ड वेगळ्या मजकुरात पाठवले जाईल."
+        },
+        "status_timestamp": "अपडेट केले {{date}}",
+        "estimated_delivery": "अपेक्षित {{date}}",
+        "delivered": "आगमन {{date}}",
+        "buy_with_prime_logo_accessibility_label": "प्राइम लोगोसह Amazon Buy",
+        "in_review_description": "आम्हाला अधिक माहिती हवी असल्यास किंवा तुमच्या ऑर्डरची पुष्टी झाल्यावर आम्ही तुम्हाला कळवू.",
+        "in_review_label": "पुनरावलोकनात",
+        "in_review_title": "तुमच्या ऑर्डरचे पुनरावलोकन केले जात आहे",
+        "last_updated": "शेवटचे अपडेट {{date}}",
+        "multiple_shipments_label": "एकाधिक शिपमेंट्स",
+        "multiple_statuses_label": "एकाधिक ऑर्डर स्थिती",
+        "no_tracking_number": "या शिपमेंटसाठी कोणताही ट्रॅकिंग क्रमांक नाही.",
+        "on_its_way_label": "त्याच्या वाटेवर",
+        "on_its_way_title": "तुमचे शिपमेंट मार्गावर आहे",
+        "out_for_delivery_label": "वितरणासाठी बाहेर",
+        "out_for_delivery_title": "तुमचे शिपमेंट वितरणासाठी बाहेर आहे",
+        "resume_tracking": "ट्रॅकिंग पुन्हा सुरू करा",
+        "submitted_label": "सादर केले",
+        "submitted_description": "ऑर्डर आणि पेमेंट तपशीलांचे पुनरावलोकन करा.",
+        "there_was_a_problem_label": "एक समस्या होती",
+        "track_shipment": "शिपमेंटचा मागोवा घ्या",
+        "request_return": "परतीची विनंती",
+        "view_order_for_details": "तपशीलांसाठी ऑर्डर पहा",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Amazon वर व्यवस्थापित करा"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Amazon सह व्यवस्थापित करा",
+            "new_window_disclaimer": "(नवीन विंडो उघडते)"
           }
         }
       },
