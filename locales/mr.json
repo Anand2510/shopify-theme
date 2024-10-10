@@ -1191,7 +1191,156 @@
           "zero": "इतर कोणत्याही पद्धती उपलब्ध नाहीत",
           "one": "%{count} इतर पद्धत येथे उपलब्ध आहे",
           "other": "%{count} इतर पद्धती उपलब्ध आहेत"
-        }
+        },
+        "shipping_rate_discounted_amount": "होती: %{original_amount}. आता: %{amount}",
+        "local_delivery": "स्थानिक वितरण",
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "%{count} अधिक वितरणासाठी विनामूल्य शिपिंग",
+            "other": "%{count} अधिक वितरणांसाठी विनामूल्य शिपिंग"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "%{count} वितरणासाठी मोफत शिपिंग",
+            "other": "%{count} वितरणासाठी मोफत शिपिंग"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "%{count} अधिक वितरणासाठी विनामूल्य शिपिंग, त्यानंतर %{recurring_order_shipping_price}",
+            "other": "%{count} अधिक वितरणासाठी विनामूल्य शिपिंग, त्यानंतर %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "%{count} डिलिव्हरीसाठी मोफत शिपिंग, नंतर %{recurring_order_shipping_price}",
+            "other": "%{count} वितरणासाठी मोफत शिपिंग, नंतर %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{shipping_price} साठी %{count} अधिक वितरण",
+            "other": "प्रत्येकी %{shipping_price} साठी %{count} अधिक वितरण"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{shipping_price} साठी %{count} वितरण",
+            "other": "प्रत्येकी %{shipping_price} साठी %{count} अधिक वितरण"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "पहिल्या %{cycle} साठी मोफत शिपिंग, त्यानंतर %{recurring_order_shipping_price}",
+            "other": "पहिल्या %{cycle} साठी मोफत शिपिंग, त्यानंतर %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{count} अधिक वितरणासाठी %{shipping_price}",
+            "other": "%{count} अधिक वितरणासाठी %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{count} वितरणासाठी %{shipping_price}",
+            "other": "%{count} वितरणासाठी %{shipping_price} (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{count} अधिक वितरणासाठी %{shipping_price}, त्यानंतर %{recurring_order_shipping_price}",
+            "other": "%{count} अधिक वितरणासाठी %{shipping_price} (%{per_delivery_cost}), त्यानंतर %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{count} वितरणासाठी %{shipping_price}, त्यानंतर %{recurring_order_shipping_price}",
+            "other": "%{count} वितरणासाठी %{shipping_price} (%{per_delivery_cost}), त्यानंतर %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "मोफत शिपिंग %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "%{count} वितरणासाठी",
+            "other": "%{count} वितरणासाठी"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "दररोज",
+              "other": "प्रत्येक %{count} दिवसांनी"
+            },
+            "week": {
+              "one": "प्रत्येक आठवड्यात",
+              "other": "प्रत्येक %{count} आठवडे"
+            },
+            "month": {
+              "one": "दर महिन्याला",
+              "other": "दर %{count} महिन्यांनी"
+            },
+            "year": {
+              "one": "दरवर्षी",
+              "other": "प्रत्येक %{count} वर्षांनी"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "प्रति वितरण %{shipping_price}",
+          "prepaid_shipping_price_label": "प्रति वितरण %{shipping_price} x %{delivery_interval_count}",
+          "initial_order_discounted": "प्रथम शिपिंग खर्च %{discounted_shipping_cost}, नंतर %{frequency_description}",
+          "prepaid_initial_order_discounted": "प्रथम शिपिंग खर्च %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "प्रथम शिपिंग खर्च %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "प्रथम शिपिंग खर्च %{discounted_shipping_price} %{prepaid_delivery_frequency}, नंतर %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "प्रथम शिपिंग खर्च %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), नंतर %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "समाविष्ट",
+          "recurring_order_shipping_price": "त्यानंतर %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "प्रथम ऑर्डर समाविष्ट आहे, त्यानंतर %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} प्रति वितरण), त्यानंतर %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "प्रथम ऑर्डर विनामूल्य",
+            "other": "प्रथम %{count} ऑर्डर मोफत"
+          },
+          "free_for_first_n_order": {
+            "one": "पहिल्या ऑर्डरसाठी",
+            "other": "पहिल्या %{count} ऑर्डरसाठी"
+          }
+        },
+        "one_time_purchase_shipping": "एक-वेळ शिपिंग",
+        "duties_and_taxes_title": "कर्तव्ये आणि कर",
+        "shipping_information_required_notice": "शिपिंग माहिती आवश्यक आहे. {{link}} .",
+        "shipping_information_redirect_link": "येथे तुमची माहिती प्रविष्ट करा",
+        "loading_progressive_rates": "अधिक दर शोधत आहे...",
+        "no_other_methods_available": "इतर कोणत्याही पद्धती उपलब्ध नाहीत",
+        "duties_and_taxes_options": {
+          "ddu_title": "डिलिव्हरीवर पैसे द्या",
+          "ddu_caption": "अतिरिक्त शुल्क लागू शकते",
+          "ddp_title": "आता पैसे द्या",
+          "ddp_caption": "वितरणावर कोणतेही अतिरिक्त शुल्क नाही"
+        },
+        "shipping_method_combinations": {
+          "with_separator": "%{विश्रांती}, %{वर्तमान},",
+          "combination": "%{विश्रांती} आणि %{वर्तमान}"
+        },
+        "shipping_used_as_billing_notice": "हा या ऑर्डरसाठी तुमचा बिलिंग पत्ता म्हणून देखील वापरला जाईल.",
+        "address_update": "पत्ता अपडेट करा",
+        "shipping_address_title": "कडे पाठवा",
+        "add_address": "वेगळा पत्ता वापरा",
+        "add_delivery_instructions": "वितरण सूचना जोडा",
+        "edit": "संपादित करा",
+        "delete": "हटवा",
+        "address_more": "या पत्त्यासाठी अधिक क्रिया",
+        "address_edit": "पत्ता संपादित करा",
+        "address_delete": "पत्ता हटवा",
+        "address_confirm": "तुमची खात्री आहे की तुम्ही तुमच्या खात्यातून हा पत्ता हटवू इच्छिता?",
+        "address_default": "डीफॉल्ट म्हणून सेट करा",
+        "address_form": {
+          "add_address": "पत्ता जोडा",
+          "save": "जतन करा",
+          "cancel": "रद्द करा",
+          "generic_error": "तुमचा पत्ता सेव्ह करताना समस्या आली. कृपया पुन्हा प्रयत्न करा.",
+          "one_time_address_subtitle": "या ऑर्डरसाठी एक-वेळचा पत्ता वापरा"
+        },
+        "different_shipping_method_summary": "उपलब्ध शिपिंग पद्धती पाहण्यासाठी भिन्न शिपिंग पत्ता प्रविष्ट करा",
+        "invalid_shipping_method_summary": "उपलब्ध शिपिंग पद्धती पाहण्यासाठी वैध शिपिंग पत्ता प्रविष्ट करा",
+        "method_summary": {
+          "incomplete_address_entered": "उपलब्ध शिपिंग पद्धती पाहण्यासाठी संपूर्ण शिपिंग पत्ता प्रविष्ट करा",
+          "incomplete_address_selected": "उपलब्ध शिपिंग पद्धती पाहण्यासाठी संपूर्ण शिपिंग पत्ता निवडा"
+        },
+        "local_pickup": {
+          "search_address": "पत्ता शोधा",
+          "rollup_title": "स्टोअर स्थान"
+        },
+        "missing_shipping_address": "शिपिंग पत्ता गहाळ आहे",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} आयटम",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} अधिक",
+        "split_shipping_merchandise_shipment_number": "%{total} पैकी %{number} शिपमेंट",
+        "pre_order_ships_now": "आता जहाजे",
+        "pre_order_ships_later": "नंतर जहाजे",
+        "pre_order_ships_date": "जहाजे %{date}",
+        "split_shipping_shipped_by_shop": "%{shop_name} ने पाठवले",
+        "split_shipping_multiple_shipment_label": "एकाधिक शिपमेंट्स",
+        "split_shipping_shipping_label": "पद्धत",
+        "split_shipping_multiple_shipment_quantity_label": "%{मात्रा} शिपमेंट",
+        "split_shipping_multiple_shipment_notice": "तुमची ऑर्डर एकाधिक शिपमेंटमध्ये येईल",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "तुमची ऑर्डर %{quantity} शिपमेंटमध्ये येईल",
+        "split_shipping_more_shipping_options": "अधिक शिपिंग पर्याय"
       },
       "stock": {
         "out_of_stock": {
