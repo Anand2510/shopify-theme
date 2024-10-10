@@ -730,7 +730,100 @@
             "other": "%{count} आयटम"
           }
         },
-        "alternative_payment_currency_total": "%{amount_due} म्हणून शुल्क आकारले"
+        "alternative_payment_currency_total": "%{amount_due} म्हणून शुल्क आकारले",
+        "title": "ऑर्डर सारांश",
+        "group_title_label": "\"%{group_title}\" चा भाग",
+        "order_name_label": "ऑर्डर %{name}",
+        "shopping_cart_label": "खरेदी कार्ट",
+        "discount_title": "सवलत",
+        "discount_title_stacking": {
+          "one": "सवलत",
+          "other": "सवलत"
+        },
+        "discount_order_stacking": {
+          "one": "ऑर्डर सवलत",
+          "other": "ऑर्डर सवलत"
+        },
+        "discount_label": "सवलत कोड",
+        "discount_not_found": "प्रविष्ट केलेल्या कोडशी जुळणारी वैध सूट शोधण्यात अक्षम",
+        "discount_placeholder": "सवलत कोड",
+        "discount_code_applied": "सवलत कोड लागू",
+        "gift_card_applied": "भेट कार्ड लागू केले",
+        "enter_shipping_address": "शिपिंग पत्ता प्रविष्ट करा",
+        "gift_card_title": "भेट कार्ड",
+        "gift_card_label": "भेट कार्ड",
+        "gift_card_placeholder": "भेट कार्ड",
+        "gift_card_and_discount_title": "सवलत कोड किंवा भेट कार्ड",
+        "gift_card_and_discount_label": "सवलत कोड किंवा भेट कार्ड",
+        "gift_card_and_discount_placeholder": "सवलत कोड किंवा भेट कार्ड",
+        "remove_gift_card_label": "गिफ्ट कार्ड साफ करा",
+        "remove_discount_label": "सवलत काढा",
+        "return_restocking_fee_label": "पुनर्संचयित शुल्क",
+        "return_shipping_fee_label": "शिपिंग परत करा",
+        "free_shipping_discount_label": "मोफत शिपिंग",
+        "applied_free_shipping_discount_label": "लागू केले",
+        "apply_discount_button_label": "अर्ज करा",
+        "applied_discount_message": "एकूण ऑर्डर किमतीवर %{amount} सूट",
+        "discount_has_been_applied": "सवलत लागू केली आहे",
+        "discount_has_been_removed": "सवलत काढून टाकली आहे",
+        "gift_card_has_been_applied": "भेटकार्ड लागू केले आहे",
+        "gift_card_has_been_removed": "भेटकार्ड काढले आहे",
+        "gift_card_subscriptions_notice": "भेट कार्ड फक्त तुमच्या पहिल्या पेमेंटवर लागू होतील",
+        "discount_already_applied": "या ऑर्डरवर सूट लागू करण्यात आली आहे. तुम्ही दुसरी सवलत जोडू शकत नाही.",
+        "cart_does_not_meet_discount_requirements_notice": "तुमच्या कार्टमधील आयटमसाठी <strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोड वैध नाही",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोड लागू करण्यासाठी तुमची शिपिंग माहिती प्रविष्ट करा",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोड सध्या तुमच्यासाठी उपलब्ध नाही",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोडसाठी पात्र ग्राहक आवश्यक आहे",
+        "shipping_information_does_not_meet_discount_requirements_notice": "तुमच्या शिपिंग पत्त्यासाठी <strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोड उपलब्ध नाही",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> सूट कोड आधीच वापरला गेला आहे",
+        "subtotal_label": "बेरजे",
+        "subtotal_label_with_quantity": {
+          "one": "उपएकूण • %{count} आयटम",
+          "other": "उपएकूण • %{count} आयटम"
+        },
+        "shipping_label": "शिपिंग",
+        "pickup_label": "स्टोअरमध्ये पिकअप",
+        "no_pickup_location": "पिकअप स्थाने उपलब्ध नाहीत.",
+        "tip_label": "टीप",
+        "calculating_shipping": "गणना करत आहे...",
+        "calculating": "गणना करत आहे...",
+        "shipping_default_value": "पुढील चरणावर गणना केली",
+        "shipping_discount_title": "शिपिंग सवलत",
+        "shipping_pending_message": "अजून उपलब्ध नाही",
+        "shipping_policy_link": "शिपिंग खर्च",
+        "taxes_label": "कर",
+        "estimated_taxes_label": "अंदाजे कर",
+        "information_estimated_taxes_label": "कर (अंदाजे)",
+        "estimated_taxes_finalization_tooltip_content": "तुम्ही तुमची ऑर्डर दिल्यानंतर अंतिम कर आणि एकूण रक्कम ईमेल किंवा मजकूराद्वारे पुष्टी केली जाईल.",
+        "order_total_label": "ऑर्डर एकूण",
+        "total_savings": "एकूण बचत",
+        "total_label": "एकूण",
+        "total_outstanding_label": "भरायची रक्कम",
+        "partial_total_label": "एकूण",
+        "free_total_label": "मोफत",
+        "paid_label": "पैसे दिले",
+        "payment_due_label": "देय देय",
+        "vat_label_html": "करांमध्ये %{amount} समाविष्ट आहे",
+        "duties_included_label": "एकूण कर आणि कर्तव्ये समाविष्ट आहेत. डिलिव्हरीवर कोणतेही अतिरिक्त शुल्क नाही.",
+        "discount_and_gift_card_savings_notice": "सवलतींमध्ये %{discount_amount} आणि गिफ्ट कार्डमध्ये %{gift_card_amount} नंतर",
+        "discount_savings_notice": "सूट मध्ये %{discount_amount} नंतर",
+        "gift_card_savings_notice": "गिफ्ट कार्ड्समध्ये %{gift_card_amount} नंतर",
+        "cost_table_title": "खर्चाचा सारांश",
+        "cost_table_item_column_header": "आयटम",
+        "cost_table_value_column_header": "मूल्य",
+        "description_label": "वर्णन",
+        "price_label": "किंमत",
+        "price_per_item": {
+          "accessibility_label": "%{price} प्रति आयटम"
+        },
+        "quantity_label": "प्रमाण",
+        "product_change_label": "बदला",
+        "product_image_label": "उत्पादन प्रतिमा",
+        "scroll_order_summary": "अधिक आयटमसाठी स्क्रोल करा",
+        "expand_order_summary_short": "दाखवा",
+        "collapse_order_summary_short": "लपवा",
+        "expand_order_summary": "ऑर्डर सारांश दर्शवा",
+        "collapse_order_summary": "ऑर्डर सारांश लपवा"
       },
       "shipping": {
         "title": "शिपिंग",
@@ -784,6 +877,40 @@
           "zero": "इतर कोणत्याही पद्धती उपलब्ध नाहीत",
           "one": "%{count} इतर पद्धत येथे उपलब्ध आहे",
           "other": "%{count} इतर पद्धती उपलब्ध आहेत"
+        }
+      },
+      "stock": {
+        "out_of_stock": {
+          "description": "हे आयटम यापुढे उपलब्ध नाहीत आणि तुमच्या कार्टमधून काढले गेले आहेत.",
+          "items_unavailable": "काही आयटम यापुढे उपलब्ध नाहीत आणि ते तुमच्या कार्टमधून काढले गेले आहेत."
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "अनुपलब्ध उत्पादन",
+          "other": "अनुपलब्ध उत्पादने"
+        },
+        "products_not_available": {
+          "one": "हे उत्पादन तुमच्या कार्टमधून काढून टाकले जाईल कारण ते तुमच्या देशात/प्रदेशात उपलब्ध नाही.",
+          "other": "ही उत्पादने तुमच्या कार्टमधून काढून टाकली जातील कारण ती तुमच्या देशात/प्रदेशात उपलब्ध नाहीत."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "हे उत्पादन तुमच्या देशात/प्रदेशात उपलब्ध नाही.",
+          "other": "ही उत्पादने तुमच्या देशात/प्रदेशात उपलब्ध नाहीत."
+        },
+        "unavailable_label": "अनुपलब्ध"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count} आयटमसाठी कोणतेही वितरण उपलब्ध नाही",
+            "other": "%{count} आयटमसाठी कोणतेही वितरण उपलब्ध नाही"
+          },
+          "message": {
+            "one": "हा आयटम तुमच्या कार्टमधून काढला जाईल कारण तुमच्या पत्त्यासाठी कोणत्याही वितरण पद्धती उपलब्ध नाहीत.",
+            "other": "हे आयटम तुमच्या कार्टमधून काढले जातील कारण तुमच्या पत्त्यासाठी वितरण पद्धती उपलब्ध नाहीत."
+          },
+          "label": "वितरण नाही"
         }
       }
     }
