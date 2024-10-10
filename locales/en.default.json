@@ -21,10 +21,14 @@
       }
     }
   },
+  "general": {
   "Cart": {
     "title": "simple cart"
-  },
+  }
+},
+"general": {
   "Blog": {
     "title": "Blog"
   }
+}
 }
