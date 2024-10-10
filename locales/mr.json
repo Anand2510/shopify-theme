@@ -930,7 +930,50 @@
       },
       "pickup_point": {
         "location_is_currently_closed": "बंद",
-        "business_hours": "उघडण्याचे तास"
+        "business_hours": "उघडण्याचे तास",
+        "no_business_hours": "उघडण्याचे कोणतेही तास उपलब्ध नाहीत",
+        "open_twenty_four_hours": "24/7 उघडा",
+        "title": "पिकअप पॉइंट",
+        "or": "किंवा",
+        "search_button": "शोधा",
+        "address_label": "पत्ता",
+        "selector_tabs": "पिकअप पॉइंट सिलेक्टर",
+        "selector_tab_map": "नकाशा",
+        "selector_tab_list": "यादी",
+        "could_not_resolve_address": "तुमचा पत्ता शोधता आला नाही. पुन्हा प्रयत्न करा किंवा वेगळा पत्ता वापरा",
+        "no_pickup_points_near_you": "निवडलेल्या पत्त्याजवळ कोणतेही पिकअप पॉइंट आढळले नाहीत",
+        "no_pickup_points_near_location": "तुमच्या स्थानाजवळ कोणतेही पिकअप पॉइंट आढळले नाहीत",
+        "no_pickup_points_found": "कोणतेही पिकअप पॉइंट आढळले नाहीत",
+        "paginator": {
+          "next_accessibility_label": "पुढील पान",
+          "previous_accessibility_label": "मागील पृष्ठ",
+          "header": {
+            "one": "%{count} पॉइंटपैकी %{first} - %{last} दाखवत आहे",
+            "other": "%{count} गुणांपैकी %{first} - %{last} दाखवत आहे"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{count} पॉइंटपैकी %{pickup_point_index}",
+            "other": "%{count} गुणांपैकी %{pickup_point_index}"
+          },
+          "selected_page": {
+            "one": "%{प्रथम} - %{count} पॉइंटपैकी %{अंतिम}",
+            "other": "%{first} - %{last} पैकी %{count} गुण"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "तुमच्या स्थानाजवळ %{count} पिकअप पॉइंट",
+          "other": "तुमच्या स्थानाजवळ %{count} पिकअप पॉइंट"
+        },
+        "change": "बदला",
+        "waiting_on_pickup_point_location_notice": "पिकअप पॉइंट शोधत आहे...",
+        "geolocation": {
+          "shared_location_button": "माझे स्थान वापरा",
+          "errors": {
+            "unsuported_by_browser": "भौगोलिक स्थान मिळवणे तुमच्या ब्राउझरद्वारे समर्थित नाही. पुन्हा प्रयत्न करा किंवा वेगळा ब्राउझर वापरा.",
+            "permission_not_allowed": "तुमचे स्थान शेअर करण्यास अनुमती द्या.",
+            "permission_denied": "तुमचे स्थान मिळू शकले नाही. पुन्हा प्रयत्न करा."
+          }
+        }
       },
       "order_summary": {
         "original_price": "मूळ किंमत",
@@ -1257,7 +1300,9 @@
       "wallets": {
         "errors": {
           "unsupported": {
-            "postal_code": "हे स्थान समर्थित नाही"
+            "postal_code": "हे स्थान समर्थित नाही",
+            "address": "व्यापारी या पत्त्यावर वितरित करू शकत नाही",
+            "wallet_is_unavailable": "या पत्त्यासह {{walletName}} वापरले जाऊ शकत नाही. तुमची खरेदी पूर्ण करण्यासाठी वेगळा पत्ता निवडा किंवा {{walletName}} बंद करा"
           },
           "outdated": {
             "shipping_method": "तुमच्या ऑर्डरसाठी शिपिंग पर्याय बदलले आहेत. तुमच्या निवडीचे पुनरावलोकन करा.",
@@ -1292,8 +1337,34 @@
             "first_name_too_long": "पहिल्या नावात बरीच अक्षरे आहेत",
             "last_name_too_long": "आडनावामध्ये बरीच अक्षरे आहेत"
           },
-          "select_different_shipping_address_to_resolve_errors": "तुमचा शिपिंग पत्ता अवैध आहे. वेगळा पत्ता निवडा किंवा नवीन वापरा."
-        }
+          "select_different_shipping_address_to_resolve_errors": "तुमचा शिपिंग पत्ता अवैध आहे. वेगळा पत्ता निवडा किंवा नवीन वापरा.",
+          "unavailable": {
+            "title": "{{walletName}} उपलब्ध नाही",
+            "description": "{{walletName}} उपलब्ध नव्हते. भिन्न पेमेंट पद्धत वापरा किंवा नंतर पुन्हा प्रयत्न करा.",
+            "instructions": "{{walletName}} मध्ये समस्या होती. पुन्हा प्रयत्न करण्यासाठी स्टोअरवर परत या किंवा वेगळ्या पद्धतीने तपासा.",
+            "unavailable_for_country": "{{walletName}} {{countryName}} मध्ये उपलब्ध नाही. तुमची खरेदी पूर्ण करण्यासाठी वेगळी पेमेंट पद्धत निवडा"
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} सध्या तुमच्या ऑर्डरसाठी अनुपलब्ध आहे. तुमची खरेदी सुरू ठेवण्यासाठी, दुसरी चेकआउट पद्धत निवडा."
+          },
+          "generic": "{{walletName}} मध्ये समस्या होती. पुन्हा प्रयत्न करा किंवा भिन्न पेमेंट पद्धत वापरा.",
+          "discount_code": "हा सवलत कोड लागू करण्यात अक्षम. कृपया तुमच्या कोडचे पुनरावलोकन करा आणि पुन्हा प्रयत्न करा.",
+          "terminal": "{{walletName}} मध्ये समस्या होती. कृपया भिन्न पेमेंट पद्धत वापरा.",
+          "detour": {
+            "stock_problems": "काही आयटम यापुढे उपलब्ध नाहीत. {{walletName}} बंद करा आणि पुन्हा प्रयत्न करा.",
+            "price_change": "काही वस्तूंच्या किमती बदलल्या आहेत. तुमच्या ऑर्डरचे पुनरावलोकन करण्यासाठी {{walletName}} बंद करा आणि पुन्हा प्रयत्न करा.",
+            "queue": "तुम्हाला चेकआउट करण्यासाठी एका रांगेत ठेवण्यात आले आहे. सुरू ठेवण्यासाठी {{walletName}} बंद करा."
+          }
+        },
+        "return_to_store": "स्टोअरवर परत या",
+        "return_to_checkout": "चेकआउटवर परत या",
+        "redirect_hint": "तुम्हाला {{walletName}} सह लॉग इन करण्यास सांगितले जाईल.",
+        "logged_in": "{{email}} शी कनेक्ट केले",
+        "shipping_line_label": "शिपिंग",
+        "payment_in_progress_title": "पेमेंट प्रगतीपथावर आहे",
+        "payment_in_progress_body": "तुमच्या पेमेंटवर प्रक्रिया केली जात आहे. तुमची ऑर्डर लवकरच पूर्ण होईल.",
+        "call_to_action": "{{walletName}} ने पैसे द्या",
+        "redirection_notice": "\" {{buttonLabel}} \" वर क्लिक केल्यानंतर, तुमची खरेदी सुरक्षितपणे पूर्ण करण्यासाठी तुम्हाला {{walletName}} वर पुनर्निर्देशित केले जाईल."
       },
       "note": {
         "length_exceeds_maximum": "नोटेचा आकार 5000 किंवा त्यापेक्षा कमी वर्णांपर्यंत कमी करा."
@@ -1450,6 +1521,91 @@
         "customer_validation_error_phone": "एक वैध फोन किंवा ऑर्डर क्रमांक प्रविष्ट करा.",
         "login": "लॉग इन करा",
         "unfulfilled_items_title": "शिपिंगसाठी तयारी करत आहे"
+      },
+      "error_page": {
+        "terminal": {
+          "title": "आमच्या चेकआउटमध्ये समस्या आली",
+          "message": "हे पृष्ठ रिफ्रेश करा किंवा काही मिनिटांनी पुन्हा प्रयत्न करा",
+          "action": {
+            "cta": "पृष्ठ रिफ्रेश करा"
+          },
+          "request_id": "विनंती आयडी: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "कार्टवर परत या",
+        "return_to_cart_to_update_quantities": "प्रमाण अपडेट करण्यासाठी %{return_to_cart_link_text}",
+        "subscription_changed": "तुमची सदस्यता बदलली आहे.",
+        "company_location_changed": "तुमची कार्ट अपडेट केली गेली आहे. तुमची ऑर्डर सबमिट करण्यापूर्वी त्याचे पुनरावलोकन करा.",
+        "company_location_changed_product_removed": "तुमची कार्ट अपडेट केली गेली आहे कारण काही उत्पादने या ठिकाणी उपलब्ध नाहीत. तुमची ऑर्डर सबमिट करण्यापूर्वी त्याचे पुनरावलोकन करा.",
+        "violations_title": "{{violation}} गहाळ किंवा अवैध आहे",
+        "individual_violations_title": {
+          "DeliveryViolations": "शिपिंग पत्ता",
+          "PaymentViolations": "बिलिंग पत्ता",
+          "OtherViolations": "ऑर्डर माहिती",
+          "UnhandledViolations": "ऑर्डर माहिती"
+        },
+        "all_violations_content": "ही माहिती अपडेट करण्यासाठी आणि तुमची ऑर्डर पूर्ण करण्यासाठी आम्हाला कॉल करा किंवा {{emailLink}} करा:",
+        "all_violations_email_link": "ईमेल",
+        "editable_shipping_address_violations_message_title": "तुमची ऑर्डर पूर्ण करण्यासाठी ही माहिती जोडा:",
+        "editable_shipping_address_violations_message_footer": "या स्थानाचा पत्ता कायमचा अपडेट करण्यासाठी, {{emailLink}} .",
+        "editable_shipping_address_violations_email_link": "आमच्याशी संपर्क साधा",
+        "shipping_address_incomplete_title": "शिपिंग पत्ता अपूर्ण आहे",
+        "calculating_shipping": "शिपिंग अद्याप मोजले जात आहे. काही सेकंदात पुन्हा प्रयत्न करा. तुमच्यावर शुल्क आकारले गेले नाही.",
+        "calculating_taxes": "अजूनही कर मोजले जात आहेत. काही सेकंदात पुन्हा प्रयत्न करा. तुमच्यावर शुल्क आकारले गेले नाही."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "पुनरावलोकन करा",
+          "link_label": "{{partnerDisplayName}} अटी आणि नियम"
+        }
+      },
+      "online_store_chat": {
+        "title": "प्रश्न? आमच्याशी गप्पा मारा"
+      },
+      "local_pickup": {
+        "location_address_search_label": "पत्ता",
+        "location_information": {
+          "one": "%{address} च्या जवळ स्टॉक असलेले %{count} स्टोअर आहे",
+          "other": "%{address} च्या जवळपास स्टॉक असलेली %{count} दुकाने आहेत"
+        },
+        "toggle_location": "माझे स्थान बदला",
+        "or": "किंवा",
+        "cancel": "रद्द करा",
+        "your_location": "तुमचे स्थान",
+        "search_button": "स्टोअर्स शोधा",
+        "no_stores_found": "कोणतीही दुकाने आढळली नाहीत",
+        "could_not_resolve_address": "तुमचा पत्ता शोधता आला नाही. पुन्हा प्रयत्न करा किंवा वेगळा पत्ता वापरा",
+        "paginator": {
+          "accessibility_label": "स्थानिक पिकअप पृष्ठांकन",
+          "previous": "मागील पृष्ठ",
+          "next": "पुढील पान",
+          "label": {
+            "one": "%{count} स्टोअरपैकी %{first} - %{last}",
+            "other": "%{count} स्टोअरपैकी %{first} - %{last}"
+          }
+        },
+        "reveal_more_label": {
+          "one": "आणखी %{count} स्थान दाखवा",
+          "other": "आणखी %{count} स्थाने दाखवा"
+        }
+      },
+      "captcha": {
+        "title": "सुरू ठेवण्यासाठी कॅप्चा पूर्ण करा",
+        "errors": {
+          "not_solved": "सुरू ठेवण्यासाठी कॅप्चा पूर्ण करा"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "तुमचा सवलत कोड यापुढे उपलब्ध नसल्यामुळे तुमच्या ऑर्डरवर प्रक्रिया करता आली नाही. तुमच्या एकूण ऑर्डरचे पुनरावलोकन करा आणि पुन्हा प्रयत्न करा."
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "शॉप पे लोड करताना समस्या आहे",
+          "try_again_later": "तुमचे कनेक्शन तपासा किंवा ही विंडो बंद करा आणि काही क्षणांनी पुन्हा प्रयत्न करा.",
+          "checkout_has_expired": "तुमचे चेकआउट कालबाह्य झाले आहे. ही विंडो बंद करा आणि {{shopName}} वरून पुन्हा तपासण्याचा प्रयत्न करा."
+        },
+        "return_to_store": "{{shopName}} वर परत या"
       }
     },
     "pagination": {
