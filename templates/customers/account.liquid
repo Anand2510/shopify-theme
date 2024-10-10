@@ -29,10 +29,10 @@
                     <td>
                      <a href="{{ order.customer_url }}">{{ order.name }}</a> 
                     </td>
-                    <td>{{ order.fulfillment_status_label  }}</td>
-                    <td>{{ order.financial_status_label }} </td>
+                    <td><span class="bdge bg-primary">{{ order.fulfillment_status_label  }}</span></td>
+                    <td><span class="badge bg-success">{{ order.financial_status_label }} </span></td>
                     <td> {{ order.created_at | time_tag: format: 'date' }} </td>
-                    <td> {{ order.total_price  }} </td>
+                    <td> {{ order.total_price |  money }} </td>
                   </tr>
                 {% endfor %}
               </tbody>
