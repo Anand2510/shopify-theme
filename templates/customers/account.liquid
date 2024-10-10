@@ -7,6 +7,22 @@
       {{ customer.default_address | format_address }}
       <a href="{{ routes.account_addresses_url }}">View address</a>
     </div>
+    <div class="col-12 col-md-8">
+      <div class="customer_order">
+        {% if customer.orders.size > 0 %}
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>order #</th>
+                  <th>Fulfillment Status</th>
+                  <td>payment Status</td>
+                  <td>Total</td>
+                </tr>
+              </thead>
+          </table>
+          {% endif %}
+      </div>
+    </div>
   </div>
 </div>
 
