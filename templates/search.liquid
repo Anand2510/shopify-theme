@@ -3,6 +3,18 @@
   <div class="row">
     <form action="/search" method="get" role="search">
     <input type="search" name="q" value="{{ search.terms | escape }}">
+    <div class="form-check-input form-check-inline">
+      <input type="checkbox" id="product_type" name="type" value="product">
+      <label class="form-check-label" for="product_type">Product</label>
+    </div>
+    <div class="form-check-input form-check-inline">
+      <input type="checkbox" id="product_type" name="type" value="article">
+      <label class="form-check-label" for="product_type">Article</label>
+    </div>
+    <div class="form-check-input form-check-inline">
+      <input type="checkbox" id="product_type" name="type" value="page">
+      <label class="form-check-label" for="product_type">Page</label>
+    </div>
     <button type="submit">search</button>
   </form>
   </div>
