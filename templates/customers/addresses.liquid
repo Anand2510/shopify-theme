@@ -1,5 +1,6 @@
 <div class="container my-5">
     <h1 class="lead"> My Address </h1>
+    <butto class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#newaddressModal"></butto>
     <div class="row my-5 gx-5">
     {% for address in customer.addresses %}
             <div class="col">
@@ -13,7 +14,21 @@
     </div>
 
 </div>
-
+<div class="modal fade" id="newaddressModal" tabindex="-1" aria-labelledby="newAddressModallabel" aria-hidden="true">
+   {% form 'customer_address', customer.new_address %}
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">  
+                    <div class="modal-title">Add New Address</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"> </button>
+                </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer"></div>
+              
+            </div>
+        </div>
+    {% endform %}
+</div>
 
 
 
