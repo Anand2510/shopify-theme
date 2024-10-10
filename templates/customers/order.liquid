@@ -22,7 +22,15 @@
     </div>
     <div class="col-12 col-md-8">
         <table class="table table-bordered">
-            <thead></thead>
+            <thead>
+              <tr>
+                <td>Product</td>
+                <td>Sku</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+              </tr>
+            </thead>
             <tbody>
               {% for line_item in order.line_items %}
                   <tr>
@@ -34,6 +42,12 @@
                   </tr>
               {% endfor %}
             </tbody>
+            <tfoot>
+              <tr>
+                <td rowspan="4">Subtotal</td>
+                <td>{{ order.line_items_subtotal_price |  money }}</td>
+              </tr>
+            </tfoot>
         </table>
     </div>
   </div>
