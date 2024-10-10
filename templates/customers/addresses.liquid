@@ -48,21 +48,24 @@
                     <input type="text" name="address[address2]" value="{{ form.address2 }}" id="AddressAddress2New"
                         class="form-control">
                 </div>
-                <div class="col-12 mb-3">
-                    <label for="AddressCityNew" class="form-label">City</label>
-                    <input type="text" name="address[city]" value="{{ form.city }}" id="AddressCityNew"
-                        class="form-control">
+                <div class="row mb-3">
+                    <div class="col-12 mb-3">
+                        <label for="AddressCityNew" class="form-label">City</label>
+                        <input type="text" name="address[city]" value="{{ form.city }}" id="AddressCityNew"
+                            class="form-control">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="AddressCountryNew" class="form-label">Country</label>
+                        <input type="text" name="address[country]" value="{{ form.country }}" id="AddressCountryNew"
+                            class="form-control">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="AddressProvinceNew" class="form-label">Province</label>
+                        <input type="text" name="address[province]" value="{{ form.province }}" id="AddressProvinceNew"
+                            class="form-control">
+                    </div>
                 </div>
-                <div class="col-12 mb-3">
-                    <label for="AddressCountryNew" class="form-label">Country</label>
-                    <input type="text" name="address[country]" value="{{ form.country }}" id="AddressCountryNew"
-                        class="form-control">
-                </div>
-                <div class="col-12 mb-3">
-                    <label for="AddressProvinceNew" class="form-label">Province</label>
-                    <input type="text" name="address[province]" value="{{ form.province }}" id="AddressProvinceNew"
-                        class="form-control">
-                </div>
+                
                 <div class="col-12 mb-3">
                     <label for="AddressZipNew" class="form-label">Postal / Zip Code</label>
                     <input type="text" name="address[zip]" value="{{ form.zip }}" id="AddressZipNew"
