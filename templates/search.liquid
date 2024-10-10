@@ -67,7 +67,7 @@
 
 
   {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %}
-
+    {%  render 'pagination', paginate:paginate %} 
 </div>
 <div class="row">
   <h2>page</h2>
