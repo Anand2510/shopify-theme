@@ -6,7 +6,7 @@
     <div class="col-12 col-md-4">
       <h6>Account Details</h6>
       {{ customer.default_address | format_address }}
-      <a href="{{ routes.account_addresses_url }}" class="btn btn-success">View address
+      <a href="{{ routes.account_addresses_url }}" class="btn btn-light">View address
         <span class="budge bg-success">{{ customer.addresses_count }}</span>
       </a>
     </div>
