@@ -2443,7 +2443,9 @@
             "load_more_label": "अधिक लोड करा",
             "load_more_accessibility_label": "अधिक कालबाह्य प्रमाणात लोड करा"
           }
-        }
+        },
+        "label": "स्टोअर क्रेडिट",
+        "accesibility_label": "स्टोअर क्रेडिट - {{formattedBalance}}"
       },
       "payment_details": {
         "title": "पेमेंट पद्धतीचे तपशील",
@@ -2541,6 +2543,39 @@
           "choose_billing_address_from_list_button_accessibility_label": "सूचीमधून बिलिंग पत्ता निवडा",
           "missing_billing_address_error_message": "कृपया बिलिंग पत्ता निर्दिष्ट करा",
           "default_checkbox": "डीफॉल्ट पेमेंट पद्धत म्हणून सेट करा"
+        }
+      },
+      "title": "पेमेंट पद्धती",
+      "add_payment_method_button": "पेमेंट पद्धत जोडा",
+      "add_payment_method_banner": "जलद चेकआउट किंवा पूर्व-अधिकृत सेवांसाठी पेमेंट पद्धत जोडा",
+      "no_payment_methods_banner": "पेमेंट पद्धती जोडल्या नाहीत",
+      "edit_payment_method_button_accessibility_label": "{{lastDigits}} ने समाप्त होणारा {{paymentMethodName}} संपादित करा",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}} संपादित करा",
+      "delete_payment_method_button": "हटवा",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}} हटवा",
+      "back_button": "मागे",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}} वर परत",
+      "default": "डीफॉल्ट",
+      "generic_card": "कार्ड",
+      "expiration_warning_button_accessibility_label": "{{lastDigits}} ने समाप्त होणाऱ्या {{paymentMethodName}} साठी कालबाह्यतेची चेतावणी दर्शवा",
+      "expires_soon": "हे कार्ड लवकरच संपत आहे",
+      "expired": "हे कार्ड कालबाह्य झाले आहे",
+      "card_update_consent": "ही पेमेंट पद्धत भविष्यातील खरेदीसाठी जतन केली जाईल.",
+      "digital_wallet_title": "डिजिटल वॉलेट",
+      "credit_or_debit_card_title": "क्रेडिट किंवा डेबिट कार्ड",
+      "google_pay": {
+        "loading": "Google Pay लोड करत आहे",
+        "errors": {
+          "generic": "Google Pay मध्ये समस्या आली. पुन्हा प्रयत्न करा किंवा भिन्न पेमेंट पद्धत वापरा.",
+          "missing_billing_address": "Google Pay ला बिलिंग पत्ता आवश्यक आहे. कृपया तुमच्या खात्यात एक जोडा."
+        }
+      },
+      "apple_pay": {
+        "loading": "Apple Pay लोड करत आहे",
+        "errors": {
+          "generic": "Apple Pay मध्ये समस्या आली. पुन्हा प्रयत्न करा किंवा भिन्न पेमेंट पद्धत वापरा.",
+          "not_available": "Apple Pay या डिव्हाइसवर उपलब्ध नाही.",
+          "missing_billing_address": "Apple Pay ला बिलिंग पत्ता आवश्यक आहे. कृपया तुमच्या खात्यात एक जोडा."
         }
       }
     },
@@ -3026,9 +3061,136 @@
             "description_waiting_for_manual_payment": "या ऑर्डरचे पेमेंट प्रलंबित आहे. पेमेंट मिळाल्यावर शिल्लक अपडेट केली जाईल.",
             "description_due_on_receipt": "पेमेंट देय झाल्यावर तुम्हाला एक बीजक प्राप्त होईल.",
             "description_due_on_receipt_partially_paid": "हा आदेश अंशतः अदा करण्यात आला. तुमच्याकडे शिल्लक शिल्लक आहे. पेमेंट देय झाल्यावर तुम्हाला एक बीजक प्राप्त होईल.",
-            "description_due_on_fulfillment": "या ऑर्डरमधील सर्व आयटम पूर्ण झाल्यानंतर पेमेंट देय आहे."
-          }
+            "description_due_on_fulfillment": "या ऑर्डरमधील सर्व आयटम पूर्ण झाल्यानंतर पेमेंट देय आहे.",
+            "description_due_on_fulfillment_partially_paid": "हा आदेश अंशतः अदा करण्यात आला. तुमच्याकडे शिल्लक शिल्लक आहे. या ऑर्डरमधील सर्व आयटम पूर्ण झाल्यानंतर पेमेंट देय आहे."
+          },
+          "draft": {
+            "description": "ऑर्डरची पुष्टी झाल्यावर पेमेंट तपशील ठरवले जातात.",
+            "title": "पेमेंट अद्याप देय नाही",
+            "in_review": {
+              "description": "ऑर्डरची पुष्टी झाल्यावर पेमेंट तपशील ठरवले जातात.",
+              "title": "पेमेंट अद्याप देय नाही"
+            },
+            "submitted": {
+              "description": "या ऑर्डरची पुष्टी करण्यासाठी पेमेंट सबमिट करा.",
+              "title": "पुष्टी करण्यासाठी पैसे द्या",
+              "deposit": {
+                "title": "देय देय आहे",
+                "due_later": "शिल्लक {{translatedName}} अटींवर आहे आणि {{dueDate}} रोजी देय आहे.",
+                "due_on_fulfillment": "या क्रमातील सर्व बाबी पूर्ण झाल्यानंतर शिल्लक देय आहे.",
+                "due_on_receipt": "तुम्हाला उर्वरित शिल्लक रकमेसाठी एक बीजक प्राप्त होईल.",
+                "due_on_date": "शिल्लक {{dueDate}} रोजी देय आहे."
+              }
+            },
+            "deposit": {
+              "due_later": "तुमच्या ऑर्डरची पुष्टी झाल्यावर {{depositAmount}} देय होईल. शिल्लक {{translatedName}} अटींवर असेल.",
+              "due_on_fulfillment": "तुमच्या ऑर्डरची पुष्टी झाल्यावर {{depositAmount}} देय होईल. ऑर्डर पूर्ण झाल्यावर शिल्लक देय होईल.",
+              "due_on_receipt": "तुमच्या ऑर्डरची पुष्टी झाल्यावर {{depositAmount}} देय होईल. उर्वरित रक्कम नंतर दिली जाईल.",
+              "due_on_date": "तुमच्या ऑर्डरची पुष्टी झाल्यावर {{depositAmount}} देय होईल. शिल्लक {{dueDate}} रोजी देय होईल."
+            }
+          },
+          "paid": {
+            "title": "पैसे दिले",
+            "title_with_date": "पैसे दिले {{date}}",
+            "description": "तुमची ऑर्डर पूर्ण भरली आहे."
+          },
+          "refund": {
+            "title": "परतावा दिला",
+            "title_with_date": "परतावा दिला {{date}}",
+            "description_full_refund": "तुम्हाला या ऑर्डरसाठी पूर्ण परतावा मिळाला आहे.",
+            "description_single_refund": "तुम्हाला या ऑर्डरसाठी आंशिक परतावा मिळाला आहे.",
+            "description_multiple_refunds": "तुम्हाला या ऑर्डरसाठी आंशिक परतावा मिळाला आहे."
+          },
+          "canceled": {
+            "title": "पेमेंट रद्द केले",
+            "description": "तुमच्यावर शुल्क आकारले गेले नाही."
+          },
+          "pay_now": "आता पैसे द्या",
+          "pay_now_accessibility_label": "ऑर्डर {{orderName}} साठी आता पैसे द्या",
+          "title": "देयक स्थिती"
+        },
+        "order_timeline": {
+          "expand_events_label": "तपशील दाखवा",
+          "expand_events_accessibility_label": "मसुदा ऑर्डर तपशील दर्शवा",
+          "hide_events_label": "तपशील लपवा",
+          "hide_events_accessibility_label": "मसुदा ऑर्डर तपशील लपवा"
+        },
+        "subtitle": "सबमिट केले {{date}}",
+        "title": "ऑर्डर {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "या स्थानावरून भविष्यातील खरेदीसाठी ही पेमेंट पद्धत यापुढे उपलब्ध राहणार नाही.",
+          "description_with_replacement": "ही पेमेंट पद्धत हटवल्याने या स्थानासाठी पूर्व-अधिकृत देयके प्रभावित होतील. आगामी ऑर्डर प्राप्त करणे सुरू ठेवण्यासाठी त्यास पर्यायी पेमेंट पद्धतीसह पुनर्स्थित करा."
+        },
+        "payment_details": {
+          "order_label": "ऑर्डर {{name}}",
+          "draft_label": "मसुदा ऑर्डर {{name}}"
         }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "PO क्रमांक जोडा",
+        "add_modal_title": "PO क्रमांक जोडा",
+        "cancel": "रद्द करा",
+        "close_modal_accessibility_label": "PO क्रमांक मोडल बंद करा",
+        "discard": "टाकून द्या",
+        "discard_changes_modal_title": "बदल टाकून द्यायचे?",
+        "edit_accessibility_label": "PO क्रमांक संपादित करा",
+        "edit_modal_title": "PO क्रमांक संपादित करा",
+        "empty_state": "PO क्रमांक नाही",
+        "modal_po_number_input_label": "PO क्रमांक",
+        "modal_po_number_input_max_length_error": "PO क्रमांकांमध्ये कमाल {{maxLength}} वर्ण असतात.",
+        "save": "जतन करा",
+        "title": "PO # {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "हा पत्ता हटवताना समस्या आली. पुन्हा प्रयत्न करा किंवा पृष्ठ रीफ्रेश करा."
+      },
+      "addresses_loading_issue": {
+        "description": "कनेक्शन त्रुटी. तुमचे इंटरनेट कनेक्शन तपासा आणि पुन्हा प्रयत्न करा."
+      },
+      "banner_title": {
+        "one": "{{count}} त्रुटी आहे",
+        "other": "{{count}} त्रुटी आहेत"
+      },
+      "failed_address_creation": {
+        "description": "तुमचा पत्ता तयार करताना समस्या आली. हे पृष्ठ रीफ्रेश करण्याचा प्रयत्न करा किंवा तुमचे इंटरनेट कनेक्शन तपासा."
+      },
+      "failed_address_update": {
+        "description": "तुमचा पत्ता अपडेट करताना समस्या आली. हे पृष्ठ रीफ्रेश करण्याचा प्रयत्न करा किंवा तुमचे इंटरनेट कनेक्शन तपासा."
+      },
+      "load_orders_error": {
+        "title": "ऑर्डर लोड करण्यात अक्षम",
+        "description": "पुन्हा प्रयत्न करा किंवा नंतर परत या.",
+        "retry_button": "पुन्हा प्रयत्न करा"
+      },
+      "load_paypal_error": {
+        "description": "PayPal लोड करताना समस्या आहे. कृपया पुन्हा प्रयत्न करा."
+      },
+      "logout_everywhere": {
+        "description": "लॉग आउट करताना काहीतरी चूक झाली. कृपया पुन्हा प्रयत्न करा."
+      },
+      "no_access_to_locations": {
+        "description": "तुम्हाला कोणत्याही स्थानांमध्ये प्रवेश नाही"
+      },
+      "not_found": {
+        "description": "URL तपासा किंवा काही मिनिटांनी पुन्हा प्रयत्न करा.",
+        "title": "हे पृष्ठ लोड करताना समस्या आहे"
+      },
+      "order_not_found": {
+        "description": "ही ऑर्डर अस्तित्वात नाही किंवा तुम्हाला ती पाहण्याची परवानगी नाही.",
+        "title": "ऑर्डर सापडली नाही"
+      },
+      "profile_update_error": {
+        "description": "तुमचे प्रोफाइल अपडेट करताना समस्या आली. हे पृष्ठ रीफ्रेश करण्याचा प्रयत्न करा किंवा तुमचे इंटरनेट कनेक्शन तपासा."
+      },
+      "retry_action_label": "पुन्हा प्रयत्न करा",
+      "load_extension_error": {
+        "title": "त्रुटी",
+        "description": "हे पृष्ठ रिफ्रेश करा किंवा काही मिनिटांनी पुन्हा प्रयत्न करा.",
+        "refresh_button": "पृष्ठ रिफ्रेश करा"
       }
     }
   },
