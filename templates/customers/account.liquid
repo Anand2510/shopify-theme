@@ -1,6 +1,10 @@
 <!-- /templates/customers/account.liquid -->
+<div class="contaner">
+  <h2>Account</h2>
+</div>
 
-{% if customer.default_address %}
+
+{% comment %} {% if customer.default_address %}
   <h2>Address</h2>
   <p>{{ customer.default_address.address1 }}</p>
   {% if customer.default_address.address2 != "" %}
@@ -23,4 +27,4 @@
   {% endif %}
   {{ paginate | default_pagination }}
   {% endpaginate %}
-</div>
+</div> {% endcomment %}
