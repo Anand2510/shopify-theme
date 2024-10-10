@@ -6,7 +6,8 @@
         {%  form 'customer_login' %}  
 
 
-            {% render 'form-eorr' form:form %}
+            
+      {% include 'form-error' form:form %} 
 
             <label for="emailAddress">Email Address</label>
             <input type="email" name="customer[email]" class="form-control rounded-0 my-2">
