@@ -26,7 +26,7 @@
             <tbody>
               {% for line_item in order.line_items %}
                   <tr>
-                    <td>{{ line_item.title |  link_to: link_item.product.url }}</td>
+                    <td>{{ line_item.title |  link_to: line_item.product.url }}</td>
                     <td>{{ line_item.sku }}</td>
                     <td>{{ line_item.original_price |  money }}</td>
                     <td>{{ line_item.quantity }}</td>
