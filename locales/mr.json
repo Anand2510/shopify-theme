@@ -123,7 +123,126 @@
             "prefetch_shipping_rates_used": "प्रीफेच केलेले शिपिंग दर कधीही दर परत करू नयेत.",
             "fulfillment_constraints_not_satisfied": "एक किंवा अधिक पूर्ततेच्या मर्यादांचे समाधान झाले नाही.",
             "must_fulfill_from_constraint_not_satisfied": "पूर्ततेच्या मर्यादांचे समाधान होत नाही कारण आवश्यक ठिकाणांहून वस्तू पूर्ण केल्या जाऊ शकत नाहीत.",
-            "must_fulfill_from_same_location_constraint_not_satisfied": "पूर्ततेच्या मर्यादांचे समाधान होत नाही कारण आयटम एकाच ठिकाणाहून पूर्ण करता येत नाहीत."
+            "must_fulfill_from_same_location_constraint_not_satisfied": "पूर्ततेच्या मर्यादांचे समाधान होत नाही कारण आयटम एकाच ठिकाणाहून पूर्ण करता येत नाहीत.",
+            "delivery_strategy_conditions_not_satisfied": "या स्थानासाठी वितरण धोरणे उपलब्ध आहेत, परंतु त्यांच्या अटी समाधानी नाहीत.",
+            "out_of_stock_at_origin_location": "मूळ स्थानावर कोणताही स्टॉक नाही.",
+            "invalid_signature": "अवैध सूट स्वाक्षरी."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B स्टोअरमध्ये सवलतींना परवानगी नाही.",
+            "custom_discount_not_honoured": "पुरवलेल्या सानुकूल सवलतीचा सन्मान केला गेला नाही.",
+            "unsupported_expectation": "पुरवलेल्या सवलतीच्या ओळीत अशी अपेक्षा होती की धोरणाचा अर्थ लावता येत नाही.",
+            "additional_requested_discount_code_discarded": "विनंती केलेली अतिरिक्त कोड सवलत टाकून दिली.",
+            "allocations_mismatch": "अपेक्षित सवलत वाटप वास्तविक सवलत वाटपाशी जुळत नाही.",
+            "discount_title_too_long": "सूट शीर्षक २५५ वर्णांपेक्षा मोठे असू शकत नाही."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "सुरू ठेवण्यासाठी विक्रेत्याच्या प्रस्तावातील नवीन कर ओळ स्वीकारली जाणे आवश्यक आहे.",
+            "unresolvable_tax_terms": "सध्याच्या वाटाघाटी संदर्भामुळे प्रस्तावित अटी सोडवता येणार नाहीत.",
+            "delivery_price_is_abstract": "संबंधित वितरण किंमत अमूर्त आहे.",
+            "tax_inclusivity_mismatch": "ठोस totalTaxAndDutyAmount किंवा totalAmountIncludedInTarget मूल्यासह पुनर्निगोशिएट करा.",
+            "tax_exemption_not_supported": "सध्याच्या वाटाघाटी सत्रासाठी कर सूट समर्थित नाहीत.",
+            "delivery_tax_exemption_not_supported": "डिलिव्हरी लाइनसाठी कर सवलत सध्या समर्थित नाहीत.",
+            "proposed_allocations_required": "'प्रस्तावित वाटप' फील्ड गहाळ आहे.",
+            "merchandise_terms_must_be_defined": "व्यापाराच्या अटी परिभाषित केल्या पाहिजेत.",
+            "delivery_terms_must_be_defined": "वितरण अटी परिभाषित केल्या पाहिजेत.",
+            "merchandise_discount_terms_must_be_defined": "व्यापारी सवलतीच्या अटी परिभाषित केल्या पाहिजेत.",
+            "delivery_discount_terms_must_be_defined": "डिलिव्हरी सवलत अटी परिभाषित केल्या पाहिजेत.",
+            "allocated_required": "'वाटप केलेले' फील्ड गहाळ आहे.",
+            "value_required": "'मूल्य' फील्ड गहाळ आहे.",
+            "line_splits_not_supported": "'व्यापारी रेषा' फील्ड अशा प्रकारे विभाजित करणे आवश्यक आहे की प्रत्येक विक्रेत्याच्या प्रस्तावात एकच ओळ घटक असेल."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B स्टोअरमध्ये मॅन्युअल पेमेंटला परवानगी नाही.",
+            "positive_amount_expected": "देय रक्कम 0 पेक्षा जास्त असणे आवश्यक आहे.",
+            "total_amount_mismatch": "एकूण देय रक्कम पेमेंटच्या रकमेशी जुळत नाही.",
+            "subscription_terms_not_accepted": "सदस्यता अटी स्वीकारल्या जात नाहीत.",
+            "missing_session_id": "क्रेडिट कार्ड सत्र माहिती गहाळ आहे.",
+            "gateway_not_supported": "पेमेंट गेटवे पेमेंट पद्धत संचयित करण्यास समर्थन देत नाही.",
+            "credit_card_last_name_required": "'आडनाव' शून्य असू शकत नाही.",
+            "credit_card_update_failed": "क्रेडिट कार्ड अपडेट अयशस्वी.",
+            "installments_amount_invalid": "हप्त्यांच्या व्यवहारासाठी अवैध रक्कम.",
+            "installments_test_mode_not_allowed": "चाचणी मोडला परवानगी नाही.",
+            "installments_gift_card_not_allowed": "हप्ते भेट कार्ड वापरण्याची परवानगी देत ​​नाहीत.",
+            "installments_unsupported_currency": "हप्ते या चलनाला समर्थन देत नाहीत.",
+            "installments_unsupported_shipping": "हप्ते या पत्त्यावर शिपिंगला समर्थन देत नाहीत.",
+            "installments_unsupported_billing": "हप्ते या बिलिंग पत्त्यास समर्थन देत नाहीत.",
+            "installments_unsupported_subscriptions": "हप्ते सदस्यतांना समर्थन देत नाहीत.",
+            "installments_ineligible_line_item": "या खरेदीमधील लाइन आयटमसाठी हप्ते अक्षम केले आहेत.",
+            "shop_cash_not_allowed": "शॉप पेशिवाय शॉप कॅशला परवानगी नाही.",
+            "shop_cash_unsupported_checkout_source": "शॉप कॅश या चेकआउटला समर्थन देत नाही.",
+            "shop_cash_gift_card_not_allowed": "शॉप कॅश भेट कार्ड खरेदी करण्यास परवानगी देत ​​नाही.",
+            "shop_cash_not_enabled": "या दुकानासाठी शॉप कॅश सक्षम नाही.",
+            "shop_cash_not_available": "या चेकआउटमध्ये शॉप कॅश समर्थित नाही.",
+            "shop_cash_unsupported_subscriptions": "शॉप कॅश सदस्यतांना समर्थन देत नाही.",
+            "shop_cash_unsupported_shipping": "शॉप कॅश कोणत्याही शिपिंगशिवाय व्यापाराला समर्थन देत नाही.",
+            "invalid_address_type": "प्रदान केलेला पत्ता प्रकार या पेमेंट पद्धतीसाठी अवैध आहे.",
+            "missing_retail_attributions": "मॅन्युअली-एंटर केलेल्या क्रेडिट कार्ड पेमेंटसाठी रिटेल विशेषता आवश्यक आहेत.",
+            "unexpected_retail_attributions": "किरकोळ विशेषता क्रेडिट कार्ड पेमेंटसाठी अनपेक्षितपणे प्रदान केली गेली.",
+            "invalid_card_source": "या सत्राला हा कार्ड स्रोत वापरण्याची परवानगी नाही.",
+            "wallet_content_missing": "वॉलेट सामग्री गहाळ आहे.",
+            "payment_instrument_not_found": "पेमेंट पद्धत शोधू शकलो नाही",
+            "unauthorized_capture_method": "पेमेंट कॅप्चर पद्धत कॉन्फिगर करण्याची परवानगी नाही.",
+            "saved_payment_methods_not_allowed": "जतन केलेल्या पेमेंट पद्धतींना परवानगी नाही.",
+            "saved_payment_methods_not_enabled": "या दुकानासाठी सेव्ह केलेल्या पेमेंट पद्धती सक्षम नाहीत.",
+            "saved_payment_methods_cvv_verification_disabled": "निवडलेल्या पेमेंट पद्धतीसाठी CVV पडताळणी आवश्यक आहे जी या दुकानासाठी सक्षम केलेली नाही. भिन्न पेमेंट पद्धत निवडा.",
+            "store_credit_not_enabled": "या दुकानासाठी स्टोअर क्रेडिट सक्षम नाही.",
+            "store_credit_account_not_found": "स्टोअर क्रेडिट खाते आढळले नाही.",
+            "store_credit_account_mismatch": "स्टोअर क्रेडिट खाते खरेदीदाराच्या ओळखीशी जुळत नाही.",
+            "store_credit_mismatched_currency": "स्टोअर क्रेडिट खात्याचे चलन चेकआउट चलनाशी जुळत नाही.",
+            "store_credit_insufficient_funds": "स्टोअर क्रेडिट खात्यामध्ये अपुरा निधी आहे.",
+            "store_credit_buying_gift_card": "तुम्ही गिफ्ट कार्ड खरेदी करण्यासाठी स्टोअर क्रेडिट वापरू शकत नाही.",
+            "gift_cards_not_allowed_for_b2b": "B2B स्टोअरमध्ये गिफ्ट कार्ड्सना परवानगी नाही.",
+            "method_required": "पेमेंट पद्धत प्रस्तावित करणे आवश्यक आहे.",
+            "paypal_express_address_invalid": "PayPal ने अवैध पत्ता परत केला.",
+            "shop_cash_unsupported_currency": "शॉप कॅश या चलनाला समर्थन देत नाही.",
+            "market_manager_blocks_wallet_payments": "पेमेंट पद्धत मार्केट मॅनेजरद्वारे समर्थित नाही."
+          },
+          "tip": {
+            "not_accepted_by_shop": "दुकान टिप्स स्वीकारत नाही.",
+            "only_one_tip_line_allowed": "एकाधिक टिपा ओळी समर्थित नाहीत.",
+            "tips_not_allowed_for_b2b": "B2B स्टोअरमध्ये टिपांना अनुमती नाही.",
+            "currency_change_reset": "चलन बदलामुळे टीप रीसेट केली गेली आहे.",
+            "tips_not_allowed_for_deferred_purchase_options": "विलंबित खरेदी पर्यायांसाठी टिपा अद्याप समर्थित नाहीत."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "हा मसुदा ऑर्डर सध्याच्या दुकानात अस्तित्वात नाही.",
+            "staff_member_not_exist": "सध्याच्या दुकानात हा कर्मचारी अस्तित्वात नाही.",
+            "location_not_exist": "हे स्थान सध्याच्या दुकानात अस्तित्वात नाही.",
+            "point_of_sale_device_not_exist": "हे पॉइंट ऑफ सेल डिव्हाइस सध्याच्या दुकानात अस्तित्वात नाही.",
+            "unresolvable_target_merchandise_lines": "सध्याच्या वाटाघाटी संदर्भामुळे प्रस्तावित विक्री विशेषता निराकरण करण्यायोग्य नाहीत."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "तुमच्या खरेदीदाराच्या प्रस्तावात गैर-निगोशिएबल_अटी असणे आवश्यक आहे.",
+            "invalid_signature": "{{target_terms}} साठीची स्वाक्षरी अवैध आहे."
+          },
+          "inventory": {
+            "missing_quantity_value": "खरेदीदाराच्या इन्व्हेंटरी लाइनमध्ये प्रमाण फील्ड गहाळ आहे.",
+            "changing_behavior_not_allowed": "या क्लायंटला इन्व्हेंटरी वर्तन बदलण्याची परवानगी नाही.",
+            "only_one_inventory_behavior_allowed": "सध्या प्रत्येक चेकआउटसाठी फक्त एक इन्व्हेंटरी वर्तन अनुमत आहे."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "या चेकआउटसाठी कर्तव्ये नाकारण्याची परवानगी नाही."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "या चेकआउटसाठी किरकोळ विशेषता अनुमत नाही.",
+            "retail_attribution_required": "या चेकआउटसाठी किरकोळ विशेषता आवश्यक आहे."
+          },
+          "captcha": {
+            "metadata_missing": "या चेकआउटसाठी कॅप्चा पूर्ण करणे आवश्यक आहे.",
+            "metadata_mismatch": "प्रदान केलेला कॅप्चा प्रदाता आणि प्रकार अपेक्षित मूल्यांशी जुळत नाही.",
+            "token_missing": "हे चेकआउट पूर्ण करण्यासाठी कॅप्चा टोकन प्रदान करणे आवश्यक आहे.",
+            "job_enqueue_failed": "कॅप्चा प्रमाणीकरण कार्य रांगेत ठेवण्यात अयशस्वी झाले.",
+            "job_already_queued": "या कॅप्चा टोकनसाठी कॅप्चा प्रमाणीकरण आधीच रांगेत आहे.",
+            "token_expired": "प्रदान केलेले कॅप्चा टोकन कालबाह्य झाले आहे. चेकआउट सुरू ठेवण्यासाठी नवीन कॅप्चा पूर्ण करा.",
+            "token_invalid": "प्रदान केलेले कॅप्चा टोकन अवैध होते. चेकआउट सुरू ठेवण्यासाठी नवीन कॅप्चा पूर्ण करा.",
+            "token_not_valid_for_session": "प्रदान केलेला कॅप्चा या चेकआउटसह वापरला जाऊ शकत नाही."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "प्राप्त रक्कम स्टोअर चलनात असणे आवश्यक आहे."
+          },
+          "checkout_source": {
+            "revoked": "हे चेकआउट यापुढे उपलब्ध नाही."
           }
         },
         "google_map_title": "गुगल मॅप",
@@ -199,7 +318,11 @@
           "add_file": "फाइल जोडा",
           "invalid_file_type": "फाइल प्रकार समर्थित नाही",
           "dragged_over": "अपलोड करण्यासाठी फाइल ड्रॉप करा"
-        }
+        },
+        "full_price": "पूर्ण किंमत:",
+        "title": "चेकआउट - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - चेकआउट",
+        "loading_title": "चेकआउट - {{shopName}}"
       },
       "contact": {
         "title": "माहिती",
@@ -912,7 +1035,145 @@
           },
           "label": "वितरण नाही"
         }
+      },
+      "wallets": {
+        "errors": {
+          "unsupported": {
+            "postal_code": "हे स्थान समर्थित नाही"
+          },
+          "outdated": {
+            "shipping_method": "तुमच्या ऑर्डरसाठी शिपिंग पर्याय बदलले आहेत. तुमच्या निवडीचे पुनरावलोकन करा.",
+            "payment_terms": "पेमेंट अटी बदलल्या आहेत. कृपया तुमच्या ऑर्डरचे पुनरावलोकन करा"
+          },
+          "invalid": {
+            "shipping_address": "वैध शिपिंग पत्ता प्रविष्ट करा",
+            "billing_address": "एक वैध बिलिंग पत्ता प्रविष्ट करा",
+            "shipping_option": "वैध शिपिंग पर्याय निवडा",
+            "email": "एक वैध ईमेल प्रविष्ट करा",
+            "zone": "वैध राज्य / प्रांत प्रविष्ट करा",
+            "emirate": "वैध अमिरात प्रविष्ट करा",
+            "postal_code": "वैध पिन / पोस्टल कोड प्रविष्ट करा",
+            "phone": "एक वैध फोन नंबर प्रविष्ट करा",
+            "reduction_code": "एक वैध सवलत कोड किंवा भेट कार्ड प्रविष्ट करा",
+            "billing_must_match_shipping": "शिपिंग पत्त्याशी जुळणे आवश्यक आहे"
+          },
+          "missing": {
+            "first_name": "प्रथम नाव प्रविष्ट करा",
+            "last_name": "आडनाव एंटर करा",
+            "address1": "पत्ता प्रविष्ट करा",
+            "address2": "अपार्टमेंट, सुट इ. प्रविष्ट करा.",
+            "city": "शहर प्रविष्ट करा",
+            "province": "राज्य/प्रांत निवडा",
+            "country": "देश/प्रदेश निवडा",
+            "zip": "पिन / पोस्टल कोड प्रविष्ट करा",
+            "phone": "फोन नंबर एंटर करा"
+          },
+          "formatting": {
+            "name_contains_emojis": "तुमच्या नावातील इमोजी हटवा",
+            "postal_code_contains_emoji": "तुमच्या पोस्टल कोडमधून इमोजी हटवा",
+            "first_name_too_long": "पहिल्या नावात बरीच अक्षरे आहेत",
+            "last_name_too_long": "आडनावामध्ये बरीच अक्षरे आहेत"
+          },
+          "select_different_shipping_address_to_resolve_errors": "तुमचा शिपिंग पत्ता अवैध आहे. वेगळा पत्ता निवडा किंवा नवीन वापरा."
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "नोटेचा आकार 5000 किंवा त्यापेक्षा कमी वर्णांपर्यंत कमी करा."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "गिफ्ट कार्डची किंमत 0 पेक्षा जास्त असणे आवश्यक आहे.",
+            "gift_card_price_must_not_exceed_limit": "गिफ्ट कार्डची किंमत %{gift_card_limit} पेक्षा जास्त नसावी.",
+            "subtotal_limit_reached": "लाइन आयटमचे कमाल मूल्य गाठले आहे."
+          }
+        }
       }
+    },
+    "pagination": {
+      "previous": "मागील",
+      "next": "पुढे"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify द्वारा समर्थित",
+      "learn_more": "अधिक जाणून घ्या"
+    },
+    "feed": {
+      "more": "अधिक"
+    },
+    "attributes": {
+      "email": "ईमेल",
+      "password": "पासवर्ड",
+      "password_confirmation": "पासवर्ड पुष्टीकरण",
+      "first_name": "नाव",
+      "last_name": "आडनाव",
+      "body": "शरीर",
+      "signature": "पत्ता"
+    },
+    "addresses": {
+      "zip_code": "पिन कोड",
+      "postal_code": "पोस्टल कोड",
+      "postcode": "पोस्टकोड",
+      "pincode": "पिनकोड",
+      "region": "प्रदेश",
+      "prefecture": "प्रीफेक्चर",
+      "province": "प्रांत",
+      "state": "राज्य",
+      "state_and_territory": "राज्य/प्रदेश",
+      "county": "परगणा",
+      "emirate": "अमिरात",
+      "governorate": "गव्हर्नरेट",
+      "confirm": "तुमची खात्री आहे की तुम्ही हा पत्ता हटवू इच्छिता?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "वैशिष्ट्यीकृत",
+        "best_selling": "सर्वोत्तम विक्री",
+        "az": "वर्णक्रमानुसार, AZ",
+        "za": "वर्णक्रमानुसार, ZA",
+        "price_ascending": "किंमत, कमी ते जास्त",
+        "price_descending": "किंमत, उच्च ते कमी",
+        "date_ascending": "तारीख, जुनी ते नवीन",
+        "date_descending": "तारीख, नवीन ते जुनी"
+      }
+    },
+    "errors": {
+      "blank": "रिक्त असू शकत नाही",
+      "blocked_address": "हे स्थान समर्थित नाही",
+      "credit_card_session_expired": "क्रेडिट कार्ड अधिकृतता कालबाह्य झाली आहे, कृपया तुमची पेमेंट माहिती पुन्हा प्रविष्ट करा. तुमच्या कार्डवर शुल्क आकारले गेले नाही.",
+      "empty": "रिक्त असू शकत नाही",
+      "invalid_email": "वैध ईमेल पत्ता असणे आवश्यक आहे",
+      "discount_disabled": "ही सवलत अक्षम केली आहे",
+      "discount_expired": "ही सवलत आता वैध नाही",
+      "discount_limit_reached": "ही सूट तिची वापर मर्यादा गाठली आहे",
+      "discount_not_found": "प्रविष्ट केलेल्या कोडशी जुळणारी वैध सूट शोधण्यात अक्षम",
+      "customer_already_used_once_per_customer_discount_notice": "ही सूट तिची वापर मर्यादा गाठली आहे",
+      "gift_card_already_applied": "तुमच्या चेकआउटवर कोड आधीच लागू केला गेला आहे",
+      "gift_card_code_invalid": "कोड अवैध आहे",
+      "gift_card_currency_mismatch": "तुमचे गिफ्ट कार्ड %{gift_card_currency} मध्ये आहे. ते %{checkout_currency} मध्ये पुन्हा जारी करण्यासाठी आमच्याशी संपर्क साधा.",
+      "gift_card_depleted": "या भेटकार्डवर कोणताही निधी शिल्लक नाही",
+      "gift_card_disabled": "भेट कार्ड अक्षम केले आहे",
+      "gift_card_expired": "गिफ्ट कार्ड कालबाह्य झाले आहे",
+      "invalid": "अवैध आहे",
+      "bad_domain": "मध्ये अवैध डोमेन नाव आहे",
+      "taken": "आधीच घेतले आहे",
+      "contains_html_tags": "HTML टॅग असू शकत नाहीत",
+      "too_short": "खूप लहान आहे (किमान %{count} वर्ण आहे)",
+      "too_long": "खूप लांब आहे (कमाल %{count} वर्ण आहे)",
+      "password_mismatch": "प्रदान केलेल्या पासवर्डशी जुळणे आवश्यक आहे",
+      "contains_spaces": "रिक्त स्थानांसह सुरू किंवा समाप्त होते.",
+      "email_domain_invalid": "प्रदाता समर्थित नाही",
+      "invalid_for_country": "%{country} साठी वैध नाही",
+      "invalid_for_country_and_province": "%{प्रांत} आणि %{देश} साठी वैध नाही",
+      "invalid_province_in_country": "%{country} मध्ये वैध प्रांत नाही",
+      "invalid_state_in_country": "%{country} मध्ये वैध राज्य नाही",
+      "invalid_region_in_country": "%{country} मध्ये वैध प्रदेश नाही",
+      "less_than_or_equal_to": "%{count} पेक्षा कमी किंवा समान असणे आवश्यक आहे",
+      "not_supported": "समर्थित नाही",
+      "full_name_required": "नाव आणि आडनाव एंटर करा",
+      "invalid_for_card_type": "वैध नाही",
+      "invalid_type": "क्षमस्व, आम्ही या प्रकारची कार्डे स्वीकारत नाही",
+      "invalid_format": "स्वरूप वैध नाही"
     }
   },
   "customer_accounts": {
