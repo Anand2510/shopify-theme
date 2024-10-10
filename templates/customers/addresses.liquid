@@ -18,82 +18,7 @@
                     <butto class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#newaddressModal">update New</butto>
 
                   {% comment %}  {% endcomment %}
-                  <div class="modal fade" id="newaddressModal" tabindex="-1" aria-labelledby="newAddressModallabel" aria-hidden="true">
-                    {% for address in customer.addresses %}
-                  {% form 'customer_address', address %}
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="modal-title" id="#newAddressModallabel">Add New Address</div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"> </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="col-12 mb-3">
-                                    <label for="AddressFirstNameNew" class="form-label" class="form-label"> First Name</label>
-                                    <input type="text" name="address[first_name]" value="{{ form.first_name }}" id="AddressFirstNameNew"
-                                        class="form-control">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label for="AddressLastNameNew" class="form-label">Last Name</label>
-                                    <input type="text" name="address[last_name]" value="{{ form.last_name }}" id="AddressLastNameNew"
-                                        class="form-control">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label for="AddressCompanyNew" class="form-label">Company Name</label>
-                                    <input type="text" name="address[company_name]" value="{{ form.company_name }}"
-                                        id="AddressCompanyNew" class="form-control">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label for="AddressAddress1New" class="form-label">Address 1</label>
-                                    <input type="text" name="address[address1]" value="{{ form.address1 }}" id="AddressAddress1New"
-                                        class="form-control">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label for="AddressAddress2New" class="form-label">Apparment, Suite, etc 2</label>
-                                    <input type="text" name="address[address2]" value="{{ form.address2 }}" id="AddressAddress2New"
-                                        class="form-control">
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-4 mb-3">
-                                        <label for="AddressCityNew" class="form-label">City</label>
-                                        <input type="text" name="address[city]" value="{{ form.city }}" id="AddressCityNew"
-                                            class="form-control">
-                                    </div>
-                                    <div class="col-12 col-md-4 mb-3">
-                                        <label for="AddressCountryNew" class="form-label">Country</label>
-                                        <select type="text" name="address[country]"  id="AddressCountryNew"
-                                            class="form-control">{{ all_country_option_tags }}</select>
-                                    </div>
-                                    <div class="col-12 col-md-4 mb-3">
-                                        <label for="AddressProvinceNew" class="form-label">Province</label>
-                                        <select type="text" name="address[province]"  id="AddressProvinceNew"
-                                            class="form-control">
-                                            {% comment %} {{ all_country_option_tags }} {% endcomment %}
-                                            </select>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-12 mb-3">
-                                    <label for="AddressZipNew" class="form-label">Postal / Zip Code</label>
-                                    <input type="text" name="address[zip]" value="{{ form.zip }}" id="AddressZipNew"
-                                        class="form-control">
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label for="AddressPhoneNew" class="form-label">Phone Number</label>
-                                    <input type="text" name="address[phone]" value="{{ form.phone }}" id="AddressPhoneNew"
-                                        class="form-control">
-                                </div>
-                
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">udate Address</button>
-                            </div>
-                
-                        </div>
-                    </div>
-                    {% endform %}
-                </div>
-{% endfor %}
+
                   {% comment %}  {% endcomment %}
                 </div>
             </div>
@@ -177,6 +102,30 @@
     {% endform %}
 </div>
 
+
+
+{% for address in customer.addresses %}
+
+    {{ address | format_address }}
+  
+    <div class="form--edit-address">
+      {% form 'customer_address', address %}
+        <input type="text" name="address[first_name]" value="{{ form.first_name }}" placeholder="First Name">
+        <input type="text" name="address[last_name]" value="{{ form.last_name }}" placeholder="Last Name">
+        <input type="text" name="address[company]" value="{{ form.company }}" placeholder="Company">
+        <input type="text" name="address[address1]" value="{{ form.address1 }}" placeholder="Address Line 1">
+        <input type="text" name="address[address2]" value="{{ form.address2 }}" placeholder="Address Line 2">
+        <input type="text" name="address[city]" value="{{ form.city }}" placeholder="City">
+        <select name="address[country]" data-default="{{ form.country }}">{{ country_option_tags }}</select>
+        <select name="address[province]" data-default="{{ form.province }}"></select>
+        <input type="text" name="address[zip]" value="{{ form.zip }}" placeholder="ZIP/Postal Code">
+        <input type="text" name="address[phone]" value="{{ form.phone }}" placeholder="Phone Number">
+        
+        <button type="submit" class="btn btn-xs btn-primary">Update Address</button>
+      {% endform %}
+    </div>
+  
+  {% endfor %}
 {% comment %} <!-- /templates/customers/addresses.liquid -->
 
 <h2>New Address</h2>
