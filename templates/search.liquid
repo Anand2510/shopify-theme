@@ -1,8 +1,15 @@
-{% paginate search.results by 10 %}
-  <form action="/search" method="get" role="search">
+<div class="container">
+  <div class="row">
+    <form action="/search" method="get" role="search">
     <input type="search" name="q" value="{{ search.terms | escape }}">
     <button type="submit">search</button>
   </form>
+  </div>
+</div>
+
+
+{% paginate search.results by 10 %}
+
 
   {% if search.performed %}
     {% for item in search.results %}
