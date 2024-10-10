@@ -1,18 +1,16 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin language editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "general": {
     "404": {
       "title": "Not found",
       "subtext_html": "The page you were looking for does not exist"
-    }
+    },
+    "Cart":{
+      "title":"card"
+    },
+    
+      "Blog":{
+        "title":"Blog"
+      }
   },
   "shopify": {
     "checkout": {
@@ -20,15 +18,6 @@
         "save_my_information_label": "save the information next time"
       }
     }
-  },
-  "general": {
-  "Cart": {
-    "title": "simple cart"
   }
-},
-"general": {
-  "Blog": {
-    "title": "Blog"
-  }
-}
+ 
 }
