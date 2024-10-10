@@ -247,6 +247,284 @@
         "phone_label": "फोन",
         "optional_phone_label": "फोन (पर्यायी)",
         "phone_placeholder": "फोन"
+      },
+      "payment": {
+        "edit_credit_card_modal": {
+          "done": "झाले",
+          "cancel": "रद्द करा",
+          "description": "तुम्ही फक्त तुमच्या कार्डचा बिलिंग पत्ता बदलू शकता.",
+          "fields": {
+            "default": "डीफॉल्ट म्हणून सेट करा",
+            "card_number": "कार्ड क्रमांक",
+            "expiry": "कालबाह्यता तारीख",
+            "security_code": "सुरक्षा कोड",
+            "name": "कार्डवर नाव",
+            "billing": "ला बिल"
+          }
+        },
+        "expired_cards_info": {
+          "one": "%{count} कालबाह्य झालेले कार्ड आहे, जे तुम्ही तुमच्या खात्यात पाहू आणि संपादित करू शकता.",
+          "other": "कालबाह्य झालेली %{count} कार्डे आहेत, जी तुम्ही तुमच्या खात्यात पाहू आणि संपादित करू शकता."
+        },
+        "local_payment_method_receiver_notice": "तुमची ऑर्डर दिल्यानंतर तुम्हाला देयक तपशील प्राप्त होतील. {{dueDays}} दिवसांत एटीएमवर किंवा ऑनलाइन पेमेंट करा.",
+        "order_edit_banner_title": "{{amount_owed}} भरणे आवश्यक आहे",
+        "order_edit_banner_subtitle": "तुमची ऑर्डर {{order_number}} अपडेट केली गेली. या बदलांचे पुनरावलोकन करा, नंतर तुमच्या ऑर्डरची पुष्टी करण्यासाठी पैसे द्या.",
+        "order_edit_banner_items_added": {
+          "one": "जोडले",
+          "other": "%{count} जोडले"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "काढले",
+          "with_quantities": "{{quantity}} पैकी {{delta}} काढले"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "परत केले {{quantity}}",
+          "with_quantities": "{{quantity}} पैकी {{delta}} परत केले"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "रिटर्नमधून काढले",
+          "with_quantities": "रिटर्नमधून {{delta}} काढले"
+        },
+        "order_edit_banner_single_item_added": "जोडले",
+        "order_edit_banner_multiple_items_added": "{{amount}} जोडले",
+        "order_edit_banner_single_item_removed": "काढले",
+        "order_edit_banner_multiple_items_removed": "{{amount}} काढले",
+        "order_edit_banner_single_item_returned": "परतले",
+        "order_edit_banner_multiple_items_returned": "{{amount}} परत केले",
+        "order_edit_banner_single_item_return_line_item_removed": "रिटर्नमधून काढले",
+        "order_edit_banner_multiple_items_return_line_item_removed": "रिटर्नमधून {{amount}} काढले",
+        "order_edit_banner_updated_order_label": "अद्ययावत ऑर्डर",
+        "gift_card_wrapper": {
+          "heading": "भेट कार्ड",
+          "apply_gift_card_label": "भेट कार्ड लागू करा",
+          "apply_another_gift_card_label": "दुसरे भेट कार्ड लागू करा",
+          "gift_card_label": "गिफ्ट कार्ड %{identifier}",
+          "payment_tag": "भेट कार्ड",
+          "add_label": "भेट कार्ड जोडा",
+          "manage_label": "भेट कार्ड व्यवस्थापित करा"
+        },
+        "gift_card_store_credit": {
+          "add_label": "भेट कार्ड किंवा स्टोअर क्रेडिट जोडा",
+          "manage_label": "भेट कार्ड किंवा स्टोअर क्रेडिट व्यवस्थापित करा"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "सानुकूल ऑनसाइट पेमेंट पुष्टीकरण"
+        },
+        "markets_pro_disclaimer_label": "खाली क्लिक करून आणि तुमची ऑर्डर पूर्ण करून, तुम्ही ग्लोबल-e च्या %{markets_pro_terms} आणि %{privacy_policy} वर या व्यवहारासाठी मर्चंट ऑफ रेकॉर्ड म्हणून ग्लोबल-e कडून तुमची वस्तू खरेदी करण्यास सहमती देता. ग्लोबल-ई %{shop_name} साठी आंतरराष्ट्रीय पूर्तता सेवा प्रदाता आहे",
+        "markets_pro_disclaimer_terms_and_conditions": "नियम आणि अटी",
+        "markets_pro_disclaimer_privacy_policy": "गोपनीयता धोरण",
+        "markets_pro_disclaimer_terms_and_conditions_title": "मर्चंट ऑफ रेकॉर्ड अटी आणि शर्ती",
+        "markets_pro_disclaimer_privacy_policy_title": "रेकॉर्ड गोपनीयता धोरण व्यापारी",
+        "purchase_order_number": {
+          "title": "PO क्रमांक",
+          "label": "PO क्रमांक (पर्यायी)"
+        },
+        "alternative_payment_currency_total_notice": "टीप: तुमच्याकडून %{amount_due} शुल्क आकारले जाईल.",
+        "alternative_payment_currency_total_manual_payment_notice": "टीप: रूपांतरित एकूण %{amount_due} आहे.",
+        "waiting_on_taxes_message": "पुढील काही सेकंदात तुमचे कर मोजले जात नसल्यास, पृष्ठ रिफ्रेश करा.",
+        "waiting_on_taxes_notice": "कर मोजत आहे",
+        "payment_method": "पेमेंट पद्धत",
+        "expired_payment_method": "निवडलेली पेमेंट पद्धत कालबाह्य झाली आहे",
+        "payment_method_update_failed": "पेमेंट पद्धत अपडेट अयशस्वी.",
+        "proposed_gateway_unavailable": "प्रस्तावित पेमेंट गेटवे अनुपलब्ध आहे",
+        "pay_in_installments_split_pay_short": "%{amount} ची ४ पेमेंट",
+        "gift_cards_unavailable": "तुमचे भेट कार्ड यापुढे या ऑर्डरवर लागू केले जाऊ शकत नाही आणि ते काढले गेले आहे",
+        "payment_flexibility_terms_id_mismatch": "पेमेंट लवचिकता अटी आयडी जुळत नाही"
+      },
+      "billing": {
+        "billing_address_title": "ला बिल",
+        "same_as_shipping": "शिपिंग पत्त्याप्रमाणेच",
+        "add_address": "वेगळा पत्ता वापरा",
+        "edit": "संपादित करा",
+        "delete": "हटवा",
+        "address_more": "या पत्त्यासाठी अधिक क्रिया",
+        "address_edit": "पत्ता संपादित करा",
+        "address_delete": "पत्ता हटवा",
+        "address_confirm": "तुमची खात्री आहे की तुम्ही तुमच्या खात्यातून हा पत्ता हटवू इच्छिता?",
+        "address_form": {
+          "add_address": "पत्ता जोडा",
+          "save": "जतन करा",
+          "cancel": "रद्द करा"
+        }
+      },
+      "company_location": {
+        "location_title": "स्थान"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "चालू शिल्लक %{amount}",
+        "credit_card_expires_on_notice": "%{month}/%{वर्ष} रोजी कालबाह्य होईल",
+        "express_payment_gateway_label": "एक्सप्रेस",
+        "manual_payment_gateway_label": "मॅन्युअल",
+        "billing_address_title": "बिलिंग पत्ता",
+        "free_label": "मोफत"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "एक वैध फोन नंबर प्रविष्ट करा",
+        "handle_email_invalid": "एक वैध ईमेल प्रविष्ट करा",
+        "email_invalid": "एक वैध ईमेल प्रविष्ट करा",
+        "email_or_phone_blank": "ईमेल किंवा फोन नंबर प्रविष्ट करा",
+        "email_or_phone_invalid": "एक वैध ईमेल किंवा मोबाइल फोन नंबर प्रविष्ट करा",
+        "address_first_name_blank": "प्रथम नाव प्रविष्ट करा",
+        "address_first_name_too_long": "नाव खूप मोठे आहे (कमाल २५५ वर्ण)",
+        "address_first_name_contains_emojis": "नावात इमोजी असू शकत नाहीत",
+        "address_first_name_contains_html_tags": "नावात HTML टॅग असू शकत नाहीत.",
+        "address_first_name_contains_url": "नावात URL असू शकत नाही",
+        "address_first_name_contains_mathematical_symbols": "प्रथम नावात गणिती चिन्हे असू शकत नाहीत",
+        "address_last_name_blank": "आडनाव एंटर करा",
+        "address_last_name_too_long": "आडनाव खूप मोठे आहे (कमाल २५५ वर्ण)",
+        "address_last_name_contains_emojis": "आडनावामध्ये इमोजी असू शकत नाहीत",
+        "address_last_name_contains_html_tags": "आडनावामध्ये HTML टॅग असू शकत नाहीत.",
+        "address_last_name_contains_url": "आडनावामध्ये URL असू शकत नाही",
+        "address_last_name_contains_mathematical_symbols": "आडनावामध्ये गणितीय चिन्हे असू शकत नाहीत",
+        "address_address1_blank": "पत्ता प्रविष्ट करा",
+        "address_address1_too_long": "पहिली पत्ता ओळ खूप मोठी आहे (कमाल 255 वर्ण)",
+        "address_address1_contains_emojis": "Address1 मध्ये इमोजी असू शकत नाहीत",
+        "address_address1_contains_html_tags": "Address1 मध्ये HTML टॅग असू शकत नाहीत.",
+        "address_address1_contains_mathematical_symbols": "पहिल्या पत्त्याच्या ओळीत गणिती चिन्हे असू शकत नाहीत"
+      }
+    }
+  },
+  "customer_accounts": {
+    "navigation_and_structure": {
+      "navigation_accessibility_message": "तुम्ही {{sectionName}} वर नेव्हिगेट केले",
+      "open_menu_accessibility_label": "मुख्य नेव्हिगेशन उघडा",
+      "orders_link_label": "ऑर्डर",
+      "shop_logo_accessibility_label": "{{shopName}} लोगो",
+      "subscriptions_link_label": "सदस्यता",
+      "settings_link": "सेटिंग्ज"
+    },
+    "account_information": {
+      "loading_accessibility_message": "खाते माहिती लोड करत आहे",
+      "loading_finished_accessibility_message": "खाते माहिती लोड केली आहे",
+      "profile_card": {
+        "cancel": "रद्द करा",
+        "cancel_accessibility_label": "प्रोफाइल संपादित करणे रद्द करा",
+        "edit": "संपादित करा",
+        "edit_accessibility_label": "प्रोफाइल संपादित करा",
+        "email_help_text": "लॉगिनसाठी वापरलेला ईमेल बदलला जाऊ शकत नाही",
+        "first_name": "नाव",
+        "last_name": "आडनाव",
+        "no_name_provided_accessibility_label": "नाव जोडले नाही",
+        "phone_number_help_text": "लॉगिनसाठी वापरलेला फोन नंबर बदलला जाऊ शकत नाही",
+        "save": "जतन करा",
+        "save_accessibility_label": "प्रोफाइल जतन करा",
+        "title": "प्रोफाइल"
+      },
+      "profile_update_confirmation_message": "प्रोफाइल अपडेट केले",
+      "title": "प्रोफाइल",
+      "people": {
+        "pagination": {
+          "load_more": "अधिक लोड करा",
+          "load_more_accessibility_label": "अधिक लोक लोड करा",
+          "loading_accessibility_label": "लोक लोड करत आहे"
+        }
+      },
+      "add_button": "ॲड"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "लेआउट पर्याय",
+      "list_title": "ऑर्डर",
+      "order_list": {
+        "column_headers": {
+          "order": "ऑर्डर करा",
+          "items": "वस्तू",
+          "total": "एकूण"
+        },
+        "delivered": "वितरित केले {{date}}",
+        "empty_state_order_source_description": "फक्त {{email}} द्वारे दिलेले ऑर्डर येथे दिसतील.",
+        "empty_state_subtitle": "ऑर्डर देण्यासाठी स्टोअरमध्ये जा.",
+        "empty_state_title": "अजून ऑर्डर नाहीत",
+        "empty_state_title_for_pending_orders": "कोणतेही प्रलंबित ऑर्डर नाहीत",
+        "estimated_shortform": "अंदाज {{date}}",
+        "estimated_delivery": "अपेक्षित {{date}}",
+        "one_images_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} समाविष्ट आहे",
+        "two_images_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} , {{lineItemName2}} समाविष्ट आहे",
+        "three_images_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} समाविष्ट आहे",
+        "four_images_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}} समाविष्ट आहे",
+        "more_than_three_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} , {{lineItemName2}} आणि {{numberOfAdditionalProducts}} अधिक उत्पादनांचा समावेश आहे",
+        "more_than_four_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , आणि {{numberOfAdditionalProducts}} अधिक उत्पादनांचा समावेश आहे",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} उत्पादने",
+        "carousel": {
+          "one_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} प्रमाण {{lineItemQuantity1}} समाविष्ट आहे",
+          "two_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} प्रमाण {{lineItemQuantity1}} , {{lineItemName2}} प्रमाण {{lineItemQuantity2}} समाविष्ट आहे",
+          "three_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} समाविष्ट आहे",
+          "four_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} प्रमाण {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{lineItemQuantity2}} , {{lineItemName4}} {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{ {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} मात्रा समाविष्ट आहे {{lineItemName5}} प्रमाण {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{ {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} मात्रा समाविष्ट आहे {{lineItemName5}} प्रमाण {{lineItemQuantity5}} , {{lineItemName6}} प्रमाण {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "ऑर्डरमध्ये {{lineItemName1}} मात्रा {{lineItemQuantity1}} , {{lineItemName2}} मात्रा {{ {{lineItemQuantity2}} , {{lineItemName3}} मात्रा {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} मात्रा समाविष्ट आहे {{lineItemName5}} प्रमाण {{lineItemQuantity5}} , {{lineItemName6}} प्रमाण {{lineItemQuantity6}} आणि अधिक",
+          "view_order_details": "ऑर्डर तपशील पहा",
+          "previous": "मागील",
+          "next": "पुढे"
+        },
+        "items": {
+          "one": "{{count}} आयटम",
+          "other": "{{count}} आयटम"
+        },
+        "list_view": "सूची दृश्य दाखवा",
+        "no_filtered_results_description": "तुमच्या ऑर्डर पाहण्यासाठी फिल्टर काढा किंवा समायोजित करा",
+        "no_filtered_results_title": "कोणतेही फिल्टर केलेले परिणाम नाहीत",
+        "order_link": "ऑर्डर पहा {{name}}",
+        "order_number": "ऑर्डर {{name}}",
+        "orders_title": "पुष्टी केली",
+        "pagination": {
+          "nav_accessibility_label": "ऑर्डर नेव्हिगेशन बटणे",
+          "next": "पुढे",
+          "next_accessibility_label": "पुढील आदेश",
+          "previous": "मागील",
+          "previous_accessibility_label": "मागील ऑर्डर",
+          "load_more": "अधिक लोड करा",
+          "load_more_accessibility_label": "अधिक ऑर्डर लोड करा"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "तपशीलांसाठी ऑर्डर पहा",
+            "estimated_delivery": "अपेक्षित {{date}}",
+            "last_updated": "शेवटचे अपडेट {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "अंदाज वितरण {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "पेमेंट थकीत आहे",
+            "due": "देय देय {{date}}",
+            "due_today": "आज पेमेंट देय आहे",
+            "due_without_date": "देय देय",
+            "due_on_fulfillment": "पूर्ततेवर देय देय",
+            "pay_to_confirm": "पुष्टी करण्यासाठी पैसे द्या",
+            "payment_not_due": "पेमेंट अद्याप देय नाही"
+          },
+          "table_view": {
+            "overdue": "ओव्हरड्यू",
+            "due": "देय {{date}}",
+            "due_today": "आज देय आहे",
+            "paid": "पैसे दिले",
+            "due_without_date": "देय",
+            "due_on_fulfillment": "पूर्ततेवर देय",
+            "pay_to_confirm": "पुष्टी करण्यासाठी पैसे द्या",
+            "payment_not_due": "अद्याप देय नाही"
+          }
+        },
+        "sort_by": "यानुसार क्रमवारी लावा: {{option}}",
+        "sort_hide_options_accessibility_label": "पुष्टी केलेल्या ऑर्डरसाठी क्रमवारी पर्याय लपवा.",
+        "sort_show_options_accessibility_label": "पुष्टी केलेल्या ऑर्डरसाठी क्रमवारी पर्याय दर्शवा.",
+        "sort_currently_sorted_by_accessibility_label": "सध्या यानुसार क्रमवारी लावली आहे: {{option}}",
+        "sort_title": "क्रमवारी लावा",
+        "sort": {
+          "date": {
+            "newest": "सर्वात नवीन ते सर्वात जुने",
+            "oldest": "सर्वात जुने ते नवीन"
+          },
+          "location": {
+            "ascending": "स्थान (AZ)",
+            "descending": "स्थान (ZA)"
+          },
+          "order_number": {
+            "ascending": "ऑर्डर क्रमांक (कमी ते उच्च)"
+          }
+        }
       }
     }
   }
