@@ -1,6 +1,14 @@
 <!-- /templates/customers/login.liquid -->
+{%  form 'customer_login' %}  
+<label for="emailAddress">Email Address</label>
+<input type="email" name="customer[email]" class="form-control">
+<label for="password">Password</label>
+<input type="password" name="customer[password]" class="form-control">
 
-<h2>Login</h2>
+<input type="button" value="Sign in" class="btn btn-primary btn-lg ">
+{% endform %} 
+
+{% comment %} <h2>Login</h2>
 {% form 'customer_login' %}
 
 {{ form.errors | default_errors }}
@@ -25,4 +33,4 @@
 
 <input type="submit" value="Submit" />
 
-{% endform %}
+{% endform %} {% endcomment %}
