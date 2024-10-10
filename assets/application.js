@@ -11,7 +11,7 @@ document.querySelector('#sort_by').addEventListener('change', function(e) {
 if( document.getElementById('AddressCountryNew') != null){
     document.getElementById('AddressCountryNew').addEventListener('change', function(e){
             var province = this.options[this.selectedIndex].getAttribute('data-provinces');
-            var proviceSelector = document.getElementById('AddressCountryNew');
+            var proviceSelector = document.getElementById('AddressProvinceNew');
             var provinceArray = JSON.parse(province);
 
             // console.log(provinceArray);
@@ -27,6 +27,7 @@ if( document.getElementById('AddressCountryNew') != null){
             for(var i = 0; i < provinceArray.length; i++ ){
                 options +='<option value="'+ provinceArray[i][0] + '">'+ provinceArray[i][0] +'</option>';
             }
+            proviceSelector.innerHTML = options;
         
     });
 }
