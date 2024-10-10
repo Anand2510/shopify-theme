@@ -403,7 +403,8 @@
             "security_code": "सुरक्षा कोड",
             "name": "कार्डवर नाव",
             "billing": "ला बिल"
-          }
+          },
+          "title": "कार्ड संपादित करा"
         },
         "expired_cards_info": {
           "one": "%{count} कालबाह्य झालेले कार्ड आहे, जे तुम्ही तुमच्या खात्यात पाहू आणि संपादित करू शकता.",
@@ -472,7 +473,134 @@
         "proposed_gateway_unavailable": "प्रस्तावित पेमेंट गेटवे अनुपलब्ध आहे",
         "pay_in_installments_split_pay_short": "%{amount} ची ४ पेमेंट",
         "gift_cards_unavailable": "तुमचे भेट कार्ड यापुढे या ऑर्डरवर लागू केले जाऊ शकत नाही आणि ते काढले गेले आहे",
-        "payment_flexibility_terms_id_mismatch": "पेमेंट लवचिकता अटी आयडी जुळत नाही"
+        "payment_flexibility_terms_id_mismatch": "पेमेंट लवचिकता अटी आयडी जुळत नाही",
+        "paypal_label": "पेपल",
+        "paypal_wallet_label": "पेपल वॉलेट",
+        "shop_pay_installments_label": "शॉप पे हप्ते",
+        "paypal_modal": {
+          "order_contains_subscriptions": "वर्गणी",
+          "order_contains_fixed_selling_plans": "एकूणमध्ये कर, शिपिंग, स्थगित शुल्क आणि काही सवलत समाविष्ट नसतील. आज देय रकमेसाठी चेकआउट करणे सुरू ठेवा."
+        },
+        "klarna_label": "क्लार्ना",
+        "klarna_pay_later_label": "Klarna सह नंतर पैसे द्या",
+        "klarna_pay_now_label": "Klarna सह आता पैसे द्या",
+        "bancontact_label": "बँक संपर्क",
+        "giropay_label": "गिरोपे",
+        "multibanco_label": "मल्टीबँको",
+        "klarna_slice_it_label": "Klarna सह वित्त",
+        "bank_picker_label": "बँक",
+        "afterpay_label": "आफ्टरपे",
+        "cashapppay_label": "रोख ॲप पे",
+        "twint_label": "ट्विंट",
+        "purchase_options_card_update_agreement_label_html": "तुमची पेमेंट पद्धत अपडेट करून, तुम्ही या स्टोअरच्या <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">रद्दीकरण धोरणानुसार</a> कोणत्याही आवर्ती किंवा स्थगित खरेदीसाठी देयके अधिकृत करता.",
+        "subscription_card_update_agreement_label": "पेमेंट पद्धत बदलल्याने तुमची सदस्यता आणि भविष्यातील आवर्ती पेमेंट अपडेट होईल.",
+        "subscription_agreement_label": "तुमच्या कार्टमधील एक किंवा अधिक आयटम ही स्थगित किंवा सदस्यता खरेदी आहे. तुमचे पेमेंट सुरू ठेवून, तुम्ही सहमती देता की तुमची पेमेंट पद्धत संपेपर्यंत किंवा तुम्ही रद्द करेपर्यंत या पृष्ठावर सूचीबद्ध केलेल्या किंमती आणि वारंवारतेनुसार आपोआप शुल्क आकारले जाईल. सर्व रद्दीकरणे %{cancelled} च्या अधीन आहेत.",
+        "subscription_agreement_cancelled": "रद्द करण्याचे धोरण",
+        "subscription_heading": "सदस्यता करार",
+        "subscription_agreement_label_html": "मला समजले आहे की मी सदस्यत्वास सहमत आहे. ते संपेपर्यंत किंवा संपेपर्यंत सूचीबद्ध केलेल्या किंमती आणि वारंवारतेनुसार त्याचे नूतनीकरण होईल\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">रद्द केले</a> .\n",
+        "purchase_options_agreement_label": "तुमच्या कार्टमधील एक किंवा अधिक आयटम ही स्थगित किंवा आवर्ती खरेदी आहे. तुमचे पेमेंट सुरू ठेवून, तुम्ही सहमती देता की तुमची पेमेंट पद्धत संपेपर्यंत किंवा तुम्ही रद्द करेपर्यंत या पृष्ठावर सूचीबद्ध केलेल्या किंमती आणि वारंवारतेनुसार आपोआप शुल्क आकारले जाईल. सर्व रद्दीकरणे %{cancellation_policy_label} च्या अधीन आहेत.",
+        "purchase_options_agreement_label_html": "मला समजते की माझ्या कार्टमधील एक किंवा अधिक आयटम ही स्थगित किंवा आवर्ती खरेदी आहे. सुरू ठेवून, मी सहमत आहे\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">रद्द करण्याचे धोरण</a>\n आणि या पृष्ठावर सूचीबद्ध केलेल्या किंमती, वारंवारता आणि तारखांवर माझ्या पेमेंट पद्धतीवर शुल्क आकारण्यासाठी तुम्हाला अधिकृत करतो\n ऑर्डर पूर्ण झाली किंवा परवानगी असल्यास मी रद्द करतो.\n",
+        "purchase_options_agreement_label_wallets": "तुमचे पेमेंट सुरू ठेवून, तुम्ही या पृष्ठावर सूचीबद्ध केलेल्या भविष्यातील शुल्कांना आणि रद्द करण्याच्या धोरणास सहमती देता.",
+        "change_currency_section_description": "चलन पर्याय निवडा",
+        "no_real_orders_dev_store": "हे स्टोअर वास्तविक ऑर्डर किंवा वास्तविक देयके स्वीकारू शकत नाही.",
+        "waiting_on_payment_methods": "उपलब्ध पेमेंट पद्धती मिळवत आहे...",
+        "apple_pay_payment_error": "तुमचे पेमेंट पूर्ण होऊ शकले नाही. पुन्हा प्रयत्न करा किंवा दुसरी पेमेंट पद्धत वापरा.",
+        "taxes_not_included": "कर समाविष्ट नाहीत",
+        "no_taxes_banner_content": "या ऑर्डरवर कर आकारले जाणार नाहीत. एकदा तुम्ही पेमेंट गोळा केल्यावर, यापुढे कर जोडले जाऊ शकत नाहीत.",
+        "paypal": {
+          "connect": "तुमचे PayPal खाते कनेक्ट करण्यासाठी क्लिक करा"
+        },
+        "apple": {
+          "connect": "तुमचे Apple Pay खाते कनेक्ट करण्यासाठी क्लिक करा",
+          "not_available": "Apple Pay या ब्राउझरमध्ये उपलब्ध नाही. तुमचे Apple Pay खाते कनेक्ट करण्यासाठी तुम्हाला Apple डिव्हाइसवर Safari वापरण्याची आवश्यकता असेल."
+        },
+        "google": {
+          "connect": "तुमच्या Google Pay खात्याशी कनेक्ट करण्यासाठी क्लिक करा",
+          "error_authorizing": "पेमेंट अधिकृत करताना त्रुटी"
+        },
+        "account_connected": "खाते जोडले.",
+        "mor_disclaimer_html": "खाली क्लिक करून आणि तुमची ऑर्डर पूर्ण करून, तुम्ही रेकॉर्ड व्यापारी म्हणून ग्लोबल-ई कडून तुमची वस्तू खरेदी करण्यास सहमत आहात\n या व्यवहारासाठी, Global-e च्या <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">अटी व शर्तींवर</a> \nआणि <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">गोपनीयता धोरण</a> . ग्लोबल-ई एक आंतरराष्ट्रीय आहे\n %{shop_name} ची पूर्तता सेवा प्रदाता\n",
+        "pending_payment": {
+          "due_notice": "तुमचे %{amount_due} चे पेमेंट %{due_date} रोजी देय आहे.",
+          "multibanco": {
+            "buyer_action_info": "तुमचे %{amount_due} पेमेंट बाकी आहे.",
+            "instruction_html": "खालील तपशील वापरून मल्टीबँको येथे किंवा ऑनलाइन पेमेंट करा. प्रश्नांसाठी किंवा पेमेंट तपशील अपडेट करण्यासाठी, %{contact_us}.",
+            "entity": "अस्तित्व",
+            "reference": "संदर्भ",
+            "amount": "रक्कम",
+            "find_nearest_atm": "जवळचे एटीएम शोधा"
+          }
+        },
+        "update_payment_method": "पेमेंट पद्धत अपडेट करा",
+        "order_covered_by_store_credit_notice": "तुमची ऑर्डर तुमच्या स्टोअर क्रेडिटद्वारे संरक्षित आहे.",
+        "order_covered_by_redeemables_notice": "तुमची ऑर्डर समाविष्ट आहे.",
+        "store_credit": {
+          "label": "स्टोअर क्रेडिट",
+          "apply_label": "स्टोअर क्रेडिट लागू करा",
+          "add_label": "स्टोअर क्रेडिट जोडा",
+          "manage_label": "स्टोअर क्रेडिट व्यवस्थापित करा",
+          "buying_gift_card": "तुम्ही गिफ्ट कार्ड खरेदी करण्यासाठी स्टोअर क्रेडिट वापरू शकत नाही",
+          "no_fixed_selling_plans": "तुम्ही स्थगित खरेदी पर्यायांसह स्टोअर क्रेडिट वापरू शकत नाही"
+        },
+        "clear": "साफ",
+        "billing_must_match_shipping_notice": "तुमच्या पेमेंट पद्धतीचा बिलिंग पत्ता शिपिंग पत्त्याशी जुळला पाहिजे.",
+        "same_billing_address_checkbox_label": "बिलिंग पत्ता म्हणून शिपिंग पत्ता वापरा",
+        "location_billing_address_label": "स्थान बिलिंग पत्ता",
+        "fact_billing_address_label": "बिलिंग पत्ता",
+        "location_shipping_address_label": "स्थान शिपिंग पत्ता",
+        "use_order_billing_address_label": "ऑर्डर बिलिंग पत्ता वापरा",
+        "use_location_billing_address_label": "स्थान बिलिंग पत्ता वापरा",
+        "use_location_shipping_address_label": "स्थान शिपिंग पत्ता वापरा",
+        "no_working_method_error": "हे स्टोअर सध्या पेमेंट स्वीकारू शकत नाही. हे पृष्ठ रिफ्रेश करा किंवा नंतर परत या.",
+        "brand_not_available": "हे स्टोअर {{brand}} स्वीकारत नाही. कृपया पैसे देण्यासाठी वेगळे कार्ड वापरा.",
+        "shipping_rate_updated": "उपलब्ध शिपिंग पद्धती अपडेट केल्या गेल्या आहेत. चेक आउट करण्यापूर्वी आपल्या निवडीची पुष्टी करा.",
+        "billing_address_invalid_phone": "सुरू ठेवण्यासाठी {{label}} {{last_digits}} साठी तुमच्या बिलिंग पत्त्यामध्ये फोन नंबर अपडेट करा.",
+        "billing_address_invalid_phone_no_card": "सुरू ठेवण्यासाठी तुमच्या बिलिंग पत्त्यामधील फोन नंबर अपडेट करा.",
+        "preview_not_available": {
+          "title": "पूर्वावलोकन उपलब्ध नाही",
+          "content": "काळजी करू नका, हे एक्सप्रेस चेकआउट तुमच्या ग्राहकांसाठी काम करते.",
+          "button": "ठीक आहे"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "वैध जारी तारीख प्रविष्ट करा",
+              "issue_number": "वैध समस्या क्रमांक प्रविष्ट करा"
+            },
+            "invalid": {
+              "verification_value": "वैध CVV किंवा सुरक्षा कोड एंटर करा"
+            }
+          }
+        },
+        "simulated_checkout": "पूर्वावलोकन लवकरच येत आहे",
+        "vaulting_agreement_label": "जलद चेकआउटसाठी माझी पेमेंट माहिती %{company} मध्ये सेव्ह करा.",
+        "business_customer_vaulting_payment_label": "चेकआउट करताना हे कार्ड जतन करा आणि %{company} ला या स्थानासाठी भविष्यातील खरेदीसाठी शुल्क आकारण्यासाठी अधिकृत करा. या स्थानावर नियुक्त केलेले सर्व संपर्क कार्ड वापरू शकतात.",
+        "purchase_options_and_vaulting_agreement_label": "तुमच्या कार्टमधील एक किंवा अधिक आयटम ही स्थगित किंवा सदस्यता खरेदी आहे. तुमचे पेमेंट सुरू ठेवून, तुम्ही सहमती देता की तुमची पेमेंट पद्धत संपेपर्यंत किंवा तुम्ही रद्द करेपर्यंत या पृष्ठावर सूचीबद्ध केलेल्या किंमती आणि वारंवारतेनुसार आपोआप शुल्क आकारले जाईल. सर्व रद्दीकरणे %{cancellation_policy_label} च्या अधीन आहेत.",
+        "purchase_options_cancellation_policy_label": "रद्द करण्याचे धोरण",
+        "use_different_credit_card_label": "वेगळे कार्ड वापरा",
+        "saved_credit_card": "तुमचे सेव्ह केलेले क्रेडिट कार्ड",
+        "saved_credit_card_info": "शेवटचे चार अंक",
+        "saved_credit_card_cvv_verification": "सत्यापनाच्या हेतूंसाठी, कृपया तुमच्या कार्डचा सुरक्षा कोड प्रविष्ट करा.",
+        "saved_credit_card_actions": {
+          "edit": "संपादित करा",
+          "delete": "हटवा"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "सर्व जतन केलेले कार्ड पहा",
+          "done": "झाले",
+          "cancel": "रद्द करा"
+        },
+        "add_credit_card_modal": {
+          "title": "कार्ड जोडा",
+          "save": "जतन करा",
+          "cancel": "रद्द करा"
+        },
+        "delete_credit_card_modal": {
+          "title": "कार्ड हटवा",
+          "confirmation": "तुमची खात्री आहे की तुम्ही {{lastDigits}} ने समाप्त होणारा {{brandName}} हटवू इच्छिता?",
+          "cancel": "रद्द करा",
+          "delete": "हटवा"
+        }
       },
       "billing": {
         "billing_address_title": "ला बिल",
