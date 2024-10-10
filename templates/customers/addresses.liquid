@@ -15,8 +15,10 @@
                     <button class="btn btn-danger">Delets</button>
                     
                     </form>
+                    <butto class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#newaddressModals">update New</butto>
+
                   {% comment %}  {% endcomment %}
-                  <div class="modal fade" id="newaddressModal" tabindex="-1" aria-labelledby="newAddressModallabel" aria-hidden="true">
+                  <div class="modal fade" id="newaddressModals" tabindex="-1" aria-labelledby="newAddressModallabel" aria-hidden="true">
 
                   {% form 'customer_address', address %}
                     <div class="modal-dialog">
