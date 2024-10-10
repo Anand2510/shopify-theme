@@ -489,6 +489,177 @@
         "rejected_transaction": "तुमचे पेमेंट नाकारले गेले. पुन्हा प्रयत्न करा किंवा भिन्न पेमेंट पद्धत वापरा.",
         "credit_card_processing": "तांत्रिक कारणांमुळे तुमच्या पेमेंटवर प्रक्रिया केली जाऊ शकत नाही. काही मिनिटांत पुन्हा प्रयत्न करा किंवा दुसरी पेमेंट पद्धत वापरा.",
         "checkout_amount_changed": "तुमच्या पेमेंटवर प्रक्रिया करता आली नाही कारण चेकआउटवर देय रक्कम बदलली आहे. कृपया तुमची ऑर्डर तपासा आणि पुन्हा प्रयत्न करा."
+      },
+      "shop_policies": {
+        "privacy_policy": "गोपनीयता धोरण",
+        "terms_of_service": "सेवा अटी",
+        "legal_notice": "कायदेशीर सूचना",
+        "shipping_policy": "शिपिंग धोरण",
+        "terms_of_sale": "विक्रीच्या अटी",
+        "subscription_policy": "सदस्यता धोरण",
+        "purchase_options_policy": "खरेदी पर्याय धोरण",
+        "contact_information": "संपर्क माहिती",
+        "purchase_options_cancellation_policy": "रद्द करण्याचे धोरण"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "रेकॉर्ड अटी आणि नियमांचे व्यापारी",
+        "privacy_policy": "रेकॉर्ड गोपनीयता धोरण व्यापारी"
+      },
+      "markets": {
+        "invalid_market_manager_error": "पेमेंट पूर्ण करण्यापूर्वी तुमच्या संपर्क माहितीचे पुनरावलोकन करा"
+      },
+      "notifications": {
+        "title": "सूचना"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "ऑर्डर %{order_name} साठी देय रक्कम",
+        "changes_summary": {
+          "added": {
+            "one": "जोडले",
+            "other": "%{count} जोडले"
+          },
+          "removed": "काढले",
+          "subtracted": "काढले %{count}",
+          "returned": "परत केले %{count}",
+          "return_line_item_removed": "रिटर्नमधून %{count} काढून टाकले"
+        },
+        "additional_payment_requested": "%{total_outstanding} भरणे आवश्यक आहे",
+        "checkout_review_and_pay": "तुमची ऑर्डर %{order_name} अपडेट केली गेली. या बदलांचे पुनरावलोकन करा, नंतर तुमच्या ऑर्डरची पुष्टी करण्यासाठी पैसे द्या.",
+        "order_updated_on": "तुमची ऑर्डर %{last_edited_at} रोजी अपडेट केली गेली.",
+        "order_review_and_pay": "तुमची ऑर्डर अपडेट केली गेली. तुमच्या ऑर्डरची पुष्टी करण्यासाठी पुनरावलोकन करा आणि पैसे द्या.",
+        "pay_now": "आता पैसे द्या"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "तुमच्या क्रेडिट कार्डवर %{amount} शुल्क आकारले जाईल",
+        "payment_total_label": "एकूण पेमेंट",
+        "change_currency_link": "%{currency_name} वर बदला",
+        "card_provider_fx_charges_warning": "तुमचा कार्ड प्रदाता %{currency_code} व्यवहारांवर शुल्क आकारू शकतो.",
+        "currency_not_supported_by_shop": "तुम्ही निवडलेले चलन आता उपलब्ध नाही. सर्व किमती आता %{currency_code} मध्ये आहेत."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "तुमच्या शिपिंग देशाच्या आधारावर तुमचे कार्ट अपडेट केले गेले आहे.",
+        "cart_and_currency_updated_based_on_country": "तुमचे कार्ट आणि चलन तुमच्या शिपिंग देशाच्या आधारावर अपडेट केले गेले आहे."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "तुमचा देश/प्रदेश अपडेट केला गेला आहे. चेकआउट सुरू ठेवण्यासाठी तुमचा शिपिंग पत्ता प्रविष्ट करा."
+      },
+      "tips": {
+        "title": "टीप जोडा",
+        "description": "%{shop_name} येथे टीमला तुमचा पाठिंबा दर्शवा",
+        "presets_description": "टीप टक्केवारी निवडा",
+        "custom_label": "सानुकूल टीप",
+        "add_tip": "टीप जोडा",
+        "update_tip": "टिप अपडेट करा",
+        "message": "धन्यवाद, आम्ही त्याचे कौतुक करतो.",
+        "no_tip_label": "काहीही नाही"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "%{product_name} खरेदी करा",
+          "one": "%{product_name} आणि %{count} इतर आयटम खरेदी करा",
+          "other": "%{product_name} आणि %{count} इतर आयटम खरेदी करा"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "दिवस",
+            "other": "%{count} दिवस"
+          },
+          "week": {
+            "one": "आठवडा",
+            "other": "%{count} आठवडे"
+          },
+          "month": {
+            "one": "महिना",
+            "other": "%{count} महिने"
+          },
+          "year": {
+            "one": "वर्ष",
+            "other": "%{count} वर्षे"
+          }
+        },
+        "recurring_totals": "%{total_price} दर %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "प्रथम पेमेंट %{total_price_with_discount}, नंतर %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "पहिले पेमेंट %{total_price}",
+            "other": "प्रथम %{count} पेमेंट प्रत्येकी %{total_price}"
+          },
+          "following_cycles": ", नंतर %{total_price} प्रत्येक %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", नंतर %{count} पेमेंट %{total_price}",
+            "other": ", नंतर प्रत्येकी %{total_price} दराने %{count} पेमेंट"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "पेमेंट पद्धती",
+        "title": "पेमेंट पद्धती",
+        "update_card_button_label": "कार्ड अपडेट करा",
+        "delete_customer_mandate": {
+          "generic_error": "तुमच्या विनंतीवर प्रक्रिया करताना समस्या आली.",
+          "success_message": "तुमची पेमेंट पद्धत यशस्वीरित्या हटवली गेली आहे"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "बरेच प्रयत्न",
+          "description": "कृपया काही मिनिटांनी पुन्हा प्रयत्न करा"
+        },
+        "line_to_check_out": "तुम्ही चेक आउट करण्यासाठी रांगेत आहात",
+        "cart_summary_heading": "आपले कार्ट",
+        "merchandise": {
+          "available": "उपलब्ध",
+          "sold_out": "विकले गेले"
+        },
+        "inventory": {
+          "partial_inventory_banner": "तुमच्या कार्टचा काही भाग विकला गेला आहे आणि चेकआउटवर खरेदी करण्यासाठी उपलब्ध होणार नाही.",
+          "sold_out": {
+            "heading": "तुमची कार्ट विकली गेली आहे",
+            "storefront_body": "खरेदी सुरू ठेवण्यासाठी स्टोअरवर परत जा",
+            "no_storefront_body": "दुर्दैवाने तुम्हाला खरेदी करायची असलेली वस्तू यापुढे उपलब्ध नाही.",
+            "link": "स्टोअरकडे परत"
+          }
+        },
+        "title": "रांग",
+        "time_to_checkout_title": "चेक आउट करण्याची वेळ - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "अंदाजे प्रतीक्षा वेळ मोजत आहे",
+          "less_than_one": "अंदाजे प्रतीक्षा वेळ: एका मिनिटापेक्षा कमी",
+          "one": "अंदाजे प्रतीक्षा वेळ: {{count}} मिनिट",
+          "other": "अंदाजे प्रतीक्षा वेळ: {{count}} मिनिटे"
+        },
+        "last_checked": "(अंतिम तपासले: {{time}} )",
+        "footer": {
+          "heading": "हे पृष्ठ रिफ्रेश करू नका, ते आपोआप अपडेट होईल.",
+          "body": "तुम्ही चेकआउट पूर्ण करेपर्यंत तुमच्या कार्टमधील आयटम आरक्षित केले जात नाहीत."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "तुमच्या विनंतीवर प्रक्रिया करताना समस्या आली, कृपया स्टोअर मालकाशी संपर्क साधा."
+      },
+      "no_address_location": {
+        "title": "पत्ता नसलेले स्थान",
+        "header": "तुमच्याकडे या स्थानासाठी शिपिंग पत्ता नाही",
+        "alt_header": "गहाळ शिपिंग पत्ता",
+        "message": "चेकआउट पूर्ण करण्यासाठी या स्थानासाठी पत्ता जोडण्यासाठी आमच्याशी संपर्क साधा.",
+        "email_us_button_label": "आम्हाला ईमेल पाठवा"
+      },
+      "order_errors": {
+        "creation_failure": "तुमची ऑर्डर तयार करताना समस्या आली. पुन्हा प्रयत्न करा किंवा अधिक तपशीलांसाठी आमच्याशी संपर्क साधा.",
+        "network_failure": "नेटवर्क त्रुटीमुळे तुमची ऑर्डर सबमिट करता आली नाही. तुमचे कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.",
+        "inventory_reservation_failure": "काही आयटम यापुढे उपलब्ध नाहीत."
+      },
+      "session_errors": {
+        "session_not_unique": "तुमच्या ऑर्डरवर प्रक्रिया करताना समस्या आली. स्टोअरवर परत येण्यासाठी हे पृष्ठ रिफ्रेश करा.",
+        "session_already_finished": "हा आदेश यापूर्वीच सादर करण्यात आला आहे. नवीन ऑर्डर सुरू करण्यासाठी तुम्ही स्टोअरमध्ये परत येऊ शकता."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "बंद",
+        "business_hours": "उघडण्याचे तास"
       }
     }
   },
