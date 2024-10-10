@@ -26,6 +26,8 @@
 <div class=" row row-cols-3 g-2 ">
   {% if search.performed %}
     {% for item in search.results %}
+      {% if item.object_type == 'product' %}
+      <div class="col">
       <div class="card shadow">
         <div class="card-body">
           {% if item.featured_image %}
@@ -38,6 +40,23 @@
        
         </div>
       </div>
+      </div>
+      {% else if item.object_type == 'article' %}
+      <div class="col">
+        <div class="card shadow">
+          <div class="card-body">
+            {% if item.image %}
+              <a href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
+                {{ item.image.src | img_url: 'small' | img_tag: item.image.alt, 'card-img-top'  }}
+              </a>
+            {% endif %}
+            <h5>{{ item.title | link_to: item.url }}</h5>
+            <p>{{ item.content | strip_html | truncatewords: 50 }}</p>
+         
+          </div>
+        </div>
+        </div>
+        {% endif %}
       {% else %}
       no results
     {% endfor %}
