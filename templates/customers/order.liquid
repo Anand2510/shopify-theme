@@ -12,6 +12,13 @@
           {{ order.billing_address | format_address }}
         </div>
       </div>
+      <div class="card">
+        <div class="card-header">Shipping Information</div>
+        <div class="card-body">
+          <p>Shipping Status: <span class="badge bg-success" >{{ order.fulfillment_status_label }}</span></p>
+          {{ order.shipping_address |  format_address }}
+        </div>
+      </div>
     </div>
   </div>
 </div>
