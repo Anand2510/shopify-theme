@@ -1,0 +1,253 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " आणि ",
+      "last_word_connector": ", आणि "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "तुम्हाला नक्की {{address}} पत्ता हटवायचा आहे का?"
+      },
+      "general": {
+        "page_title": "चेकआउट",
+        "error_page_title": "त्रुटी",
+        "skip_to_content": "सामग्रीवर जा",
+        "breadcrumb": "ब्रेडक्रंब",
+        "continue_button_label": "चालू ठेवा",
+        "complete_purchase_button_label": "ऑर्डर पूर्ण करा",
+        "pay_now_button_label": "आता पैसे द्या",
+        "authenticate_purchase_button_label": "पेमेंट प्रमाणित करा",
+        "edit_link_label": "संपादित करा",
+        "all_rights_reserved": "सर्व हक्क राखीव %{shop_name}",
+        "print_policies_link_label": "छापा",
+        "cart": "कार्ट",
+        "close_modal_label": "बंद करा",
+        "close_notice_label": "बंद करा",
+        "expand_notice_label": "अधिक पहा",
+        "continue_to_shipping_method": "शिपिंग सुरू ठेवा",
+        "continue_to_payment_method": "पेमेंट करणे सुरू ठेवा",
+        "continue_to_review": "ऑर्डरचे पुनरावलोकन करा",
+        "back_to_cart": "कार्टवर परत या",
+        "back_to_contact_information": "माहिती कडे परत जा",
+        "back_to_shipping_method": "शिपिंग वर परत या",
+        "back_to_payment_method": "पेमेंटवर परत या",
+        "choose_shipping_method": "शिपिंग पद्धत निवडा",
+        "choose_payment_method": "पेमेंट पद्धत निवडा",
+        "choose_billing_address": "बिलिंग पत्ता निवडा",
+        "contact_us_html": "अधिक माहितीसाठी आमच्याशी संपर्क साधा",
+        "autocomplete_title": "सूचना",
+        "autocomplete_single_item": "1 आयटम उपलब्ध",
+        "autocomplete_multi_item": "{{number}} आयटम उपलब्ध",
+        "autocomplete_close": "सूचना बंद करा",
+        "forwarding_indicator": {
+          "new_window": "नवीन विंडोमध्ये उघडते.",
+          "external": "बाह्य वेबसाइट उघडते.",
+          "external_and_new_window": "बाह्य वेबसाइट नवीन विंडोमध्ये उघडते."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - चेकआउट"
+        },
+        "tooltip_accessibility_label": "अधिक माहिती",
+        "qr_code": "QR कोड",
+        "errors": {
+          "only_empty_terms_accepted": "हे धोरण फक्त रिक्त अटी स्वीकारते.",
+          "session_identifier_not_unique_error": "तुमच्या ऑर्डरमध्ये काहीतरी चूक झाली, कृपया पुन्हा तपासण्याचा प्रयत्न करा.",
+          "line_item_limit_reached": "लाइन आयटमची कमाल संख्या गाठली आहे.",
+          "session_is_already_finished": "हे चेकआउट सत्र आधीच अंतिम केले गेले आहे.",
+          "merchandise": {
+            "only_value_constraint": "व्यापारी मालाच्या इनपुटमध्ये फक्त अचूक मूल्यांना अनुमती आहे.",
+            "merchandise_not_found": "उत्पादन आढळले नाही.",
+            "merchandise_variant_not_found": "उत्पादन प्रकार आढळला नाही.",
+            "merchandise_not_applicable": "उत्पादन प्रकार खरेदी केला जाऊ शकत नाही.",
+            "bundle_products_not_supported_for_b2b": "या स्थानासाठी B2B ऑर्डरमध्ये बंडल केलेले आयटम जोडले जाऊ शकत नाहीत.",
+            "gift_card_quantity_mismatch": "भेट कार्ड कोड निर्दिष्ट करताना, लाइन आयटमचे प्रमाण आणि भेट कार्ड कोडची संख्या जुळली पाहिजे.",
+            "gift_card_not_supported": "या चेकआउटवर भेट कार्ड समर्थित नाहीत.",
+            "gift_card_not_unique": "या चेकआउटमध्ये {{code}} कोड असलेले गिफ्ट कार्ड एकापेक्षा जास्त वेळा येते. तुलना करण्यापूर्वी कोडचे स्वरूपन केले जाते.",
+            "gift_card_used": "गिफ्ट कार्ड कोड {{code}} आधीपासून भेट कार्डला नियुक्त केला आहे. तुलना करण्यापूर्वी कोडचे स्वरूपन केले जाते.",
+            "gift_card_invalid": "गिफ्ट कार्ड कोड {{code}} अवैध आहे.",
+            "gift_card_code_changed": "स्वरूपन नियमांचे पालन करण्यासाठी गिफ्ट कार्ड कोड {{proposed_code}} बदलून {{formatted_code}} करण्यात आला.",
+            "gift_card_with_attributes_not_supported": "या चेकआउटवर सानुकूल गुणधर्मांसह भेट कार्ड समर्थित नाहीत.",
+            "gift_card_with_components_not_supported": "या चेकआउटवर घटकांसह भेट कार्ड समर्थित नाहीत.",
+            "selling_plan_mismatch": "सदस्यता अद्यतनित केली गेली आहे.",
+            "selling_plan_not_supported": "सदस्यता समर्थित नाहीत.",
+            "selling_plan_not_supported_b2b": "B2B चेकआउटसाठी सदस्यता समर्थित नाहीत.",
+            "price_mismatch": "या मालाची पूर्वी प्रस्तावित किंमत अवैध होती आणि ती अपडेट केली गेली आहे.",
+            "inventory_not_found": "या व्यापारासाठी कोणतीही इन्व्हेंटरी आढळली नाही.",
+            "product_not_published": "उत्पादन प्रकाशित झाले नाही.",
+            "duplicated_stable_id": "या मर्चेंडाइज लाइनमध्ये दुसऱ्या ओळीप्रमाणेच स्थिर-आयडी आहे.",
+            "minimum_quantity_not_met": "काही वस्तूंचे प्रमाण किमान आवश्यकतेनुसार पूर्ण करत नाही.",
+            "maximum_quantity_exceeded": "काही वस्तूंचे प्रमाण कमाल अनुमत मर्यादा ओलांडते.",
+            "quantity_increment_not_met": "काही वस्तूंचे प्रमाण ऑर्डर मर्यादा पूर्ण करत नाही.",
+            "quantity_rules_not_met": "काही वस्तूंचे प्रमाण ऑर्डर मर्यादा पूर्ण करत नाही.",
+            "bundle_requires_components": "या बंडल मालामध्ये कोणतेही घटक नाहीत.",
+            "title_too_long": "मालाचे शीर्षक खूप मोठे आहे.",
+            "title_empty": "मालाचे शीर्षक रिक्त आहे."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "कंपनी संपर्कास कंपनीमध्ये प्रवेश नाही.",
+            "customer_account_required": "सुरू ठेवण्यासाठी ग्राहकाने लॉग इन करणे आवश्यक आहे.",
+            "company_location_required": "सुरू ठेवण्यासाठी ग्राहकाने कंपनीचे स्थान निवडणे आवश्यक आहे.",
+            "contact_info_does_not_match_customer_account": "निर्दिष्ट ग्राहक माहिती लॉग इन केलेल्या ग्राहक खात्याशी जुळली पाहिजे.",
+            "phone_number_does_not_match_expected_pattern": "निर्दिष्ट फोन नंबर अपेक्षित पॅटर्नशी जुळत नाही.",
+            "email_required": "सदस्यत्व वापरून माल खरेदी केला जातो तेव्हा ईमेल आवश्यक आहे.",
+            "email_domain_is_invalid": "या निर्दिष्ट डोमेनचे निराकरण केले जाऊ शकत नाही.",
+            "missing_contact_method": "वैध संपर्क पद्धत गहाळ आहे.",
+            "checkout_completion_target_is_missing": "चेकआउट पूर्ण करण्याचे लक्ष्य गहाळ आहे.",
+            "invalid_customer_profile": "अवैध ग्राहक प्रोफाइल प्रदान केले होते.",
+            "customer_profile_access_restricted": "चेकआउटला ग्राहक प्रोफाइलमध्ये प्रवेश करण्याची परवानगी नाही.",
+            "checkout_completion_target_is_invalid_proc": "अवैध चेकआउट पूर्ण करण्याचे लक्ष्य."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "कार्टमध्ये फक्त एक वितरण लाइन असणे आवश्यक आहे.",
+            "wrong_number_of_delivery_lines": "मालाच्या प्रत्येक गटासाठी वितरण लाइन निर्दिष्ट करणे आवश्यक आहे.",
+            "external_delivery_promise_error": "बाह्य वितरण वचन आणण्यात त्रुटी.",
+            "options_instructions_invalid": "निर्दिष्ट सूचना अपेक्षित पॅटर्नशी जुळत नाहीत.",
+            "destination_address_required": "सुरू ठेवण्यासाठी गंतव्य पत्ता आवश्यक आहे.",
+            "pickup_points_unavailable": "पिकअप पॉइंट सध्या अनुपलब्ध आहेत.",
+            "local_pickup_delivery_line_detail_changed": "चालू ठेवण्यासाठी सध्याची स्थानिक पिकअप वितरण धोरण बदलणे आवश्यक आहे.",
+            "local_pickup_no_delivery_strategy_available": "स्थानिक पिकअप वितरण धोरण उपलब्ध नाही.",
+            "origin_location_id_required": "रिटेल वितरण पद्धतीची विनंती केल्यावर मूळ स्थान आयडी आवश्यक आहे.",
+            "invalid_origin_location_id": "मूळ स्थान आयडीशी जुळणारे स्थान सापडले नाही.",
+            "origin_location_id_not_allowed": "विनंती केलेल्या वितरण पद्धती मूळ स्थान आयडीला समर्थन देत नाहीत.",
+            "auto_fulfill_not_allowed": "हे सत्र पूर्णता वर्तन ओव्हरराइड करण्यासाठी अधिकृत नाही.",
+            "auto_fulfill_required": "रिटेल वितरण पद्धतीची विनंती केली जाते तेव्हा स्वयं पूर्ण करणे आवश्यक असते.",
+            "prefetch_shipping_rates_used": "प्रीफेच केलेले शिपिंग दर कधीही दर परत करू नयेत.",
+            "fulfillment_constraints_not_satisfied": "एक किंवा अधिक पूर्ततेच्या मर्यादांचे समाधान झाले नाही.",
+            "must_fulfill_from_constraint_not_satisfied": "पूर्ततेच्या मर्यादांचे समाधान होत नाही कारण आवश्यक ठिकाणांहून वस्तू पूर्ण केल्या जाऊ शकत नाहीत.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "पूर्ततेच्या मर्यादांचे समाधान होत नाही कारण आयटम एकाच ठिकाणाहून पूर्ण करता येत नाहीत."
+          }
+        },
+        "google_map_title": "गुगल मॅप",
+        "confirm_order_button_label": "ऑर्डरची पुष्टी करा",
+        "submit_order_button_label": "ऑर्डर सबमिट करा",
+        "submit_for_review_button_label": "पुनरावलोकनासाठी सबमिट करा",
+        "submit_for_review_notice_label": "तुमच्या ऑर्डरचे पुनरावलोकन होईपर्यंत पेमेंट देय होणार नाही",
+        "continue_to_payment_plans_button_label": "पेमेंट योजना सुरू ठेवा",
+        "back_button_label": "परतावे",
+        "choose_delivery_strategy": "वितरण पद्धत निवडा",
+        "autocomplete_zero_item": "कोणतेही आयटम उपलब्ध नाहीत",
+        "autocomplete_powered_by_google": "{{brandName}} द्वारा समर्थित",
+        "submit": "सबमिट करा",
+        "processing": "प्रक्रिया करत आहे...",
+        "stepper": {
+          "increase": "{{type}} वाढवा",
+          "decrease": "{{type}} कमी करा",
+          "minimum_reached": "किमान {{value}} गाठले",
+          "maximum_reached": "कमाल {{value}} गाठली"
+        },
+        "remove_item": "%{label} काढा",
+        "remove_tag": "टॅग काढा",
+        "dates": {
+          "weekdays": {
+            "monday": "सोमवार",
+            "tuesday": "मंगळवार",
+            "wednesday": "बुधवार",
+            "thursday": "गुरुवार",
+            "friday": "शुक्रवार",
+            "saturday": "शनिवार",
+            "sunday": "रविवार"
+          },
+          "weekdays_abbreviation": {
+            "monday": "मो",
+            "tuesday": "तू",
+            "wednesday": "आम्ही",
+            "thursday": "गु",
+            "saturday": "सा",
+            "sunday": "सु"
+          },
+          "months": {
+            "january": "जानेवारी",
+            "february": "फेब्रुवारी",
+            "march": "मार्च",
+            "april": "एप्रिल",
+            "may": "मे",
+            "june": "जून",
+            "july": "जुलै",
+            "august": "ऑगस्ट",
+            "september": "सप्टेंबर",
+            "october": "ऑक्टोबर",
+            "november": "नोव्हेंबर",
+            "december": "डिसेंबर"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "मागील महिना दाखवा, {{month}} {{year}}",
+          "show_next_month": "पुढील महिन्यात दाखवा, {{month}} {{year}}",
+          "range_start": "श्रेणी प्रारंभ",
+          "in_range": "श्रेणीत",
+          "range_end": "श्रेणी समाप्त"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} मार्करचा क्लस्टर",
+            "other": "{{number}} मार्करचा क्लस्टर"
+          }
+        },
+        "sheet": {
+          "expand": "विस्तृत करा"
+        },
+        "dropzone": {
+          "add_file": "फाइल जोडा",
+          "invalid_file_type": "फाइल प्रकार समर्थित नाही",
+          "dragged_over": "अपलोड करण्यासाठी फाइल ड्रॉप करा"
+        }
+      },
+      "contact": {
+        "title": "माहिती",
+        "address_title": "पत्ता",
+        "shipping_used_as_billing_notice": "हा या ऑर्डरसाठी तुमचा बिलिंग पत्ता म्हणून देखील वापरला जाईल.",
+        "delivery_option_title": "वितरण पद्धत",
+        "contact_method_title": "संपर्क करा",
+        "email_label": "ईमेल",
+        "email_placeholder": "ईमेल",
+        "email_or_phone_label": "ईमेल किंवा मोबाईल फोन नंबर",
+        "email_or_phone_placeholder": "ईमेल किंवा मोबाईल फोन नंबर",
+        "stored_addresses_label": "सेव्ह केलेले पत्ते",
+        "available_addresses_label": "उपलब्ध पत्ते",
+        "new_address_label": "नवीन पत्ता वापरा",
+        "first_name_label": "नाव",
+        "optional_first_name_label": "नाव (पर्यायी)",
+        "last_name_label": "आडनाव",
+        "company_label": "कंपनी",
+        "company_attention_label": "कंपनी/लक्ष",
+        "optional_company_attention_label": "कंपनी/लक्ष (पर्यायी)",
+        "optional_company_label": "कंपनी (पर्यायी)",
+        "address1_label": "पत्ता",
+        "address2_label": "अपार्टमेंट, सुट इ.",
+        "optional_address2_label": "अपार्टमेंट, सुट इ. (पर्यायी)",
+        "city_label": "शहर",
+        "country_label": "देश/प्रदेश",
+        "country_code": "देश/प्रदेश कोड",
+        "province_label": "प्रांत",
+        "province_placeholder": "प्रांत",
+        "county_label": "परगणा",
+        "county_placeholder": "परगणा",
+        "state_label": "राज्य",
+        "state_placeholder": "राज्य",
+        "region_label": "प्रदेश",
+        "region_placeholder": "प्रदेश",
+        "region_none": "काहीही निवडले नाही",
+        "prefecture_label": "प्रीफेक्चर",
+        "prefecture_placeholder": "प्रीफेक्चर",
+        "governorate_label": "गव्हर्नरेट",
+        "governorate_placeholder": "गव्हर्नरेट",
+        "emirate_label": "अमिरात",
+        "emirate_placeholder": "अमिरात",
+        "state_and_territory_label": "राज्य/प्रदेश",
+        "state_and_territory_placeholder": "राज्य/प्रदेश",
+        "phone_label": "फोन",
+        "optional_phone_label": "फोन (पर्यायी)",
+        "phone_placeholder": "फोन"
+      }
+    }
+  }
+}
