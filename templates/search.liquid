@@ -66,10 +66,11 @@
   {% endif %}
 
 
-  {% comment %} {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %} {% endcomment %}
+  {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %}
 
 </div>
 <div class="row">
+  <h2>page</h2>
   {%  render 'pagination', paginate:paginate %} 
 </div>
 {% endpaginate %}
