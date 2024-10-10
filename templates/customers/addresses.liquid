@@ -61,8 +61,10 @@
                     </div>
                     <div class="col-12 col-md-4 mb-3">
                         <label for="AddressProvinceNew" class="form-label">Province</label>
-                        <input type="text" name="address[province]" value="{{ form.province }}" id="AddressProvinceNew"
+                        <select type="text" name="address[province]"  id="AddressProvinceNew"
                             class="form-control">
+                            {{ all_country_option_tags }}
+                            </select>
                     </div>
                 </div>
                 
