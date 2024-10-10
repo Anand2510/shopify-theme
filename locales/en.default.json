@@ -10,6 +10,9 @@
     
       "Blog":{
         "title":"Blog"
+      },
+      "Layout":{
+        "login_text":"Login"
       }
   },
   "shopify": {

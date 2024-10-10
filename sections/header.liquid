@@ -35,20 +35,36 @@
         <a class="nav-link" href="/cart">contact</a>
     </li>
     </ul>
+    <ul class="navbar-nav">
+      {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+         <li class="nav-item">
+          <a href="{{ routes.account_url }}">Account</a>
+         </li>
+        {% else %}
+        <li class="nav-item">
+          <a href="{{ routes.account_login_url }}">{{ 'general.Layout.login_text' | t }}</a>
+        </li>
+        {% endif %}
+      {% endif %}
+     
+
+    </ul>
     <form action="/search" method="get" role="search" class="me-3">
     <input type="text" name="q" id="" value="{{ search.terms |  escape }}">
       <button type="submit">Search</button>
     </form>
-    {% if shop.customer_accounts_enabled %}
-      {% if customer %}
-        <a href="/account">account</a>
-        {{ 'log out'  | customer_logout_link }}
-      {% else %}
-        {{ 'log in ' | customer_login_link }}
-        {{ 'register' | customer_register_link }}
-      {% endif %}
-    {% endif %}
+    
   </div>
 </nav>
 </div>
 </div>
+{% comment %} {% if shop.customer_accounts_enabled %}
+  {% if customer %}
+    <a href="/account">account</a>
+    {{ 'log out'  | customer_logout_link }}
+  {% else %}
+    {{ 'log in ' | customer_login_link }}
+    {{ 'register' | customer_register_link }}
+  {% endif %}
+{% endif %} {% endcomment %}
