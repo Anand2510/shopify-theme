@@ -369,7 +369,27 @@
         "state_and_territory_placeholder": "राज्य/प्रदेश",
         "phone_label": "फोन",
         "optional_phone_label": "फोन (पर्यायी)",
-        "phone_placeholder": "फोन"
+        "phone_placeholder": "फोन",
+        "phone_tooltip": "तुमच्या ऑर्डरबद्दल आम्हाला तुमच्याशी संपर्क साधण्याची गरज असल्यास",
+        "zip_code_label": "पिन कोड",
+        "optional_zip_code_label": "पिन कोड (पर्यायी)",
+        "zip_code_placeholder": "पिन कोड",
+        "postal_code_label": "पोस्टल कोड",
+        "optional_postal_code_label": "पोस्टल कोड (पर्यायी)",
+        "postal_code_placeholder": "पोस्टल कोड",
+        "postcode_label": "पोस्टकोड",
+        "optional_postcode_label": "पोस्टकोड (पर्यायी)",
+        "postcode_placeholder": "पोस्टकोड",
+        "pincode_label": "पिन कोड",
+        "optional_pincode_label": "पिन कोड (पर्यायी)",
+        "pincode_placeholder": "पिन कोड",
+        "civic_number_warning": "तुमच्याकडे घर क्रमांक असल्यास जोडा",
+        "optional_last_name_label": "आडनाव (पर्यायी)",
+        "different_shipping_address_label": "वेगळ्या पत्त्यावर पाठवा",
+        "different_shipping_address_text": "या ऑर्डरसाठी एक-वेळचा पत्ता वापरा",
+        "change_company_location_link_label": "कंपनीचे स्थान बदला",
+        "change_location_link_label": "स्थान बदला",
+        "ship_to_company": "{{companyName}} ला पाठवा"
       },
       "payment": {
         "edit_credit_card_modal": {
@@ -1006,6 +1026,76 @@
         "out_of_stock": {
           "description": "हे आयटम यापुढे उपलब्ध नाहीत आणि तुमच्या कार्टमधून काढले गेले आहेत.",
           "items_unavailable": "काही आयटम यापुढे उपलब्ध नाहीत आणि ते तुमच्या कार्टमधून काढले गेले आहेत."
+        },
+        "page_title": "इन्व्हेंटरी समस्या",
+        "title": "स्टॉक संपला",
+        "items_unavailable_notice": "काही आयटम यापुढे उपलब्ध नाहीत.",
+        "product_column_header": "उत्पादने",
+        "quantity_column_header": "प्रमाण",
+        "price_column_header": "किंमत",
+        "status_column_header": "स्थिती",
+        "removed_from_cart_notice": "कार्टमधून काढले",
+        "sold_out_label": "विकले गेले",
+        "reduced_label": "कमी केले",
+        "reduced_with_quantity_label": "फक्त %{quantity_available} शिल्लक",
+        "remove_from_cart_button_label": "कार्टमधून काढा",
+        "continue_shopping_button_label": "चालू ठेवा",
+        "go_back_to_cart_button_label": "माझ्या कार्टवर परत जा",
+        "remove": "काढा",
+        "return_to_store_label": "स्टोअरवर परत या",
+        "continue_cta_label": "चेकआउट सुरू ठेवा",
+        "item_label": {
+          "one": "{{count}} आयटम",
+          "other": "{{count}} आयटम"
+        },
+        "empty_cart_label": "तुमची कार्ट रिकामी आहे",
+        "quantity_update": {
+          "page_title": "प्रमाण अद्यतन",
+          "title": "प्रमाण अद्यतन",
+          "description": "या आयटमसाठी उपलब्ध प्रमाण बदलले आहे आणि तुमच्या कार्टमध्ये अपडेट केले आहे."
+        },
+        "unpurchasable_product": {
+          "title": "खरेदी न करता येणारे उत्पादन",
+          "header": "तुमच्या कार्टमधून काही आयटम काढले गेले",
+          "message": "हे आयटम B2B ऑर्डरसाठी उपलब्ध नाहीत.",
+          "status_column_header": "उपलब्ध नाही"
+        },
+        "unpurchasable_product_generic": {
+          "title": "खरेदी न करता येणारे उत्पादन",
+          "header": "तुमच्या कार्टमधून काही आयटम काढले गेले",
+          "message": "या वस्तू उपलब्ध नाहीत.",
+          "status_column_header": "उपलब्ध नाही"
+        },
+        "unfulfillable_product": {
+          "title": "वितरण उपलब्ध नाही",
+          "message": {
+            "one": "या आयटमसाठी %{delivery_method} यापुढे उपलब्ध नाही.",
+            "other": "या आयटमसाठी %{delivery_method} आता उपलब्ध नाही."
+          },
+          "default_message": {
+            "one": "या आयटमसाठी निवडलेली वितरण पद्धत यापुढे उपलब्ध नाही.",
+            "other": "या आयटमसाठी निवडलेली वितरण पद्धत यापुढे उपलब्ध नाही."
+          }
+        },
+        "unshippable_product": {
+          "title": "वितरण उपलब्ध नाही",
+          "header": {
+            "one": "%{count} आयटमसाठी कोणतेही वितरण उपलब्ध नाही",
+            "other": "%{count} आयटमसाठी कोणतेही वितरण उपलब्ध नाही"
+          },
+          "message": {
+            "one": "हा आयटम तुमच्या कार्टमधून काढला जाईल कारण तुमच्या पत्त्यासाठी कोणत्याही वितरण पद्धती उपलब्ध नाहीत.",
+            "other": "हे आयटम तुमच्या कार्टमधून काढले जातील कारण तुमच्या पत्त्यासाठी वितरण पद्धती उपलब्ध नाहीत."
+          },
+          "status_column_header": "वितरण नाही"
+        },
+        "price_update": {
+          "title": "किंमत अद्यतन",
+          "description": "या आयटमच्या किमती बदलल्या आहेत आणि तुमच्या कार्टमध्ये अपडेट केल्या आहेत."
+        },
+        "price_and_quantity_update": {
+          "title": "किंमत आणि प्रमाण अद्यतन",
+          "description": "या वस्तूंच्या किमती आणि उपलब्ध प्रमाण बदलले आहेत आणि तुमच्या कार्टमध्ये अपडेट केले आहेत."
         }
       },
       "contextual_availability": {
@@ -1088,6 +1178,46 @@
             "subtotal_limit_reached": "लाइन आयटमचे कमाल मूल्य गाठले आहे."
           }
         }
+      },
+      "delivery_options": {
+        "free_total_label": "मोफत",
+        "ship": "जहाज",
+        "ship_to_address": "पत्त्यावर पाठवा",
+        "shipping_address": "शिपिंग पत्ता",
+        "pick_up": "उचला",
+        "pick_up_from_store": "स्टोअरमध्ये पिकअप",
+        "pick_up_locations": "स्टोअर स्थाने",
+        "pick_up_in_one_hour": "सहसा 1 तासात तयार होते",
+        "pick_up_in_two_hours": "सहसा 2 तासात तयार होते",
+        "pick_up_in_four_hours": "सहसा 4 तासात तयार होते",
+        "pick_up_in_twenty_four_hours": "सहसा 24 तासात तयार होते",
+        "pick_up_in_two_to_four_days": "सहसा 2-4 दिवसात तयार होते",
+        "pick_up_in_five_or_more_days": "साधारणपणे ५+ दिवसात तयार होते",
+        "pick_up_in_zero_to_two_hours": "2 तासात पिकअपसाठी तयार",
+        "pick_up_in_two_to_four_hours": "4 तासांत पिकअपसाठी तयार",
+        "pick_up_immediately": "आता पिकअपसाठी सज्ज",
+        "pick_up_next_day": "पुढच्या दिवशी पिकअपसाठी तयार",
+        "pickup_point_method_definition": "पिकअप पॉइंटवर पाठवा",
+        "retail_method_definition": "किरकोळ शिपिंग",
+        "none_method_definition": "शिपिंग नाही",
+        "subscription_pickup_information": "ही वितरण पद्धत या ऑर्डरमधील सर्व आयटम आणि या सदस्यत्वासाठी भविष्यातील सर्व ऑर्डरवर लागू होईल."
+      },
+      "customer_account": {
+        "not_user_label": "%{first_name} नाही?",
+        "have_an_account_label": "खाते आहे का?",
+        "sign_in_link_label": "लॉग इन करा",
+        "sign_out_link_label": "लॉग आउट करा",
+        "save_my_information_label": "पुढील वेळी माहिती जतन करा",
+        "invalid_address": "निवडलेला पत्ता अवैध आहे. %{update_address_link} किंवा वेगळा पत्ता निवडा.",
+        "incomplete_address": "निवडलेला पत्ता अपूर्ण आहे. %{update_address_link} किंवा वेगळा पत्ता निवडा.",
+        "rollup_label": "खाते",
+        "invalid_shipping_method_summary": "उपलब्ध शिपिंग पद्धती पाहण्यासाठी वैध शिपिंग पत्ता निवडा",
+        "saved_address_option_description": {
+          "one": "तुमच्याकडे {{count}} जतन केलेला पत्ता आहे.",
+          "other": "तुमच्याकडे {{count}} सेव्ह केलेले पत्ते आहेत."
+        },
+        "saved_address_option_link": "जतन केलेला पत्ता वापरा",
+        "saved_address_modal_title": "माझा जतन केलेला पत्ता वापरा"
       }
     },
     "pagination": {
