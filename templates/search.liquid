@@ -17,6 +17,6 @@
       no results
     {% endfor %}
   {% endif %}
-
-  {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %}
+{%  render 'pagination', paginate:paginate %} 
+  {% comment %} {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %} {% endcomment %}
 {% endpaginate %}

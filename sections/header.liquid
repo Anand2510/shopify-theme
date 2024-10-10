@@ -37,7 +37,7 @@
     </ul>
     <form action="/search" method="get" role="search">
     <input type="text" name="q" id="" value="{{ search.terms |  escape }}">
-
+      <button type="submit">Search</button>
     </form>
     {% if shop.customer_accounts_enabled %}
       {% if customer %}
