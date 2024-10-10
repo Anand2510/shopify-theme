@@ -29,7 +29,7 @@
                     </td>
                     <td>{{ order.fulfillment_status_label  }}</td>
                     <td>{{ order.financial_status_label }} </td>
-                    <td> {{ order.created_at |  time_tag format: 'date' }} </td>
+                    <td> {{ order.created_at | time_tag format: 'date' }} </td>
                     <td> {{ order.total_price  }} </td>
                   </tr>
                 {% endfor %}
