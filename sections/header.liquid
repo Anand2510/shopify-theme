@@ -32,6 +32,10 @@
         <a class="nav-link" href="/cart">contact</a>
     </li>
     </ul>
+    <form action="/search" method="get" role="search">
+    <input type="text" name="q" id="" value="{{ search.terms |  escape }}">
+
+    </form>
     {% if shop.customer_accounts_enabled %}
       {% if customer %}
         <a href="/account">account</a>
