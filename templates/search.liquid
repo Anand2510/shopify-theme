@@ -64,11 +64,12 @@
     {% endfor %}
     </div>
   {% endif %}
-  <div class="row">
-    {%  render 'pagination', paginate:paginate %} 
-  </div>
+
 
   {% comment %} {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %} {% endcomment %}
 
+</div>
+<div class="row">
+  {%  render 'pagination', paginate:paginate %} 
 </div>
 {% endpaginate %}
