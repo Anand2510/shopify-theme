@@ -1,6 +1,6 @@
-
+{% paginate search.results by 10 %}
 <div class="container my-4 text-center">
-  {% paginate search.results by 10 %}
+
   <div class="row">
     <form action="/search" method="get" role="search">
     <input type="search" name="q" value="{{ search.terms | escape }}">
@@ -69,5 +69,6 @@
   </div>
 
   {% comment %} {% if paginate.pages > 1 %}{{ paginate | default_pagination }}{% endif %} {% endcomment %}
-{% endpaginate %}
+
 </div>
+{% endpaginate %}
