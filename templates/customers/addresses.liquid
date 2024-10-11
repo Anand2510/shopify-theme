@@ -12,26 +12,9 @@
                 <div class="card-footer">
                     <form action="/account/addresses/{{ address.id }}" method="post" data-confirm-massege="Delete Addresss">
                     <input type="hidden" name="_method" value="delete">
-                    <button class="btn btn-danger">Delets</button>
+                    <button class="btn btn-danger">Delet</button>
                     
                     </form>
-                    <butto class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#newaddressModal">update New</butto>
-
-                  {% comment %}  {% endcomment %}
-                  <button class="btn btn-primary rounded-0" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#newaddressModal" 
-                  data-first-name="{{ address.first_name }}" 
-                  data-last-name="{{ address.last_name }}" 
-                  data-company-name="{{ address.company_name }}" 
-                  data-address1="{{ address.address1 }}" 
-                  data-address2="{{ address.address2 }}" 
-                  data-city="{{ address.city }}" 
-                  data-country="{{ address.country }}" 
-                  data-province="{{ address.province }}" 
-                  data-zip="{{ address.zip }}" 
-                  data-phone="{{ address.phone }}">Update</button>
-                  {% comment %}  {% endcomment %}
                 </div>
             </div>
         </div>
@@ -114,30 +97,6 @@
     {% endform %}
 </div>
 
-
-{% comment %} 
-{% for address in customer.addresses %}
-
-    {{ address | format_address }}
-  
-    <div class="form--edit-address">
-      {% form 'customer_address', address %}
-        <input type="text" name="address[first_name]" value="{{ form.first_name }}" placeholder="First Name">
-        <input type="text" name="address[last_name]" value="{{ form.last_name }}" placeholder="Last Name">
-        <input type="text" name="address[company]" value="{{ form.company }}" placeholder="Company">
-        <input type="text" name="address[address1]" value="{{ form.address1 }}" placeholder="Address Line 1">
-        <input type="text" name="address[address2]" value="{{ form.address2 }}" placeholder="Address Line 2">
-        <input type="text" name="address[city]" value="{{ form.city }}" placeholder="City">
-        <select name="address[country]" data-default="{{ form.country }}">{{ country_option_tags }}</select>
-        <select name="address[province]" data-default="{{ form.province }}"></select>
-        <input type="text" name="address[zip]" value="{{ form.zip }}" placeholder="ZIP/Postal Code">
-        <input type="text" name="address[phone]" value="{{ form.phone }}" placeholder="Phone Number">
-        
-        <button type="submit" class="btn btn-xs btn-primary">Update Address</button>
-      {% endform %}
-    </div>
-  
-  {% endfor %} {% endcomment %}
 {% comment %} <!-- /templates/customers/addresses.liquid -->
 
 <h2>New Address</h2>
