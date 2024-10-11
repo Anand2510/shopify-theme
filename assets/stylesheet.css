@@ -98,7 +98,21 @@
 }
 .dropup-content{
   display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  min-width: 210px;
+  z-index: 1;
+  background-color: #f1f1f1;
+  box-shadow: -1px 0px 20px 0px #00000066;
 }
 .dropup:hover .dropup-content{
   display: block;
+}
+.dropup-content a{
+color: #000;
+font-size: 17px;
+padding: 15px 10px;
+display: block;
+text-align: center;
 }

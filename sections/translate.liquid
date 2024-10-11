@@ -3,7 +3,8 @@
     <div class="dropup-content">
         {% for locale in shop.published_locales %}
             {% comment %} <a href="">{{ locale.iso_code }}</a> {% endcomment %}
-            <a href="">{{ locale.endonym_name }}</a>
+            <a href="#" id="localItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
         {% endfor %}
     </div>
+    <input type="hidden" name="localecode" value="{{ form.current_locale.iso_code }}" id="">
     {% endform %}
