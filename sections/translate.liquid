@@ -6,5 +6,5 @@
             <a href="#" id="localItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
         {% endfor %}
     </div>
-    <input type="hidden" name="localecode" value="{{ form.current_locale.iso_code }}" id="">
+    <input type="hidden" id="localeCode" name="localecode" value="{{ form.current_locale.iso_code }}">
     {% endform %}

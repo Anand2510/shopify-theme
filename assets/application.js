@@ -41,3 +41,11 @@ if(document.getElementById("forgotpassword") != null){
         }
     });
 }
+var localeItem = document.querySelectorAll("localeItem");
+if(localeItem.length > 0){
+    localeItem.forEach(item =>{
+        localeItem.addEventListener("click", event =>{
+            document.getElementById("localeCode")
+    });
+     });
+}
