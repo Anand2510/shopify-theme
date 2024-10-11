@@ -14,7 +14,7 @@
     {% endform %}
     <a href="#recover" class="text-center">Forgot your password?</a>
   </div>
-  <div class="forgot-password-form d-none">
+  <div id="forgot_password_form" class="forgot-password-form d-none">
     {% form 'recover_customer_password' %}
     {% include 'form-error', form:form %}
     <div class="col-12">

@@ -31,3 +31,13 @@ if( document.getElementById('AddressCountryNew') != null){
         
     });
 }
+if(document.getElementById("forgotPassword") != null){
+    document.getElementById('forgotpassword').addEventListener("click", function(e){
+        console.log("I Clicked");
+        const element = document.querySelector("#forgot_password_form");
+        if(element.classList.contains("d-none")){
+            element.classList.remove("d-none");
+            element.classList.add("d-block");
+        }
+    });
+}
