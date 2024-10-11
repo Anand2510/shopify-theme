@@ -116,17 +116,17 @@ padding: 15px 10px;
 display: block;
 text-align: center;
 }
-.footer-section .row.mobile {
+/* .footer-section .row.mobile {
   display: none;
-}
+} */
 /* .footer-section .container .row.descktop {
   display: block;
 } */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .footer-section .row.descktop {
     display: none;
 }
 .footer-section .row.mobile {
   display: block;
 }
-}
+} */

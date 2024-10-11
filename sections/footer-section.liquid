@@ -1,7 +1,7 @@
 <footer class="footer-section bg-light py-5 mt-5">
     <div class="container">
         <div class="row descktop row-cols-{{ section.settings.colum_range }}">
-            <div class="row mobile row-cols-{{ section.settings.mobile_colum_range }}">
+            
                 {%  assign item = block.settings %} 
                 {% if block.type == 'link_list' %}
                     <div class="col ">
@@ -44,14 +44,6 @@
         {
             "type":"range",
             "id": "colum_range",
-            "default": 3,
-            "min": 2,
-            "max": 4,
-            "label": "Number of colum"
-        },
-        {
-            "type":"range",
-            "id": "mobile_colum_range",
             "default": 3,
             "min": 2,
             "max": 4,
