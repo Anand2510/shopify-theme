@@ -116,3 +116,17 @@ padding: 15px 10px;
 display: block;
 text-align: center;
 }
+.footer-section .container .descktop .row.mobile {
+  display: none;
+}
+.footer-section .container .row.descktop {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .footer-section .container .row.descktop {
+    display: none;
+}
+.footer-section .container .descktop .row.mobile {
+  display: block;
+}
+}
