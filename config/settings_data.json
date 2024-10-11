@@ -1,15 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "navbar_color": "#ec00ff",
+    "header_text_font": "sans-serif",
+    "body_font_size": 20,
     "sections": {
       "header": {
         "type": "header",
@@ -137,7 +139,13 @@
           "text_8bEy9m"
         ],
         "settings": {
-          "colum_range": 4
+          "colum_range": 4,
+          "enable_payment_type_icon": true
+        }
+      },
+      "translate": {
+        "type": "translate",
+        "settings": {
         }
       }
     },
