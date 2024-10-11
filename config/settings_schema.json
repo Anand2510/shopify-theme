@@ -51,6 +51,21 @@
         "id":"body_text_font",
         "label":"Font",
         "default":"mono"
+      },
+      {
+        "type": "header",
+        "content": "Body Font Size"
+      },
+      {
+        "type": "font_picker",
+        "id":"body_font_size",
+        "label":"Font Size",
+        "default":16,
+        "unit":"px",
+        "min":"13",
+        "max":"30",
+        "step":1
+
       }
     ]
   }
