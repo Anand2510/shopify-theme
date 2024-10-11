@@ -1,6 +1,6 @@
 <footer class="footer-section bg-light py-5 mt-5">
     <div class="container">
-        <div class="row row-cols-{{ section.settings.colum_range }}">
+        <div class="row {% if section.settings.colum_range  %} row-cols-{{ section.settings.colum_range }} {% endif %}">
             {% for block in section.blocks %}
                 {%  assign item = block.settings %} 
                 {% if block.type == 'link_list' %}
