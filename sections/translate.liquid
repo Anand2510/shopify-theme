@@ -1,8 +1,9 @@
-{% form 'localization' %}
+{% form 'localization' id:"localization_form_tag", class:"dropup" %}
     <div class="localeBtn">Transalte</div>
     <div class="dropup-content">
         {% for locale in shop.published_locales %}
-            <a href="">{{ locale.iso_code }}</a>
+            {% comment %} <a href="">{{ locale.iso_code }}</a> {% endcomment %}
+            <a href="">{{ locale.endonym_name }}</a>
         {% endfor %}
     </div>
     {% endform %}
