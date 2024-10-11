@@ -37,7 +37,7 @@
           <div class="card" style="width: 18rem;"> 
             {% assign image = product.featured_media.preview_image %}
             {% if image != blank %}
-              <a href="#" id="productInfoAnchor">
+              <a href="#" id="productInfoAnchor" product-handle="{{ product.handle }}">
                 <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
               </a>
             {% else %}

@@ -57,6 +57,12 @@ if(productInfoAncors.length > 0){
     productInfoAncors.forEach(item => {
         item.addEventListener("click", event =>{
                 console.log(" i clicked this image");
+                var url = '/product/'+ item.getAttribute('product-handle') + '.js';
+                fetch(url)
+                .then((resp)=>.json())
+                .then(function(data){
+                    console.log(data);
+                });
                 producModal.show();
         });
     });
