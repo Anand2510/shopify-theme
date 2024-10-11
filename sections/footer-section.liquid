@@ -1,8 +1,7 @@
 <footer class="footer-section bg-light py-5 mt-5">
     <div class="container">
         <div class="row descktop row-cols-{{ section.settings.colum_range }}">
-            <div class="row mobile row-cols-{{ section.settings.mobile_colum_range }}"></div>
-            {% for block in section.blocks %}
+            <div class="row mobile row-cols-{{ section.settings.mobile_colum_range }}">
                 {%  assign item = block.settings %} 
                 {% if block.type == 'link_list' %}
                     <div class="col ">
@@ -30,6 +29,7 @@
                 {% endif %}
             {% endfor %}
         </div>
+    </div>
     </div>
 </footer>
 
