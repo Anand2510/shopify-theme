@@ -54,7 +54,7 @@
       },
       {
         "type": "header",
-        "content": "Body Font Size"
+        "content": "Font Size"
       },
       {
         "type": "font_picker",
