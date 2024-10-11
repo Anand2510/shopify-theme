@@ -31,8 +31,8 @@ if( document.getElementById('AddressCountryNew') != null){
         
     });
 }
-if(document.getElementById("forgot-password-form ") != null){
-    document.getElementById('forgot-password-form ').addEventListener("click", function(e){
+if(document.getElementById("forgotpassword") != null){
+    document.getElementById('forgotpassword').addEventListener("click", function(e){
         console.log("I Clicked");
         const element = document.querySelector("#forgot_password_form");
         if(element.classList.contains("d-none")){
