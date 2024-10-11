@@ -41,6 +41,12 @@
         "id":"header_text_font",
         "label":"Font",
         "default":"mono"
+      },
+      {
+        "type": "font_picker",
+        "id":"body_text_font",
+        "label":"Font",
+        "default":"mono"
       }
     ]
   }
