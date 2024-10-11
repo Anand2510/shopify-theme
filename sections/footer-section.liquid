@@ -31,11 +31,13 @@
             {% endfor %}
         </div>
     </div>
-    <div class="container">
+    {% if section.settings.enable_payment_type_icon %}
+    <div class="container justify-content-center">
         {% for payment_type in shop.enabled_payment_types %}
             <img src="{{ payment_type |  payment_type_img_url }}">
         {% endfor %}
     </div>
+    {% endif %}
 </footer>
 
 
@@ -53,6 +55,12 @@
             "min": 2,
             "max": 4,
             "label": "Number of colum"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_payment_type_icon",
+            "label": "Enable Payment Type Icon",
+            "default": true
         }
     ],
     "max_blocks": 4,
