@@ -37,7 +37,10 @@
           <div class="card" style="width: 18rem;"> 
             {% assign image = product.featured_media.preview_image %}
             {% if image != blank %}
-              <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
+              <a href="#" id="productInfoAncors">
+
+                <img class="card-img-top" src="{{ image | img_url: 'medium' }}" alt="{{ product.title }}">
+              </a>
             {% else %}
               {{ 'product-1' | placeholder_svg_tag: 'card-img-top' }}
             {% endif %}
@@ -53,5 +56,5 @@
   {% endpaginate %}
 </div>
 
-
+<div class="modal fade" id="productInfoModal"></div>
 
