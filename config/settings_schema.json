@@ -43,7 +43,7 @@
         "default":"mono"
       },
       {
-        "type": "Body",
+        "type": "header",
         "content": "Body Style"
       },
       {
