@@ -10,9 +10,9 @@
 {
   "current": {
     "navbar_color": "#ec00ff",
-    "header_text_font": "agmena_n4",
+    "header_text_font": "mono",
     "body_text_font": "abril_fatface_n4",
-    "body_font_size": 20,
+    "body_font_size": 18,
     "sections": {
       "header": {
         "type": "header",
