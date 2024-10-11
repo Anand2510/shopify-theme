@@ -50,3 +50,13 @@ if(localeItems.length > 0){
     });
      });
 }
+
+var productInfoAncors = document.querySelectorAll("#productInfoAnchor");
+if(productInfoAncors.length > 0){
+    productInfoAncors.forEach(item => {
+        item.addEventListener("click", event =>{
+                console.log(" i clicked this image");
+        });
+    });
+
+}
