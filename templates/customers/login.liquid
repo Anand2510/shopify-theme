@@ -7,7 +7,7 @@
 
 
             
-      {% include 'form-error' form:form %} 
+      {% include 'form-error', form:form %} 
 
             <label for="emailAddress">Email Address</label>
             <input type="email" name="customer[email]" class="form-control rounded-0 my-2">
@@ -16,8 +16,19 @@
             
             <input type="submit" value="Sign in" class="btn btn-primary btn-lg w-100 rounded-0">
             {% endform %} 
+            <a href="#recover" class="text-center">Forgot your password?</a>
     </div>
+<div class="forgot-password-form d-none">
+  {% form 'recover_customer_password' %}
+    {%  include 'form-error', form:form  %}
 
+    <div class="col-12">
+      <label for="resetpassword" class="form-labe">Email Address</label>
+      <input type="email" name="email" id="resetpassword">
+    </div>
+    <input type="submit" value="Reset Password">
+  {% endform %}
+</div>
 </div>
 {% comment %} <h2>Login</h2>
 {% form 'customer_login' %}
