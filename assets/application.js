@@ -59,7 +59,7 @@ if(productInfoAncors.length > 0){
                 console.log(" i clicked this image");
                 var url = '/product/'+ item.getAttribute('product-handle') + '.js';
                 fetch(url)
-                .then((resp)=>resp.json())
+                .then((resp) => resp.json())
                 .then(function(data){
                     console.log(data);
                 });
