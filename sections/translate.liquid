@@ -1,1 +1,7 @@
-hello Word
+{% form 'localization' %}
+    <div class="localeBtn">Transalte</div>
+    <div class="dropup-content">
+        {% for locale in shop.published_locales %}
+            <a href="">{{ locale.iso_code }}</a>
+        {% endfor %}
+    </div>
