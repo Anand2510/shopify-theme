@@ -31,6 +31,11 @@
             {% endfor %}
         </div>
     </div>
+    <div class="container">
+        {% for payment_type in shop.enabled_payment_types %}
+            <img src="{{ payment_type |  payment_type_img_url }}">
+        {% endfor %}
+    </div>
 </footer>
 
 
