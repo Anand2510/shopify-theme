@@ -1,10 +1,10 @@
 <footer class="footer-section bg-light py-5 mt-5">
     <div class="container">
-        <div class="row row-cols-{{ section.settings.colum_range-s }}">
+        <div class="row row-cols-{{ section.settings.colum_range }}">
             {% for block in section.blocks %}
                 {%  assign item = block.settings %} 
                 {% if block.type == 'link_list' %}
-                    <div class="col">
+                    <div class="col col-md-1">
                         <h5>{{ item.title }}</h5>
                         {%  assign footer_linklist = item.menu %} 
                         <ul class="list-unstyled text-small">
