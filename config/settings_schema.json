@@ -28,6 +28,21 @@
         "default":"#79FF00"
       }
     ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading Style"
+      },
+      {
+        "type": "font_picker",
+        "id":"header_text_font",
+        "label":"Font",
+        "default":"Mono"
+      }
+    ]
   }
   
 ]
