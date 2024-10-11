@@ -40,7 +40,7 @@
         "type": "font_picker",
         "id":"header_text_font",
         "label":"Font",
-        "default":"Mono"
+        "default":"mono"
       }
     ]
   }
