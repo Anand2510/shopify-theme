@@ -7,10 +7,12 @@
 
 
 {% form 'contact' %}
-<div class="alert alert-success">
-{% if form.posted_successfully? %} Thank you for your contact {% endif %}
+
+{% if form.posted_successfully? %}
+  <div class="alert alert-success">
+ Thank you for your contact 
 </div>
-  
+{% endif %}
   {{ form.errors | default_errors }}
   <div class="row">
     <div class="col-12 col-md-6">
