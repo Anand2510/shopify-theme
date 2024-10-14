@@ -57,7 +57,7 @@ if(productInfoAncors.length > 0){
     productInfoAncors.forEach(item => {
         item.addEventListener("click", event =>{
                 console.log(" i clicked this image");
-                var url = '/product/' + item.getAttribute('product-handle') + '.js';
+                var url = '/products/' + item.getAttribute('product-handle') + '.js';
                 fetch(url)
                 .then((resp) => resp.json())
                 .then(function(data){
