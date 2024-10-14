@@ -20,12 +20,18 @@
       <input class="form-control" type="email" id="ContactFormEmail" name="contact[email]">
     </div>
   </div>
-
-
-  <label for="ContactFormPhone">phone</label>
-  <input type="tel" id="ContactFormPhone" name="contact[phone]">
+<div class="row">
+  <div class="col">
+    <label for="ContactFormPhone">phone</label>
+    <input class="form-control" type="tel" id="ContactFormPhone" name="contact[phone]">
+  </div>
+</div>
+<div class="col">
   <label for="ContactFormMessage">message</label>
-  <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
+  <textarea class="form-control" rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
+</div>
+
+
   <input type="submit" value="send">
 {% endform %}
 </div>
