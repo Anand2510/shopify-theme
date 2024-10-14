@@ -17,7 +17,7 @@
       {% endif %}
       
       <div class="card-body">
-        <h3><a href="{{ product.url }}">{{ product.title | truncate: 15 }}</a></h3>
+        <a href="{{ product.url }}"> <h3>{{ product.title | truncate: 15 }}</h3></a>
         <p>{{ product.price | money_without_trailing_zeros }}</p>
       </div>
     </div>
