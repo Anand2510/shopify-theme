@@ -19,6 +19,7 @@
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
+          <label for="productSelect">variants</label>
           <select name="id" id="productSelect" class="form-select">
             {% for variant in product.variants %}
               {% if variant.available %}
