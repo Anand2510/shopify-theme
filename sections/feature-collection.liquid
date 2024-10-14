@@ -5,7 +5,7 @@
     {%  for product in collections[section.settings.featute_collection].products %}
         {%  assign image = product.featured_media.preview_image %} 
         <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; z-index: 99;">
                 {%  if image != blank %} 
                  <a href="{{ product.url }}">   <img class="card-img-top" src="{{ image |  img_url: 'medium' }}" alt="{{ product.title }}"></a>
                     {%  else %}
