@@ -12,7 +12,10 @@
     </div>
     <div class="col-md-6 col-12">
       <h1>{{ product.title }}</h1>
-      <p>{{ product.price | money_with_currency }}</p>
+      <div class="col">
+        <p>{{ product.price | money_with_currency }}</p>
+      </div>
+      
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
@@ -27,6 +30,7 @@
           </select>
         </div>
         <div class="mb-3">
+          <label for="Quantity" class="form-label">Quantity</label>
           <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
         </div>
         <button type="submit" name="add" id="AddToCart" class="btn btn-secondary btn-lg w-100 rounded-0 mb-3">Add To Cart</button>
