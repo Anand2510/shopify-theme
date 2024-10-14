@@ -64,7 +64,7 @@ if(productInfoAncors.length > 0){
                     // console.log(data);
                     document.getElementById("productInfoimg").src = data.images[0];
                     document.getElementById("productInfoTitle").innerHTML = data.title;
-                    document.getElementById("productInfoPrice").innerHTML = data.compare_at_price;
+                    document.getElementById("productInfoPrice").innerHTML = item.getAttribute('product-price');
                     document.getElementById("producInfoDescription").innerHTML = data.description;
                 });
                 producModal.show();
