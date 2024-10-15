@@ -22,27 +22,27 @@
           "settings": {
           }
         },
-        "varintSelector": {
-          "type": "varint_selector",
+        "variantSelector": {
+          "type": "variant_selector",
           "settings": {
           }
         },
-        "varintColor": {
-          "type": "varint_selector_color",
+        "variantColor": {
+          "type": "variant_selector_color",
           "settings": {
           }
         },
-        "Quantity": {
+        "quantity": {
           "type": "quantity",
           "settings": {
           }
         },
-        "CheckOutButton": {
+        "checkoutButton": {
           "type": "checkout_buttons",
           "settings": {
           }
         },
-        "Description": {
+        "description": {
           "type": "description",
           "settings": {
           }
@@ -51,11 +51,11 @@
       "block_order": [
         "title",
         "price",
-        "varintSelector",
-        "varintColor",
-        "Quantity",
-        "CheckOutButton",
-        "Description"
+        "variantSelector",
+        "variantColor",
+        "quantity",
+        "checkoutButton",
+        "description"
       ],
       "settings": {
       }
