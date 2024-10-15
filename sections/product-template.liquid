@@ -10,126 +10,96 @@
       {% endfor %}
     </div>
     <div class="col-md-6 col-12">
-      {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
-      {%  for block in section.blocks %} 
-      {% case block.type %}
-        {% when 'title' %}
-          <h1>{{ product.title }}</h1>
-          {%  when 'price' %} 
-            <p>{{ product.price | money_with_currency }}</p>
-            {%  when 'varint_selector' %} 
-              <div class="mb-3">
-                <label for="variantSelect" class="form-label">Variants</label>
-                <select name="variant_id" id="variantSelect" class="form-select">
-                  {% for variant in product.variants %}
-                    {% if variant.available %}
-                      <option value="{{ variant.id }}">{{ variant.title }}</option>
-                    {% else %}
-                      <option value="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
-                    {% endif %}
-                  {% endfor %}
-                </select>
-              </div>
-              {%  when 'varint_selector_color' %} 
-                <div class="mb-3">
-                  <label for="colorSelect" class="form-label">Color</label>
-                  <select name="color_id" id="colorSelect" class="form-select">
-                    {% assign colorVariants = product.variants | where: "option1", "Color" %}
-                    {% for variant in colorVariants %}
-                      {% if variant.available %}
-                        <option value="{{ variant.id }}">{{ variant.option1 }}</option>
-                      {% else %}
-                        <option value="{{ variant.id }}" disabled="disabled">{{ variant.option1 }}</option>
-                      {% endif %}
-                    {% endfor %}
-                  </select>
-                </div>
-                {%  when 'quantity' %} 
-                  <div class="mb-3">
-                    <label for="Quantity" class="form-label">Quantity</label>
-                    <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
-                  </div>
-                  {%  when 'checkout_buttons' %} 
-                    <button type="submit" name="add" id="AddToCart" class="btn btn-secondary btn-lg w-100 rounded-0 mb-3">Add To Cart</button>
-                    {% if section.settings.dynamic_buttons_checkbox == true %}
-                      {{ form | payment_button }}
-                    {% endif %}
-                    {%  when 'description' %} 
-                      <div class="col">
-                        and---{{ product.description }}
-                      </div>
-        {% else %}
-          
-      {% endcase %}
-      {% endfor %}
-    
-      
+      <h1>{{ product.title }}</h1>
+      <p>{{ product.price | money_with_currency }}</p>
 
- 
-    
+      {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
+        <div class="mb-3">
+          <label for="variantSelect" class="form-label">Variants</label>
+          <select name="variant_id" id="variantSelect" class="form-select">
+            {% for variant in product.variants %}
+              {% if variant.available %}
+                <option value="{{ variant.id }}">{{ variant.title }}</option>
+              {% else %}
+                <option value="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
         
-    
+        <div class="mb-3">
+          <label for="colorSelect" class="form-label">Color</label>
+          <select name="color_id" id="colorSelect" class="form-select">
+            {% assign colorVariants = product.variants | where: "option1", "Color" %}
+            {% for variant in colorVariants %}
+              {% if variant.available %}
+                <option value="{{ variant.id }}">{{ variant.option1 }}</option>
+              {% else %}
+                <option value="{{ variant.id }}" disabled="disabled">{{ variant.option1 }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
         
-    
-   
+        <div class="mb-3">
+          <label for="Quantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
+        </div>
+        <button type="submit" name="add" id="AddToCart" class="btn btn-secondary btn-lg w-100 rounded-0 mb-3">Add To Cart</button>
+        {% if section.settings.dynamic_buttons_checkbox == true %}
+          {{ form | payment_button }}
+        {% endif %}
       {% endform %}
-     
+      <div class="col">
+        {{ product.description }}
+      </div>
     </div>
-  </div>
 </div>
 
- {% schema %}
+
+
+{% schema %}
 {
-    "name": "Product Page",
+    "name": "Product",
     "settings": [
         {
-            "type":"checkbox",
-            "id":"dynamic_buttons_checkbox",
-            "label":"Enable Dynamic Buttons",
-            "default":false
+            "type": "checkbox",
+            "id": "dynamic_buttons_checkbox",
+            "label": "Enable Dynamic Buttons",
+            "default": false
         }
-        ],
-        "blocks": [
-          {
-              "type":"title",
-              "name":"Title",
-              "limit": 1
-          },
-          {
-            "type": "price",
-            "name":"Price",
-            "limit": 1
-          },
-          {
-            "type": "varint_selector",
-            "name":"Varint Selector",
-            "limit": 1
-          },
-          {
-            "type": "varint_selector_color",
-            "name":"Varint Selector Color",
-            "limit": 1
-          },
-          {
-            "type": "quantity",
-            "name":"Quantity",
-            "limit": 1
-          },
-          {
-            "type": "checkout_buttons",
-            "name":"Check Out Buttons",
-            "limit": 1
-          },
-          {
-            "type": "description",
-            "name":"Description",
-            "limit": 1
-          }
-        ],
-        "presets": [
-          {
-            "name": "product sections"
-          }
-        ]
+    ],
+    "blocks": [
+        {
+          "type": "title",
+          "name": "Title",
+          "limit": 1
+        },
+        {
+          "type": "price",
+          "name": "Price",
+          "limit": 1
+        },
+        {
+          "type": "variant_selector",
+          "name": "Variant Selector",
+          "limit": 1
+        },
+        {
+          "type": "quantity",
+          "name": "Quantity",
+          "limit": 1
+        },
+        {
+          "type": "checkout_buttons",
+          "name": "Checkout Buttons",
+          "limit": 1
+        },
+        {
+          "type": "description",
+          "name": "Description",
+          "limit": 1
+        }
+    ]
 }
-{% endschema %} 
+{% endschema %}
