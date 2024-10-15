@@ -19,8 +19,8 @@
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
-          <label for="productSelect" class="form-label">variants</label>
-          <select name="id" id="productSelect" class="form-select">
+          <label for="variantSelect" class="form-label">Variants</label>
+          <select name="variant_id" id="variantSelect" class="form-select">
             {% for variant in product.variants %}
               {% if variant.available %}
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
@@ -30,11 +30,12 @@
             {% endfor %}
           </select>
         </div>
+        
         <div class="mb-3">
-          <label for="productSelect" class="form-label">color</label>
-          <select name="id" id="productSelect" class="form-select">
-            {%  assign productss = product.variants.Color %}
-            {% for variant in productss.variants %}
+          <label for="colorSelect" class="form-label">Color</label>
+          <select name="color_id" id="colorSelect" class="form-select">
+            {% assign colorVariants = product.variants | where: "option1", "Color" %}
+            {% for variant in colorVariants %}
               {% if variant.available %}
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
               {% else %}
@@ -43,6 +44,7 @@
             {% endfor %}
           </select>
         </div>
+        
         <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
           <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
