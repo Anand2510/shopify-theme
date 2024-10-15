@@ -43,12 +43,21 @@
           },
           "variant_selector_jrD6ge": {
             "type": "variant_selector",
-            "disabled": true,
             "settings": {
             }
           },
           "price_cMtX6r": {
             "type": "price",
+            "settings": {
+            }
+          },
+          "quantity_x7mLDe": {
+            "type": "quantity",
+            "settings": {
+            }
+          },
+          "checkout_buttons_Jnr7r8": {
+            "type": "checkout_buttons",
             "settings": {
             }
           }
@@ -57,7 +66,9 @@
           "title_dT6gD8",
           "description_8cyjVh",
           "variant_selector_jrD6ge",
-          "price_cMtX6r"
+          "price_cMtX6r",
+          "quantity_x7mLDe",
+          "checkout_buttons_Jnr7r8"
         ],
         "settings": {
           "dynamic_buttons_checkbox": true
