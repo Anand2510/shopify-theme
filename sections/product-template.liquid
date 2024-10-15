@@ -31,6 +31,19 @@
           </select>
         </div>
         <div class="mb-3">
+          <label for="productSelect" class="form-label">color</label>
+          <select name="id" id="productSelect" class="form-select">
+            {%  assign product = product.variants.Color %}
+            {% for variant in producst.variants %}
+              {% if variant.available %}
+                <option value="{{ variant.id }}">{{ variant.title }}</option>
+              {% else %}
+                <option value="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+        <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
           <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
         </div>
@@ -55,6 +68,38 @@
             "label":"Enable Dynamic Buttons",
             "default":false
         }
+        ],
+        "blocks": [
+          {
+              "type":"title",
+              "name":"Title",
+              "limit": 1
+          },
+          {
+            "type": "price",
+            "name":"Price",
+            "limit": 1
+          },
+          {
+            "type": "varint_selector",
+            "name":"Varint Selector",
+            "limit": 1
+          },
+          {
+            "type": "quantity",
+            "name":"Quantity",
+            "limit": 1
+          },
+          {
+            "type": "checkout_buttons",
+            "name":"Check Out Buttons",
+            "limit": 1
+          },
+          {
+            "type": "description",
+            "name":"Description",
+            "limit": 1
+          }
         ],
         "presets": [
           {
