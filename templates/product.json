@@ -12,7 +12,9 @@
                 "variantSelector": {
                     "type": "variant_selector"
                 },
-            
+                "variantColor": {
+                    "type": "variant_selector_color"
+                },
                 "quantity": {
                     "type": "quantity"
                 },

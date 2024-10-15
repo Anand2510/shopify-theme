@@ -31,6 +31,20 @@
                 {% endfor %}
               </select>
             </div>
+            {%  when 'variant_selector_color' %} 
+              <div class="mb-3">
+                <label for="colorSelect" class="form-label">Color</label>
+                <select name="color_id" id="colorSelect" class="form-select">
+                  {% assign colorVariants = product.variants | where: "option1", "Color" %}
+                  {% for variant in colorVariants %}
+                    {% if variant.available %}
+                      <option value="{{ variant.id }}">{{ variant.option1 }}</option>
+                    {% else %}
+                      <option value="{{ variant.id }}" disabled="disabled">{{ variant.option1 }}</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div> 
           {% when 'quantity' %}
             <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
@@ -55,19 +69,7 @@
 
      
         
-        {% comment %} <div class="mb-3">
-          <label for="colorSelect" class="form-label">Color</label>
-          <select name="color_id" id="colorSelect" class="form-select">
-            {% assign colorVariants = product.variants | where: "option1", "Color" %}
-            {% for variant in colorVariants %}
-              {% if variant.available %}
-                <option value="{{ variant.id }}">{{ variant.option1 }}</option>
-              {% else %}
-                <option value="{{ variant.id }}" disabled="disabled">{{ variant.option1 }}</option>
-              {% endif %}
-            {% endfor %}
-          </select>
-        </div> {% endcomment %}
+        {% comment %}{% endcomment %}
         
      
       {% endform %}
@@ -102,6 +104,11 @@
         {
           "type": "variant_selector",
           "name": "Variant Selector",
+          "limit": 1
+        },
+        {
+          "type": "variant_selector_color",
+          "name": "Variant Selector Color",
           "limit": 1
         },
         {
