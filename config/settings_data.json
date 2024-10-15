@@ -194,23 +194,6 @@
 
     ],
     "blocks": {
-      "11945366711752539959": {
-        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "1508965166889416987": {
-        "type": "shopify://apps/voice-search-rvs/blocks/vsearch/8ef905b2-5f75-45ea-a294-d0e3c180914f",
-        "disabled": false,
-        "settings": {
-          "Vsearch": true,
-          "search_icon": true,
-          "colour": "#000000",
-          "icon_size": 16,
-          "right_space": 32
-        }
-      },
       "12645029315662244871": {
         "type": "shopify://apps/meteor-mega-menu/blocks/app_embed/9412d6a7-f8f8-4d65-b9ae-2737c2f0f45b",
         "disabled": true,
@@ -277,6 +260,23 @@
           "images_aspect_ratio": "1",
           "cards_background": "#ffffff",
           "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "1508965166889416987": {
+        "type": "shopify://apps/voice-search-rvs/blocks/vsearch/8ef905b2-5f75-45ea-a294-d0e3c180914f",
+        "disabled": true,
+        "settings": {
+          "Vsearch": true,
+          "search_icon": true,
+          "colour": "#000000",
+          "icon_size": 16,
+          "right_space": 32
+        }
+      },
+      "11945366711752539959": {
+        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
+        "disabled": true,
+        "settings": {
         }
       }
     }
