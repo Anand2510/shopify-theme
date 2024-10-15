@@ -1,53 +1,40 @@
 {
-    "name": "Product Page",
-    "settings": [
-        {
-            "type": "checkbox",
-            "id": "dynamic_buttons_checkbox",
-            "label": "Enable Dynamic Buttons",
-            "default": false
+    "sections": {
+        "template": {
+            "type": "product-template",
+            "blocks": {
+                "title": {
+                    "type": "title"
+                },
+                "price": {
+                    "type": "price"
+                },
+                "variantSelector": {
+                    "type": "variant_selector"
+                },
+                "variantColor": {
+                    "type": "variant_selector_color"
+                },
+                "quantity": {
+                    "type": "quantity"
+                },
+                "checkoutButton": {
+                    "type": "checkout_buttons"
+                },
+                "description": {
+                    "type": "description"
+                }
+            },
+            "block_order": [
+                "title",
+                "price",
+                "variantSelector",
+                "variantColor",
+                "quantity",
+                "checkoutButton",
+                "description"
+            ]
         }
-    ],
-    "blocks": [
-        {
-            "type": "title",
-            "name": "Title",
-            "limit": 1
-        },
-        {
-            "type": "price",
-            "name": "Price",
-            "limit": 1
-        },
-        {
-            "type": "variant_selector",
-            "name": "Variant Selector",
-            "limit": 1
-        },
-        {
-            "type": "variant_selector_color",
-            "name": "Variant Selector Color",
-            "limit": 1
-        },
-        {
-            "type": "quantity",
-            "name": "Quantity",
-            "limit": 1
-        },
-        {
-            "type": "checkout_buttons",
-            "name": "Check Out Buttons",
-            "limit": 1
-        },
-        {
-            "type": "description",
-            "name": "Description",
-            "limit": 1
-        }
-    ],
-    "presets": [
-        {
-            "name": "product sections"
-        }
-    ]
+    },
+    "order": ["template"]
 }
