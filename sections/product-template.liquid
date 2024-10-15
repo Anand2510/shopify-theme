@@ -37,13 +37,14 @@
             {% assign colorVariants = product.variants | where: "option1", "Color" %}
             {% for variant in colorVariants %}
               {% if variant.available %}
-                <option value="{{ variant.id }}">{{ variant.title }}</option>
+                <option value="{{ variant.id }}">{{ variant.option1 }}</option>
               {% else %}
-                <option value="{{ variant.id }}" disabled="disabled">{{ variant.title }}</option>
+                <option value="{{ variant.id }}" disabled="disabled">{{ variant.option1 }}</option>
               {% endif %}
             {% endfor %}
           </select>
         </div>
+        
         
         <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
