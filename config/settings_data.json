@@ -31,11 +31,6 @@
       "product-template": {
         "type": "product-template",
         "blocks": {
-          "title_dT6gD8": {
-            "type": "title",
-            "settings": {
-            }
-          },
           "description_8cyjVh": {
             "type": "description",
             "settings": {
@@ -43,6 +38,11 @@
           },
           "variant_selector_jrD6ge": {
             "type": "variant_selector",
+            "settings": {
+            }
+          },
+          "title_dT6gD8": {
+            "type": "title",
             "settings": {
             }
           },
@@ -63,9 +63,9 @@
           }
         },
         "block_order": [
-          "title_dT6gD8",
           "description_8cyjVh",
           "variant_selector_jrD6ge",
+          "title_dT6gD8",
           "price_cMtX6r",
           "quantity_x7mLDe",
           "checkout_buttons_Jnr7r8"
@@ -194,37 +194,26 @@
 
     ],
     "blocks": {
-      "5918445685253060206": {
-        "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+      "11945366711752539959": {
+        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": false,
         "settings": {
         }
       },
-      "17151115064775110295": {
-        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
+      "1508965166889416987": {
+        "type": "shopify://apps/voice-search-rvs/blocks/vsearch/8ef905b2-5f75-45ea-a294-d0e3c180914f",
         "disabled": false,
         "settings": {
-          "color_brand": "#467C99",
-          "contrast_color": "#FFFFFF",
-          "color_brand_secondary": "#467C99",
-          "corners": "8px",
-          "app_background": "#f9f8f4",
-          "app_container": 1200,
-          "app_vertical_padding": 32,
-          "images_aspect_ratio": "1",
-          "cards_background": "#FFFFFF",
-          "cards_border_color": "rgba(0,0,0,0)"
-        }
-      },
-      "5946647744298494267": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
-        "settings": {
+          "Vsearch": true,
+          "search_icon": true,
+          "colour": "#000000",
+          "icon_size": 16,
+          "right_space": 32
         }
       },
       "12645029315662244871": {
         "type": "shopify://apps/meteor-mega-menu/blocks/app_embed/9412d6a7-f8f8-4d65-b9ae-2737c2f0f45b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "navigation_link_caret_style": "outline",
           "navigation_link_spacing": 16,
@@ -248,7 +237,7 @@
       },
       "5059203847231188605": {
         "type": "shopify://apps/smart-product-filter-search/blocks/app-embed/5cc1944c-3014-4a2a-af40-7d65abc0ef73",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "productGridSelector": "",
           "useCustomQuickviewTemplate": false,
@@ -262,21 +251,32 @@
           "customYMMTemplateLoader": "{%- capture YMMTemplate -%}{% render 'globo.filter.form' %}{%- endcapture -%}{%- unless YMMTemplate contains 'Liquid error' -%}<script id=\"gspfForm\" type=\"template/html\">{{- YMMTemplate | replace: \"script>\", \"scripttag>\" -}}</script>{%- endunless -%}"
         }
       },
-      "11945366711752539959": {
-        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
-        "disabled": false,
+      "5918445685253060206": {
+        "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+        "disabled": true,
         "settings": {
         }
       },
-      "1508965166889416987": {
-        "type": "shopify://apps/voice-search-rvs/blocks/vsearch/8ef905b2-5f75-45ea-a294-d0e3c180914f",
-        "disabled": false,
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": true,
         "settings": {
-          "Vsearch": true,
-          "search_icon": true,
-          "colour": "#000000",
-          "icon_size": 16,
-          "right_space": 32
+        }
+      },
+      "17151115064775110295": {
+        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": true,
+        "settings": {
+          "color_brand": "#467c99",
+          "contrast_color": "#ffffff",
+          "color_brand_secondary": "#467c99",
+          "corners": "8px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#ffffff",
+          "cards_border_color": "rgba(0,0,0,0)"
         }
       }
     }
