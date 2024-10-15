@@ -23,12 +23,12 @@
           }
         },
         "variantSelector": {
-          "type": "variant_selector",
+          "type": "varint_selector",
           "settings": {
           }
         },
         "variantColor": {
-          "type": "variant_selector_color",
+          "type": "varint_selector_color",
           "settings": {
           }
         },
