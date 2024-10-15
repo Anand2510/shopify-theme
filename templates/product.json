@@ -1,34 +1,53 @@
 {
-    "sections": {
-        "template":{
-            "type": "product-template",
-            "blocks": {
-                "title":{
-                    "type": "title"
-                },
-                "price":{
-                    "type": "price"
-                },
-                "varintSelector":{
-                    "type": "varint_selector"
-                },
-                "varintColor":{
-                    "type": "varint_selector_color"
-                },
-                "Quantity":{
-                    "type": "quantity"
-                },
-                "CheckOutButton":{
-                    "type": "checkout_buttons"
-                },
-                "Description":{
-
-                    "type": "description"
-                }
-
-            },
-            "block_order": ["title","price","varintSelector","varintColor","Quantity","CheckOutButton","Description"]
+    "name": "Product Page",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "dynamic_buttons_checkbox",
+            "label": "Enable Dynamic Buttons",
+            "default": false
         }
-    },
-    "order": ["template"]
+    ],
+    "blocks": [
+        {
+            "type": "title",
+            "name": "Title",
+            "limit": 1
+        },
+        {
+            "type": "price",
+            "name": "Price",
+            "limit": 1
+        },
+        {
+            "type": "variant_selector",
+            "name": "Variant Selector",
+            "limit": 1
+        },
+        {
+            "type": "variant_selector_color",
+            "name": "Variant Selector Color",
+            "limit": 1
+        },
+        {
+            "type": "quantity",
+            "name": "Quantity",
+            "limit": 1
+        },
+        {
+            "type": "checkout_buttons",
+            "name": "Check Out Buttons",
+            "limit": 1
+        },
+        {
+            "type": "description",
+            "name": "Description",
+            "limit": 1
+        }
+    ],
+    "presets": [
+        {
+            "name": "product sections"
+        }
+    ]
 }
