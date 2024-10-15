@@ -33,8 +33,8 @@
         <div class="mb-3">
           <label for="productSelect" class="form-label">color</label>
           <select name="id" id="productSelect" class="form-select">
-            {%  assign product = product.variants.Color %}
-            {% for variant in producst.variants %}
+            {%  assign productss = product.variants.Color %}
+            {% for variant in productss.variants %}
               {% if variant.available %}
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
               {% else %}
