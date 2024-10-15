@@ -4,9 +4,30 @@
             "type": "product-template",
             "blocks": {
                 "title":{
-                    "type": ""
+                    "type": "title"
+                },
+                "price":{
+                    "type": "price"
+                },
+                "varintSelector":{
+                    "type": "varint_selector"
+                },
+                "varintColor":{
+                    "type": "varint_selector_color"
+                },
+                "Quantity":{
+                    "type": "quantity"
+                },
+                "CheckOutButton":{
+                    "type": "checkout_buttons"
+                },
+                "Description":{
+
+                    "type": "description"
                 }
-            }
+
+            },
+            "block_order": ["title","price","varintSelector","varintColor","Quantity","CheckOutButton","Description"]
         }
     },
     "order": ["template"]
