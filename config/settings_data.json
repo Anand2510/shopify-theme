@@ -46,6 +46,11 @@
             "settings": {
             }
           },
+          "variant_selector_color_aHLWT4": {
+            "type": "variant_selector_color",
+            "settings": {
+            }
+          },
           "quantity_x7mLDe": {
             "type": "quantity",
             "settings": {
@@ -66,6 +71,7 @@
           "title_dT6gD8",
           "price_cMtX6r",
           "variant_selector_jrD6ge",
+          "variant_selector_color_aHLWT4",
           "quantity_x7mLDe",
           "checkout_buttons_Jnr7r8",
           "description_8cyjVh"
