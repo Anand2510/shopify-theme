@@ -284,6 +284,13 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "14437475469799978234": {
+        "type": "shopify://apps/product/blocks/add/747acf4c-834b-4f4b-9e45-7144e68e039b",
+        "disabled": false,
+        "settings": {
+          "icon_color": "#121212"
+        }
       }
     }
   },
