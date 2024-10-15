@@ -31,22 +31,33 @@
       "product-template": {
         "type": "product-template",
         "blocks": {
-          "price_VWeUL4": {
-            "type": "price",
+          "title_dT6gD8": {
+            "type": "title",
+            "settings": {
+            }
+          },
+          "description_8cyjVh": {
+            "type": "description",
+            "settings": {
+            }
+          },
+          "variant_selector_jrD6ge": {
+            "type": "variant_selector",
             "disabled": true,
             "settings": {
             }
           },
-          "title_F3RWix": {
-            "type": "title",
-            "disabled": true,
+          "price_cMtX6r": {
+            "type": "price",
             "settings": {
             }
           }
         },
         "block_order": [
-          "price_VWeUL4",
-          "title_F3RWix"
+          "title_dT6gD8",
+          "description_8cyjVh",
+          "variant_selector_jrD6ge",
+          "price_cMtX6r"
         ],
         "settings": {
           "dynamic_buttons_checkbox": true
