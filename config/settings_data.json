@@ -30,6 +30,24 @@
       },
       "product-template": {
         "type": "product-template",
+        "blocks": {
+          "price_VWeUL4": {
+            "type": "price",
+            "disabled": true,
+            "settings": {
+            }
+          },
+          "title_F3RWix": {
+            "type": "title",
+            "disabled": true,
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "price_VWeUL4",
+          "title_F3RWix"
+        ],
         "settings": {
           "dynamic_buttons_checkbox": true
         }
