@@ -16,6 +16,12 @@
         {% case block.type %}
           {% when 'title' %}
             <h1>{{ product.title }}</h1>
+          {% if product.metafields.custom.additional_info %}
+  <div class="product-additional-info">
+    <p>{{ product.metafields.custom.additional_info }}</p>
+  </div>
+{% endif %}
+
           {% when 'price' %}
             <p>{{ product.price | money_with_currency }}</p>
           {% when 'variant_selector' %}
