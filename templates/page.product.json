@@ -27,17 +27,12 @@
           "settings": {
           }
         },
-        "variantColor": {
-          "type": "variant_selector_color",
-          "settings": {
-          }
-        },
         "quantity": {
           "type": "quantity",
           "settings": {
           }
         },
-        "checkoutButton": {
+        "checkoutButtons": {
           "type": "checkout_buttons",
           "settings": {
           }
@@ -52,9 +47,8 @@
         "title",
         "price",
         "variantSelector",
-        "variantColor",
         "quantity",
-        "checkoutButton",
+        "checkoutButtons",
         "description"
       ],
       "settings": {
