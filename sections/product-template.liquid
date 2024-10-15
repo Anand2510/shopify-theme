@@ -1,11 +1,10 @@
-{% assign current_product = product.selected_or_first_available_vatrient %}
+{% assign current_product = product.selected_or_first_available_variant %}
 {% assign product_image = current_product.featured_image | default: product.featured_image %} 
 
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-12">
       <img class="img-fluid" src="{{ product_image | img_url: 'large' }}" alt="{{ product_image.alt }}" id="productMainImage"> 
-      {% comment %} <img class="img-fluid" src="{{ product.main_image.src | img_url: 'large' }}" alt="{{ product.main_image.alt }}" id="productMainImage">  {% endcomment %}
       {% for image in product.images %}
         <img src="{{ image.src | img_url: 'medium' }}" alt="{{ image.alt }}">
       {% endfor %}
@@ -15,7 +14,6 @@
       <div class="col">
         <p>{{ product.price | money_with_currency }}</p>
       </div>
-      
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
@@ -45,74 +43,75 @@
           </select>
         </div>
         
-        
         <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
           <input type="number" class="form-control" name="quantity" id="Quantity" value="1" min="1">
         </div>
         <button type="submit" name="add" id="AddToCart" class="btn btn-secondary btn-lg w-100 rounded-0 mb-3">Add To Cart</button>
-        {% if section.settings.dynamic_buttons_checkbox == true %}
-                 {{ form | payment_button }}
-         {% endif %}
+        {% if section.settings.dynamic_buttons_checkbox %}
+          {{ form | payment_button }}
+        {% endif %}
       {% endform %}
+      
       <div class="col">
         {{ product.description }}
       </div>
     </div>
   </div>
 </div>
- {% schema %}
+
+{% schema %}
 {
-    "name": "Product Page",
-    "settings": [
-        {
-            "type":"checkbox",
-            "id":"dynamic_buttons_checkbox",
-            "label":"Enable Dynamic Buttons",
-            "default":false
-        }
-        ],
-        "blocks": [
-          {
-              "type":"title",
-              "name":"Title",
-              "limit": 1
-          },
-          {
-            "type": "price",
-            "name":"Price",
-            "limit": 1
-          },
-          {
-            "type": "varint_selector",
-            "name":"Varint Selector",
-            "limit": 1
-          },
-          {
-            "type": "varint_selector_color",
-            "name":"Varint Selector Color",
-            "limit": 1
-          },
-          {
-            "type": "quantity",
-            "name":"Quantity",
-            "limit": 1
-          },
-          {
-            "type": "checkout_buttons",
-            "name":"Check Out Buttons",
-            "limit": 1
-          },
-          {
-            "type": "description",
-            "name":"Description",
-            "limit": 1
-          }
-        ],
-        "presets": [
-          {
-            "name": "product sections"
-          }
-        ]
+  "name": "Product Page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "dynamic_buttons_checkbox",
+      "label": "Enable Dynamic Buttons",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "variant_selector",
+      "name": "Variant Selector",
+      "limit": 1
+    },
+    {
+      "type": "variant_selector_color",
+      "name": "Variant Selector Color",
+      "limit": 1
+    },
+    {
+      "type": "quantity",
+      "name": "Quantity",
+      "limit": 1
+    },
+    {
+      "type": "checkout_buttons",
+      "name": "Check Out Buttons",
+      "limit": 1
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    }
+  ],
+  "presets": [
+    {
+      "name": "product sections"
+    }
+  ]
 }
-{% endschema %} 
+{% endschema %}
