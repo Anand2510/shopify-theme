@@ -67,11 +67,14 @@
             <div class="col">
         {{ product.description }}
       </div>
-          {% if product.metafields.custom.custom_field %}
+    {% if product.metafields.custom.custom_field %}
   <div class="product-custom-field">
-   <p>custom metafields---</p> <p>{{ product.metafields.custom.custom_field }}</p>
+    <p>Custom Metafield Value: {{ product.metafields.custom.custom_field }}</p>
   </div>
+{% else %}
+  <p>No custom metafield found.</p>
 {% endif %}
+
 
           {% else %}
             
