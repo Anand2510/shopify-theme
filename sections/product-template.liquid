@@ -67,9 +67,9 @@
             <div class="col">
         {{ product.description }}
       </div>
-        <p>custom metafields---</p>  {% if product.metafields.custom.custom_field %}
+          {% if product.metafields.custom.custom_field %}
   <div class="product-custom-field">
-    <p>{{ product.metafields.custom.custom_field }}</p>
+   <p>custom metafields---</p> <p>{{ product.metafields.custom.custom_field }}</p>
   </div>
 {% endif %}
 
