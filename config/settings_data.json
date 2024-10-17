@@ -283,7 +283,7 @@
       },
       "1508965166889416987": {
         "type": "shopify://apps/voice-search-rvs/blocks/vsearch/8ef905b2-5f75-45ea-a294-d0e3c180914f",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "Vsearch": true,
           "search_icon": true,
