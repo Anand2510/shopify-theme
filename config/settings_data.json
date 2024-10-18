@@ -291,6 +291,16 @@
           "icon_size": 16,
           "right_space": 32
         }
+      },
+      "12759131022160772505": {
+        "type": "shopify://apps/wish-list-app/blocks/floating/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+        "disabled": false,
+        "settings": {
+          "check": true,
+          "check_bottom": true,
+          "products_text": "",
+          "icon_color": "#121212"
+        }
       }
     }
   },
