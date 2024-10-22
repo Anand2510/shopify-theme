@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "template-homepage": {
@@ -122,6 +122,22 @@
       ],
       "settings": {
       }
+    },
+    "17295756927081cc83": {
+      "type": "apps",
+      "blocks": {
+        "wish_list_app_product_page_JkyhQH": {
+          "type": "shopify://apps/wish-list-app/blocks/product-page/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+          "settings": {
+            "example": "this is text of xample"
+          }
+        }
+      },
+      "block_order": [
+        "wish_list_app_product_page_JkyhQH"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -135,6 +151,7 @@
     "feature_collection_6gBHhU",
     "feature_collection_old_KyeBNT",
     "page_faq_template_GH9hCN",
-    "faq_section_9APexV"
+    "faq_section_9APexV",
+    "17295756927081cc83"
   ]
 }
