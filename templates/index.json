@@ -9,22 +9,6 @@
  */
 {
   "sections": {
-    "17295756927081cc83": {
-      "type": "apps",
-      "blocks": {
-        "wish_list_app_product_page_JkyhQH": {
-          "type": "shopify://apps/wish-list-app/blocks/product-page/b1badf1b-2de7-479c-ac67-1414d596b7d9",
-          "settings": {
-            "example": "this is text of ExampleS"
-          }
-        }
-      },
-      "block_order": [
-        "wish_list_app_product_page_JkyhQH"
-      ],
-      "settings": {
-      }
-    },
     "template-homepage": {
       "type": "template-index",
       "settings": {
@@ -38,6 +22,29 @@
         "description": "<p>Example Paragraph</p>",
         "button_label": "Button",
         "button_link": ""
+      }
+    },
+    "17295756927081cc83": {
+      "type": "apps",
+      "blocks": {
+        "wish_list_app_product_page_JkyhQH": {
+          "type": "shopify://apps/wish-list-app/blocks/product-page/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+          "settings": {
+            "example": "<p>Enhance Your Online Store with a New App Section to Add Text.</p>"
+          }
+        },
+        "wish_list_app_product_page_qpzqWk": {
+          "type": "shopify://apps/wish-list-app/blocks/product-page/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+          "settings": {
+            "example": "<p>Discover how easy it is to personalize your app by adding text to any section.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "wish_list_app_product_page_JkyhQH",
+        "wish_list_app_product_page_qpzqWk"
+      ],
+      "settings": {
       }
     },
     "feature_collection_K4atPq": {
