@@ -129,7 +129,7 @@
         "wish_list_app_product_page_JkyhQH": {
           "type": "shopify://apps/wish-list-app/blocks/product-page/b1badf1b-2de7-479c-ac67-1414d596b7d9",
           "settings": {
-            "example": "this is text of xample"
+            "example": "this is text of ExampleS"
           }
         }
       },
