@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "template": {
+    "main": {
       "type": "product-template",
       "blocks": {
         "title": {
@@ -56,6 +56,6 @@
     }
   },
   "order": [
-    "template"
+    "main"
   ]
 }
