@@ -18,8 +18,8 @@
             <h1>{{ product.title }}</h1>
 <!-- Example: Display custom metafield under product description -->
 <div class="product-metafields">
-  {% if product.metafields.custom.custom_field %}
-   test nme <p>{{ product.metafields.custom.custom_field }}</p>
+  {% if product.metafields.custom_fields.custom_text_field %}
+   test nme <p>{{ product.metafields.custom_fields.custom_text_field }}</p>
   {% endif %}
 </div>
 
