@@ -25,7 +25,7 @@
           <h2 style="color:red;">Appp</h2>
           <div class="show-varint">
             {% assign product_varient = product.metafields.custom.product_type.value %}
-
+            {{ product.metafields.custom.product_type.title }}
             {{ product_varient.title }}
           </div>
 
