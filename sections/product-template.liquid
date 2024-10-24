@@ -22,6 +22,11 @@
    test nme <p>{{ product.metafields.custom_fields.custom_text_field }}</p>
   {% endif %}
 </div>
+          <div class="show-varint">
+            {% assign product_varient = product.metafields.custom.product_type.value %}
+
+            {{ product_varient.title }}
+          </div>
 
           {% when 'price' %}
             <p>{{ product.price | money_with_currency }}</p>
