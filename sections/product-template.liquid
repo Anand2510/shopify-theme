@@ -23,8 +23,8 @@
   {% endif %}
 </div>
 
-         <h2 style="color:blue;">new</h2> {% if product.metafields.customNamespace.customkey %}
-  <p>Product Type: {{ product.metafields.customNamespace.customkey | product }}</p>
+          {% if product.metafields.custom.product_type %}
+  <p>Product Type: {{ product.metafields.custom.product_type | product }}</p>
 {% endif %}
 
           <h2 style="color:red;">Appp</h2>
