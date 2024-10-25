@@ -22,9 +22,9 @@
    test nme <p>{{ product.metafields.custom_fields.custom_text_field }}</p>
   {% endif %}
 </div>
-
+<p>Product Type: {{ product.metafields.customnamespace.customkey | product }}</p>
           {% if product.metafields.custom.product_type %}
-  <p>Product Type: {{ product.metafields.custom.product_type | product }}</p>
+  <p>Product Type: {{ product.metafields.custom.product_typee | product }}</p>
 {% endif %}
 
           <h2 style="color:red;">Appp</h2>
