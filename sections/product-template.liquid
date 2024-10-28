@@ -27,6 +27,10 @@
 {{ test.title }}
 {{ product.metafields.global.test-product.title }}
 
+          <!----------------------------  -->
+          {% assign testtt = product.metafields.customNamespace.customKey.value %}
+{{ testtt.title }}
+          
           <h2 style="color:red;">Appp</h2>
           <div class="show-varint">
             {% assign product_varient = product.metafields.custom.product_type.value %}
