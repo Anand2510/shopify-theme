@@ -44,6 +44,27 @@
 {% else %}
   <p>No selected product</p>
 {% endif %}
+<script>
+  document.addEventListener("DOMContentLoaded", async function() {
+    const selectedProductId = "{{ selected_product_id }}";
+    
+    if (selectedProductId) {
+      try {
+        // Fetch product details from the Shopify Storefront API
+        const response = await fetch(`/products/${selectedProductId}.json`);
+        const data = await response.json();
+        
+        // Extract the product title or other details as needed
+        const productTitle = data.product.title;
+        
+        // Insert the product title into the placeholder div
+        document.getElementById("related-product-info").innerText = "Related Product Title: " + productTitle;
+      } catch (error) {
+        console.error("Failed to fetch related product details:", error);
+      }
+    }
+  });
+</script>
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
