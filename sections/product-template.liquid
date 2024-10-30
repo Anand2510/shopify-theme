@@ -32,7 +32,18 @@
 {% assign new_product_title = product.metafields.custombottom.selected_product_id.value %}
           {{ productss.title }}
          checkkk-- {{ product.metafields.custombottom.selected_product_id.title }}
+          <script>
 
+            // Find the title of the product based on the selected ID in product.metafields
+const selectedProductIdMetafield = product.metafields.edges.find(
+  (mf) => mf.node.key === "selected_product_id"
+)?.node.value;
+
+const selectedProductTitle = allProducts.find(
+  (prod) => prod.id === selectedProductIdMetafield
+)?.title;
+
+          </script>
 
           {% assign selected_product_id = product.metafields.custombottom.selected_product_id.value %}
 
