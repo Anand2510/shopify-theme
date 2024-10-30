@@ -32,6 +32,19 @@
 {% assign new_product_title = product.metafields.custombottom.selected_product_id.value %}
           {{ productss.title }}
          checkkk-- {{ product.metafields.custombottom.selected_product_id.title }}
+
+
+          {% assign selected_product_id = product.metafields.custombottom.selected_product_id.value %}
+
+{% if selected_product_id %}
+  <!-- Display the product ID for reference -->
+  <p>Selected Product ID: {{ selected_product_id }}</p>
+  <!-- Placeholder for JavaScript to fetch additional data -->
+  <div id="related-product-info"></div>
+{% else %}
+  <p>No selected product</p>
+{% endif %}
+
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
           
