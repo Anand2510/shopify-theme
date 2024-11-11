@@ -42,7 +42,7 @@
             {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
                {{ top_products.title }}<br>{{ top_products.price | money_with_currency }}<br>
             {% for variant in top_products.variants %}
-             {{ variant.title }}
+             <!-- {{ variant.title }} -->
                      <input 
           class="topappend" 
           type="radio" 
