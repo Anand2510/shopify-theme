@@ -57,7 +57,7 @@
              {% endfor %}<br>
                {{ bottom_products.title }}<br>
             {% for varian in bottom_products.variants %}
-             {{ varian.title }}
+            {% comment %} {{ varian.title }}{% endcomment %}
                            <input 
           class="topappends" 
           type="radio" 
