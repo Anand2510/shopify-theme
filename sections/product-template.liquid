@@ -22,12 +22,12 @@
   {% if product.metafields.custom_fields.custom_text_field %}
    test nme <p>{{ product.metafields.custom_fields.custom_text_field }}</p>
   {% endif %}
-</div>{% endcomment %}
+</div>
 <!--------------------------------------metafield Guruji----------------------------------------  -->
           {% assign test = product.metafields.global.test-product.value %}
 {{ test.title }}
 {{ product.metafields.global.test-product.title }}
-
+{% endcomment %}
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
 
@@ -35,7 +35,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
-          nnn---{{ product_name.title }}
+         {{ product_name.title }}
           <!----------------------------  -->
 
 
