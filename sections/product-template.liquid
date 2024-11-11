@@ -40,7 +40,7 @@
 <!------------------------------------------------------------------------------------------------------------------------------  -->
         {% assign top_products = product.metafields.custombottom.top_product.value %}
             {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
-               {{ top_products.title }}<br>{{ top_products.price | money_without_currency }}<br>
+               {{ top_products.title }}<br>{{ top_products.price | money_with_currency }}<br>
             {% for variant in top_products.variants %}
              {{ variant.title }}
              {% endfor %}<br>
