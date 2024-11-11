@@ -28,6 +28,124 @@
 {{ test.title }}
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
+
+{% assign top_products = product.metafields.custombottom.top_product.value %}
+{% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
+
+<!-- Top Product -->
+<div id="top-product">
+  <h3>{{ top_products.title }}</h3>
+  <span>{{ top_products.price | money_with_currency }}</span>
+  
+  {% for variant in top_products.variants %}
+    <input 
+      class="top-variant" 
+      type="radio" 
+      id="top-variant-{{ variant.id }}" 
+      data-price="{{ variant.price | money_with_currency }}" 
+      name="top-variant" 
+      value="{{ variant.id }}" 
+      form="product-form-template--22811318583601__main"
+      {% if forloop.first %} checked{% endif %}
+    >
+    <label for="top-variant-{{ variant.id }}">{{ variant.title }}</label>
+  {% endfor %}
+</div>
+
+<!-- Bottom Product -->
+<div id="bottom-product">
+  <h3>{{ bottom_products.title }}</h3>
+  <span>{{ bottom_products.price | money_with_currency }}</span>
+  
+  {% for variant in bottom_products.variants %}
+    <input 
+      class="bottom-variant" 
+      type="radio" 
+      id="bottom-variant-{{ variant.id }}" 
+      data-price="{{ variant.price | money_with_currency }}" 
+      name="bottom-variant" 
+      value="{{ variant.id }}" 
+      form="product-form-template--22811318583601__main"
+      {% if forloop.first %} checked{% endif %}
+    >
+    <label for="bottom-variant-{{ variant.id }}">{{ variant.title }}</label>
+  {% endfor %}
+</div>
+
+<!-- Add to Cart Button -->
+<button id="add-to-cart-btn">Add to Cart</button>
+
+<script>
+// JavaScript to handle select/unselect behavior and add to cart functionality
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize variables
+  let selectedTopVariant = document.querySelector('input[name="top-variant"]:checked');
+  let selectedBottomVariant = document.querySelector('input[name="bottom-variant"]:checked');
+
+  // Function to update the selected variant IDs
+  function updateSelectedVariants() {
+    selectedTopVariant = document.querySelector('input[name="top-variant"]:checked');
+    selectedBottomVariant = document.querySelector('input[name="bottom-variant"]:checked');
+  }
+
+  // Event listener for changing top variant
+  document.querySelectorAll('input[name="top-variant"]').forEach(function(input) {
+    input.addEventListener('change', function() {
+      updateSelectedVariants();
+    });
+  });
+
+  // Event listener for changing bottom variant
+  document.querySelectorAll('input[name="bottom-variant"]').forEach(function(input) {
+    input.addEventListener('change', function() {
+      updateSelectedVariants();
+    });
+  });
+
+  // Add to Cart functionality using AJAX
+  document.getElementById('add-to-cart-btn').addEventListener('click', function() {
+    if (!selectedTopVariant || !selectedBottomVariant) {
+      alert("Please select both top and bottom product variants.");
+      return;
+    }
+
+    const topVariantId = selectedTopVariant.value;
+    const bottomVariantId = selectedBottomVariant.value;
+
+    // Add both products to the cart (using AJAX)
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        items: [
+          {
+            id: topVariantId,
+            quantity: 1
+          },
+          {
+            id: bottomVariantId,
+            quantity: 1
+          }
+        ]
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Optionally, you can update the cart UI here
+      alert('Products added to the cart!');
+    })
+    .catch(error => {
+      console.error('Error adding to cart:', error);
+      alert('There was an error adding the products to the cart.');
+    });
+  });
+});
+</script>
+
+
+          <br>
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
 
