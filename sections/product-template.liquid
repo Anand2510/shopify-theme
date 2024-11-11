@@ -53,51 +53,13 @@ const selectedProductTitle = allProducts.find(
 
           </script>
 
-          {% assign selected_product_id = product.metafields.custombottom.selected_product_id.value %}
 
-{% if selected_product_id %}
-  <!-- Display the product ID for reference -->
-  <p>Selected Product ID: {{ selected_product_id }}</p>
-  <!-- Placeholder for JavaScript to fetch additional data -->
-  <div id="related-product-info"></div>
-{% else %}
-  <p>No selected product</p>
-{% endif %}
-<script>
-  document.addEventListener("DOMContentLoaded", async function() {
-    const selectedProductId = "{{ selected_product_id }}";
-    
-    if (selectedProductId) {
-      try {
-        // Fetch product details from the Shopify Storefront API
-        const response = await fetch(`/products/${selectedProductId}.json`);
-        const data = await response.json();
-        
-        // Extract the product title or other details as needed
-        const productTitle = data.product.title;
-        
-        // Insert the product title into the placeholder div
-        document.getElementById("related-product-info").innerText = "Related Product Title: " + productTitle;
-      } catch (error) {
-        console.error("Failed to fetch related product details:", error);
-      }
-    }
-  });
-</script>
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
           {{ product_name.title }}
           <!----------------------------  -->
-          {% assign testtt = product.metafields.customNamespace.customKey.value %}
-{{ testtt.title }}
-          {{ product.metafields.customNamespace.customKey }}
-          <h2 style="color:red;">Appp</h2>
-          <div class="show-varint">
-            {% assign product_varient = product.metafields.custom.product_type.value %}
-            {{ product.metafields.bakery.ingredients.title }}
-            {{ product_varient.title }}
-          </div>
+
 
           {% when 'price' %}
             <p>{{ product.price | money_with_currency }}</p>
