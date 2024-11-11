@@ -57,7 +57,17 @@
              {% endfor %}<br>
                {{ bottom_products.title }}<br>
             {% for varian in bottom_products.variants %}
-             {{ varian.title }}
+             <!-- {{ varian.title }} -->
+                           <input 
+          class="topappend" 
+          type="radio" 
+          id="{{ varian.id }}" 
+          data-top-product-price="{{ varian.price | money_with_currency }}" 
+          name="top-variant-id" 
+          value="{{ varian.id }}" 
+          form="product-form-template--22811318583601__main"
+          {% if forloop.first %} checked{% endif %}
+        >
              {% endfor %}
          
           
