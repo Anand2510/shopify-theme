@@ -276,16 +276,16 @@
       "12759131022160772505": {
         "type": "shopify://apps/wish-list-app/blocks/floating/b1badf1b-2de7-479c-ac67-1414d596b7d9",
         "disabled": true,
-        "settings": {
-          "check": true,
-          "check_bottom": true,
-          "products_text": "",
-          "icon_color": "#121212"
-        }
+        "settings": {}
+      },
+      "8334550015831547310": {
+        "type": "shopify://apps/wish-list-app/blocks/Add/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+        "disabled": false,
+        "settings": {}
       },
       "14437475469799978234": {
         "type": "shopify://apps/product/blocks/add/747acf4c-834b-4f4b-9e45-7144e68e039b",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "icon_color": "#121212"
         }
