@@ -29,13 +29,17 @@
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
 <!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
-{% assign top_products = product.metafields.custombottom.top_product.value %}
+
+
+
+          <br>
+          {% assign top_products = product.metafields.custombottom.top_product.value %}
 {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
 
 <!-- Top Product -->
 <div id="top-product">
   <h3>{{ top_products.title }}</h3>
-  Top : <span>{{ top_products.price | money_with_currency }}</span>
+  <span>{{ top_products.price | money_with_currency }}</span>
   
   {% for variant in top_products.variants %}
     <input 
@@ -55,7 +59,7 @@
 <!-- Bottom Product -->
 <div id="bottom-product">
   <h3>{{ bottom_products.title }}</h3>
- Bottom : <span>{{ bottom_products.price | money_with_currency }}</span>
+  <span>{{ bottom_products.price | money_with_currency }}</span>
   
   {% for variant in bottom_products.variants %}
     <input 
@@ -72,6 +76,11 @@
   {% endfor %}
 </div>
 
+<!-- Total Price Display -->
+<div id="total-price">
+  <h4>Total Price: <span id="total-price-amount">{{ top_products.price | money_with_currency }}</span></h4>
+</div>
+
 <!-- Add to Cart Button -->
 <button id="add-to-cart-btn">Add to Cart</button>
 
@@ -81,11 +90,20 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize variables
   let selectedTopVariant = document.querySelector('input[name="top-variant"]:checked');
   let selectedBottomVariant = document.querySelector('input[name="bottom-variant"]:checked');
+  let totalPriceDisplay = document.getElementById('total-price-amount');
 
-  // Function to update the selected variant IDs
+  // Function to update the selected variant IDs and price
   function updateSelectedVariants() {
     selectedTopVariant = document.querySelector('input[name="top-variant"]:checked');
     selectedBottomVariant = document.querySelector('input[name="bottom-variant"]:checked');
+
+    // Calculate the total price
+    let topPrice = parseFloat(selectedTopVariant.dataset.price.replace(/[^\d.-]/g, ''));  // Remove currency symbols
+    let bottomPrice = parseFloat(selectedBottomVariant.dataset.price.replace(/[^\d.-]/g, '')); // Remove currency symbols
+    let totalPrice = topPrice + bottomPrice;
+
+    // Update the total price display
+    totalPriceDisplay.innerText = (totalPrice).toFixed(2); // You can format this to include currency if needed.
   }
 
   // Event listener for changing top variant
@@ -141,11 +159,12 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('There was an error adding the products to the cart.');
     });
   });
+
+  // Initialize the price on page load
+  updateSelectedVariants();
 });
 </script>
 
-
-          <br>
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
 
