@@ -36,7 +36,10 @@
 <!------------------------------------------------------------------------------------------------------------------------------  -->
         {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
                {{ product_name.title }}
-          {{ product_name.variants }}
+           {% for variant in product_name.variants %}
+             {{ variant.variants }}
+             {% endfor %}
+          
           <!------------------------------>
 
 
