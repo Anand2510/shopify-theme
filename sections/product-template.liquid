@@ -31,11 +31,17 @@
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
 
-
+   {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
+               {{ product_name.title }}
+           {% for variant in product_name.variants %}
+             {{ variant.title }}
+             {% endfor %}
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
-        {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
-               {{ product_name.title }}
+        {% assign top_products = product.metafields.custombottom.top_product.value %}
+            {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
+               {{ top_products.title }}<br>
+           {{ bottom_products.title }}
            {% for variant in product_name.variants %}
              {{ variant.title }}
              {% endfor %}
