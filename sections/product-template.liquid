@@ -57,9 +57,9 @@
              {% endfor %}<br>
                {{ bottom_products.title }}<br>
             {% for varian in bottom_products.variants %}
-             <!-- {{ varian.title }} -->
+             {{ varian.title }}
                            <input 
-          class="topappend" 
+          class="topappends" 
           type="radio" 
           id="{{ varian.id }}" 
           data-top-product-price="{{ varian.price | money_with_currency }}" 
