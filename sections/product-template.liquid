@@ -35,7 +35,7 @@
 <!-- Top Product -->
 <div id="top-product">
   <h3>{{ top_products.title }}</h3>
-  Top<span>{{ top_products.price | money_with_currency }}</span>
+  Top : <span>{{ top_products.price | money_with_currency }}</span>
   
   {% for variant in top_products.variants %}
     <input 
@@ -55,7 +55,7 @@
 <!-- Bottom Product -->
 <div id="bottom-product">
   <h3>{{ bottom_products.title }}</h3>
- Bottom <span>{{ bottom_products.price | money_with_currency }}</span>
+ Bottom : <span>{{ bottom_products.price | money_with_currency }}</span>
   
   {% for variant in bottom_products.variants %}
     <input 
