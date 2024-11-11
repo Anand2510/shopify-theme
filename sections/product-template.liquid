@@ -42,7 +42,7 @@
             {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
                {{ top_products.title }}<br>{{ top_products.price | money_with_currency }}<br>
             {% for variant in top_products.variants %}
-             
+             <!-- {{ variant.title }} -->
                      <input 
           class="topappend" 
           type="radio" 
@@ -68,6 +68,7 @@
           form="product-form-template--22811318583601__main"
           {% if forloop.first %} checked{% endif %}
         >
+               <label for="{{ varian.id }}">{{ varian.title }}</label>
              {% endfor %}
          
           
