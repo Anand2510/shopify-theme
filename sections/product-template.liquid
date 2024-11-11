@@ -28,7 +28,7 @@
 {{ test.title }}
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
-
+<!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
 {% assign top_products = product.metafields.custombottom.top_product.value %}
 {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
 
@@ -148,49 +148,6 @@ document.addEventListener('DOMContentLoaded', function () {
           <br>
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
-
-   {% assign product_name = product.metafields.custombottom.selected_product_id.value %}
-               {{ product_name.title }}
-           {% for variant in product_name.variants %}
-             {{ variant.title }}
-             {% endfor %}
-
-<!------------------------------------------------------------------------------------------------------------------------------  -->
-        {% assign top_products = product.metafields.custombottom.top_product.value %}
-            {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
-               {{ top_products.title }}<br>{{ top_products.price | money_with_currency }}<br>
-            {% for variant in top_products.variants %}
-             <!-- {{ variant.title }} -->
-                     <input 
-          class="topappend" 
-          type="radio" 
-          id="{{ variant.id }}" 
-          data-top-product-price="{{ variant.price | money_with_currency }}" 
-          name="top-variant-id" 
-          value="{{ variant.id }}" 
-          form="product-form-template--22811318583601__main"
-          {% if forloop.first %} checked{% endif %}
-        >
-        <label for="{{ variant.id }}">{{ variant.title }}</label>
-             {% endfor %}<br>
-               {{ bottom_products.title }}<br>
-            {% for varian in bottom_products.variants %}
-            {% comment %} {{ varian.title }}{% endcomment %}
-                           <input 
-          class="topappends" 
-          type="radio" 
-          id="{{ varian.id }}" 
-          data-top-product-price="{{ varian.price | money_with_currency }}" 
-          name="top-variant-id" 
-          value="{{ varian.id }}" 
-          form="product-form-template--22811318583601__main"
-          {% if forloop.first %} checked{% endif %}
-        >
-               <label for="{{ varian.id }}">{{ varian.title }}</label>
-             {% endfor %}
-         
-          
-          <!------------------------------>
 
 
           {% when 'price' %}
