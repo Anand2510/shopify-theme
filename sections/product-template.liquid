@@ -31,43 +31,6 @@
           
           <script src="{{ 'custom-product-script.js' | asset_url }}"></script>
           {% render 'custom-product' %}
-          <script>
-          async function addSnippetToProductPage() {
-  try {
-    // Fetch existing product.liquid content
-    const productTemplate = await axios.get(apiUrl, {
-      params: { 'asset[key]': 'templates/product.liquid' },
-      headers: { 'X-Shopify-Access-Token': accessToken },
-    });
-
-    const snippetReference = "{% render 'custom-product' %}";
-
-    // Check if snippet is already included
-    if (!productTemplate.data.asset.value.includes(snippetReference)) {
-      const updatedContent = productTemplate.data.asset.value + "\n" + snippetReference;
-
-      // Update the product.liquid file
-      await axios.put(apiUrl, {
-        asset: {
-          key: 'templates/product.liquid',
-          value: updatedContent,
-        },
-      }, {
-        headers: { 'X-Shopify-Access-Token': accessToken },
-      });
-
-      console.log('Snippet added to product page!');
-    } else {
-      console.log('Snippet already exists in product page.');
-    }
-  } catch (error) {
-    console.error('Error updating product page:', error);
-  }
-}
-
-addSnippetToProductPage();
-
-          </script>
 <!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
 <!-- Total Price Display -->
 {% comment %}
