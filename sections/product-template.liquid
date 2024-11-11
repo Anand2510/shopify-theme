@@ -29,17 +29,6 @@
 {{ product.metafields.global.test-product.title }}
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
-{% assign related_products_json = product.metafields.custombottom.related_products.value %}
-{% assign related_products = related_products_json | parse_json %}
-
-{% for related_product in related_products %}
-  <h2>{{ related_product.title }}</h2> <!-- Assuming 'title' is a property of each related product -->
-{% endfor %}
-
-          {{ product.metafields.custombottom.related_products.title }}
-{% assign new_product_title = product.metafields.custombottom.selected_product_id.value %}
-          {{ productss.title }}
-         checkkk-- {{ product.metafields.custombottom.selected_product_id.title }}
 
 
 
