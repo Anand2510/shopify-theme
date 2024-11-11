@@ -29,7 +29,10 @@
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
 <!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
-
+<!-- Total Price Display -->
+<div id="total-price">
+  <h4>Total Price: <span id="total-price-amount">{{ top_products.price | money_with_currency }}</span></h4>
+</div>
 
 
           <br>
@@ -76,10 +79,7 @@
   {% endfor %}
 </div>
 
-<!-- Total Price Display -->
-<div id="total-price">
-  <h4>Total Price: <span id="total-price-amount">{{ top_products.price | money_with_currency }}</span></h4>
-</div>
+
 
 <!-- Add to Cart Button -->
 <button id="add-to-cart-btn">Add to Cart</button>
