@@ -29,6 +29,8 @@
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
           
+          <script src="{{ 'custom-product-script.js' | asset_url }}"></script>
+          {% render 'custom-product' %}
 <!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
 <!-- Total Price Display -->
 {% comment %}
