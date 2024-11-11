@@ -41,8 +41,8 @@
         {% assign top_products = product.metafields.custombottom.top_product.value %}
             {% assign bottom_products = product.metafields.custombottom.bottom_product.value %}
                {{ top_products.title }}<br>
-           {{ bottom_products.title }}
-           {% for variant in product_name.variants %}
+               {{ bottom_products.title }}
+           {% for variant in top_products.variants %}
              {{ variant.title }}
              {% endfor %}
           
