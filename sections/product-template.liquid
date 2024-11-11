@@ -28,11 +28,11 @@
 {{ test.title }}
 {{ product.metafields.global.test-product.title }}
 {% endcomment %}
-          
+          <div class="subscriptions_app_embed_block"></div>
           
 <!-------------------------------------------------------------------------metafield stats-------------------------------------------------------------------------------------  -->
 <!-- Total Price Display -->
-{% comment %}
+
   
 <div id="total-price">
   <h4>Total Price: <span id="total-price-amount">{{ top_products.price | money_with_currency }}</span></h4>
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <!------------------------------------------------------------------------------------------------------------------------------  -->
 
-{% endcomment %}
+
 
           {% when 'price' %}
             <p>{{ product.price | money_with_currency }}</p>
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
     </div>
 </div>
-<div class="subscriptions_app_embed_block"></div>
+
 
 
 {% schema %}
