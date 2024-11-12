@@ -248,26 +248,28 @@
           "right_space": 32
         }
       },
-      "14437475469799978234": {
-        "type": "shopify://apps/product/blocks/add/747acf4c-834b-4f4b-9e45-7144e68e039b",
-        "disabled": false,
-        "settings": {
-          "icon_color": "#121212"
-        }
+      "5918445685253060206": {
+        "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+        "disabled": true,
+        "settings": {}
       },
-      "12759131022160772505": {
-        "type": "shopify://apps/wish-list-app/blocks/floating/b1badf1b-2de7-479c-ac67-1414d596b7d9",
+      "1768834845299682660": {
+        "type": "shopify://apps/subscriptions/blocks/app-embed-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
         "disabled": false,
         "settings": {
-          "check": true,
-          "check_bottom": true,
-          "products_text": "",
-          "icon_color": "#121212"
+          "color_text_title": "#6D7175",
+          "color_text_body": "#6D7175",
+          "dividers_color": "#8F8D8D",
+          "bacgkround_color": "#FFFFFF",
+          "border_thickness": 1,
+          "border_radius": 0,
+          "supporting_text_title": "Purchase options",
+          "subscription_policy_url": ""
         }
       },
       "17151115064775110295": {
         "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "color_brand": "#467c99",
           "contrast_color": "#ffffff",
@@ -281,8 +283,15 @@
           "cards_border_color": "rgba(0,0,0,0)"
         }
       },
-      "5918445685253060206": {
-        "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+      "14437475469799978234": {
+        "type": "shopify://apps/product/blocks/add/747acf4c-834b-4f4b-9e45-7144e68e039b",
+        "disabled": true,
+        "settings": {
+          "icon_color": "#121212"
+        }
+      },
+      "12759131022160772505": {
+        "type": "shopify://apps/wish-list-app/blocks/floating/b1badf1b-2de7-479c-ac67-1414d596b7d9",
         "disabled": true,
         "settings": {}
       }
